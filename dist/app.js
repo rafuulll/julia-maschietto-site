@@ -264,10 +264,11 @@
         litWords = count;
       }
       conceptTime += delta * 0.001;
+      const compactTags = innerWidth <= 760;
       pills.forEach((pill, i) => {
         const phase = conceptTime * (0.65 + i * 0.09) + i * 2.1;
-        pill.style.setProperty('--dx', `${(Math.sin(phase) * 6).toFixed(2)}px`);
-        pill.style.setProperty('--dy', `${(Math.cos(phase) * 11 + (progress - 0.5) * (i % 2 ? -12 : 12)).toFixed(2)}px`);
+        pill.style.setProperty('--dx', `${(Math.sin(phase) * (compactTags ? 3 : 6)).toFixed(2)}px`);
+        pill.style.setProperty('--dy', `${(Math.cos(phase) * (compactTags ? 5 : 8)).toFixed(2)}px`);
         pill.style.setProperty('--drift-rot', `${(Math.sin(phase * 0.8) * 3).toFixed(2)}deg`);
       });
     }

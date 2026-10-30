@@ -1,16 +1,21 @@
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-const desktop = matchMedia('(min-width: 1001px) and (min-height: 480px)');
+const desktop = matchMedia('(min-width: 1001px) and (min-height: 480px) and (hover: hover) and (pointer: fine)');
 const process = document.getElementById('processo');
 const scene = process.querySelector('.process-scene');
 const windowEl = process.querySelector('.process-window');
 const track = process.querySelector('.process-steps');
 const bar = process.querySelector('.process-progress');
+const timelineBar = process.querySelector('.process-timeline-progress');
 const journey = process.closest('.journey');
 let pinned = false, travel = 0, processVisible = false, lastProgress = -1, needsPaint = true;
 
 function layoutProcess() {
-  pinned = desktop.matches && !reduced.matches;
+  pinned = desktop.matches && !reduced.matches && CSS.supports('position', 'sticky');
   process.classList.toggle('is-pinned', pinned);
+  windowEl.setAttribute('aria-label', pinned ? 'As quatro etapas do projeto. Use as setas para explorar.' : 'As quatro etapas do projeto, em sequência.');
+  if (pinned) windowEl.tabIndex = 0; else windowEl.removeAttribute('tabindex');
+  bar.setAttribute('aria-hidden', String(!pinned));
+  timelineBar.setAttribute('aria-hidden', String(pinned));
   const cardWidth = track.firstElementChild.getBoundingClientRect().width;
   track.style.setProperty('--process-side', `${Math.max(0,(windowEl.clientWidth-cardWidth)/2)}px`);
   travel = Math.max(0, track.scrollWidth - windowEl.clientWidth);
@@ -22,8 +27,11 @@ function layoutProcess() {
   paintProcess();
 }
 function paintProcess() {
-  const distance = pinned ? -process.getBoundingClientRect().top : windowEl.scrollLeft;
-  const progress = travel ? Math.min(1, Math.max(0, distance / travel)) : 1;
+  const distance = -process.getBoundingClientRect().top;
+  const bounds = track.getBoundingClientRect();
+  const progress = Math.min(1, Math.max(0, pinned
+    ? (travel ? distance / travel : 1)
+    : (innerHeight * .6 - bounds.top) / Math.max(1, bounds.height)));
   // Compensate only the pinned traversal. After its end the offset is constant,
   // so the decoration resumes ordinary page movement alongside About.
   journey.style.setProperty('--wave-offset', pinned ? `${Math.min(travel,Math.max(0,distance)).toFixed(2)}px` : '0px');
@@ -31,6 +39,8 @@ function paintProcess() {
   if (progress !== lastProgress) {
     bar.style.setProperty('--process-progress', progress.toFixed(4));
     bar.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
+    timelineBar.style.setProperty('--timeline-progress', progress.toFixed(4));
+    timelineBar.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
     lastProgress = progress;
   }
   needsPaint = false;

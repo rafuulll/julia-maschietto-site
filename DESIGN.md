@@ -249,3 +249,13 @@ Hero retains the sixth photographic treatment. Lift the portrait by 54–80px on
 Testimonials now use the paper surface, white 14px-radius cards, Manrope 16px/1.7 quotes, wine attribution and the existing serif emphasis in a centered heading. Manual 46px circular arrows sit above the rail. A 360px card is centered with partial neighbors and soft edge fades; narrow cards use viewport minus64px. No automatic cycling or hover-dependent pause. Fictional status stays visible. Native swipe, scroll-snap, keyboard arrows/Home/End and reduced-motion behavior are retained.
 
 Waves use absolute artwork translated only to compensate the pinned process travel. The translation clamps at the final step; ordinary vertical movement resumes immediately afterward. No pin compensation on mobile or reduced-motion layouts. Link and tab hit areas are at least44px; footer columns use zero-minimum grid tracks so links wrap at320px. Earlier round descriptions above are historical where they differ.
+
+### Eighth execution — current refinements
+
+Bahari leads the project section in a two-column image/narrative feature, stacking on mobile. Use the existing illustrative photograph with its caption, shared credits and contextualized411mil result. Expandable evidence sits below; the other five case rows retain their appearance. Feature corner radius14px; title34–46px, body15px/1.75 and wine serif result54–60px.
+
+The baseline process is a single vertical column with a2px wine progress line,8px nodes and40px step gaps. All steps remain readable without module JavaScript. The pinned lateral variant requires fine pointer/hover, sticky support, sufficient viewport size and motion enabled. Vertical progress follows the list passing the60% viewport reading line. Wave compensation still applies only to pinned travel.
+
+The testimonial rail no longer opts out of vertical wheel handling. Native horizontal swipe and normal vertical scrolling coexist; fade width is12–28px. Concept tags reserve four corner zones outside an88px top/bottom text inset (78px on mobile); mobile corners may bleed modestly but never overlap the heading. Drift amplitudes are bounded to3/5px mobile and6/8px desktop.
+
+The new imagegen desktop composition is a separate approval proposal, not the current live hero or a responsive template. Keep the seventh-round live hero until the user approves the raster direction.
