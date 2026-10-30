@@ -4,48 +4,174 @@
   "title": "Design System: Julia Maschietto",
   "extensions": {
     "colorMeta": {
-      "wine": { "role": "primary", "displayName": "Wine" },
-      "red": { "role": "primary", "displayName": "Active Red" },
-      "paper": { "role": "neutral", "displayName": "Warm Paper" },
-      "ink": { "role": "neutral", "displayName": "Deep Ink" },
-      "rose": { "role": "neutral", "displayName": "Soft Rose" },
-      "muted": { "role": "neutral", "displayName": "Warm Muted Text" },
-      "line": { "role": "neutral", "displayName": "Warm Hairline" },
-      "deliverables": { "role": "neutral", "displayName": "Artifact Paper" },
-      "testimonials": { "role": "neutral", "displayName": "Quote Paper" }
+      "wine": {
+        "role": "primary",
+        "displayName": "Wine"
+      },
+      "red": {
+        "role": "primary",
+        "displayName": "Active Red"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink"
+      },
+      "rose": {
+        "role": "neutral",
+        "displayName": "Soft Rose"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Warm Muted Text"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Warm Hairline"
+      },
+      "deliverables": {
+        "role": "neutral",
+        "displayName": "Artifact Paper"
+      },
+      "testimonials": {
+        "role": "neutral",
+        "displayName": "Quote Paper"
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Editorial Display", "purpose": "Manrope hero heading; responsive overrides are documented in DESIGN.md." },
-      "headline": { "displayName": "Section Headline", "purpose": "Medium-weight section introductions." },
-      "title": { "displayName": "Service Title", "purpose": "Service headings; proof rows have smaller local sizes." },
-      "body": { "displayName": "Reading Text", "purpose": "Global base; local copy uses denser sizes and generous leading." },
-      "label": { "displayName": "Control Label", "purpose": "Navigation and text links." },
-      "emphasis": { "displayName": "Instrument Serif Italic", "purpose": "Expressive inline emphasis, signatures, outcomes and quotes; font-style italic is required." }
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "Manrope hero heading; responsive overrides are documented in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Medium-weight section introductions."
+      },
+      "title": {
+        "displayName": "Service Title",
+        "purpose": "Service headings; proof rows have smaller local sizes."
+      },
+      "body": {
+        "displayName": "Reading Text",
+        "purpose": "Global base; local copy uses denser sizes and generous leading."
+      },
+      "label": {
+        "displayName": "Control Label",
+        "purpose": "Navigation and text links."
+      },
+      "emphasis": {
+        "displayName": "Instrument Serif Italic",
+        "purpose": "Expressive inline emphasis, signatures, outcomes and quotes; font-style italic is required."
+      }
     },
     "shadows": [
-      { "name": "navigation", "value": "inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px -23px rgba(10,15,21,.4)", "purpose": "Floating translucent navigation." },
-      { "name": "project-preview", "value": "0 22px 55px -25px rgba(25,15,15,.45)", "purpose": "Transient pointer-following project image." },
-      { "name": "notebook", "value": "drop-shadow(0 20px 16px rgba(25,20,20,.1))", "purpose": "CSS filter on notebook artifact." },
-      { "name": "dialog", "value": "0 30px 100px -30px rgba(10,5,10,.6)", "purpose": "Native modal overlay." },
-      { "name": "contact", "value": "0 9px 25px -10px rgba(50,5,10,.5)", "purpose": "Floating contact shortcut." },
-      { "name": "concept-pill", "value": "0 10px 22px -17px rgba(114,25,25,.4)", "purpose": "Decorative positioning labels." }
+      {
+        "name": "navigation",
+        "value": "inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px -23px rgba(10,15,21,.4)",
+        "purpose": "Floating translucent navigation."
+      },
+      {
+        "name": "project-preview",
+        "value": "0 22px 55px -25px rgba(25,15,15,.45)",
+        "purpose": "Transient pointer-following project image."
+      },
+      {
+        "name": "notebook",
+        "value": "drop-shadow(0 20px 16px rgba(25,20,20,.1))",
+        "purpose": "CSS filter on notebook artifact."
+      },
+      {
+        "name": "dialog",
+        "value": "0 30px 100px -30px rgba(10,5,10,.6)",
+        "purpose": "Native modal overlay."
+      },
+      {
+        "name": "contact",
+        "value": "0 9px 25px -10px rgba(50,5,10,.5)",
+        "purpose": "Floating contact shortcut."
+      },
+      {
+        "name": "concept-pill",
+        "value": "0 10px 22px -17px rgba(114,25,25,.4)",
+        "purpose": "Decorative positioning labels."
+      }
     ],
     "motion": [
-      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Primary authored easing." },
-      { "name": "spring", "value": "cubic-bezier(.22,1,.36,1)", "purpose": "Navigation indicator and reveal transforms." },
-      { "name": "button-label", "value": ".55s var(--ease)", "purpose": "Opposing vertical rolling labels." },
-      { "name": "button-circle", "value": ".5s var(--ease)", "purpose": "Arrow circle rotates -45deg on hover." },
-      { "name": "reveal", "value": "opacity .85s var(--ease),transform 1s var(--spring),filter .8s var(--ease)", "purpose": "26px rise, 5px blur; essential content visible without scripts." },
-      { "name": "word-in", "value": ".9s var(--ease), 45ms stagger", "purpose": "Word-level heading entrance." },
-      { "name": "dialog-in", "value": ".4s var(--ease)", "purpose": "20px rise and .98-to-1 scale." },
-      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Disable smooth scrolling, reveal transforms, parallax and previews; reduce animation/transition duration to .01ms, show content immediately, begin footer video paused." }
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Primary authored easing."
+      },
+      {
+        "name": "spring",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Navigation indicator and reveal transforms."
+      },
+      {
+        "name": "button-label",
+        "value": ".55s var(--ease)",
+        "purpose": "Opposing vertical rolling labels."
+      },
+      {
+        "name": "button-circle",
+        "value": ".5s var(--ease)",
+        "purpose": "Arrow circle rotates -45deg on hover."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity .85s var(--ease),transform 1s var(--spring),filter .8s var(--ease)",
+        "purpose": "26px rise, 5px blur; essential content visible without scripts."
+      },
+      {
+        "name": "word-in",
+        "value": ".9s var(--ease), 45ms stagger",
+        "purpose": "Word-level heading entrance."
+      },
+      {
+        "name": "dialog-in",
+        "value": ".4s var(--ease)",
+        "purpose": "20px rise and .98-to-1 scale."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Disable smooth scrolling, reveal transforms, parallax and previews; reduce animation/transition duration to .01ms, show content immediately, begin footer video paused."
+      },
+      {
+        "name": "concept-words",
+        "value": "opacity .16 → 1, .45s var(--ease)",
+        "purpose": "Sequential darkening tied to viewport passage, reversible on upward scroll."
+      },
+      {
+        "name": "concept-tags",
+        "value": "visible-only requestAnimationFrame drift",
+        "purpose": "Independent ±6px x, ±11px y and ±3deg rotation plus restrained scroll offset. Static under reduced motion."
+      }
     ],
     "breakpoints": [
-      { "name": "wide", "value": "min-width:1600px" },
-      { "name": "compact-desktop", "value": "max-width:1200px" },
-      { "name": "tablet", "value": "max-width:1000px" },
-      { "name": "mobile", "value": "max-width:760px" },
-      { "name": "narrow", "value": "max-width:380px" }
+      {
+        "name": "wide",
+        "value": "min-width:1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "max-width:1200px"
+      },
+      {
+        "name": "tablet",
+        "value": "max-width:1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width:760px"
+      },
+      {
+        "name": "narrow",
+        "value": "max-width:380px"
+      }
     ]
   },
   "components": [
@@ -68,8 +194,8 @@
     {
       "name": "Floating Navigation",
       "kind": "nav",
-      "description": "Compact translucent pill; the production version adapts to hero/footer and replaces links with a circular mobile toggle.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-brand\" href=\"#inicio\">Jm.</a><a href=\"#servicos\">Serviços</a><a href=\"#projetos\">Projetos</a><a class=\"ds-contact\" href=\"#contato\">Vamos conversar <svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 12h16m-7-7 7 7-7 7\"/></svg></a></nav>",
+      "description": "Three section links and one contact action, without a brand block. Mobile preserves contact plus menu toggle.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a href=\"#servicos\">Serviços</a><a href=\"#projetos\">Projetos</a><a href=\"#sobre\">Sobre</a><a class=\"ds-contact\" href=\"#contato\">Vamos conversar <svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 12h16m-7-7 7 7-7 7\"/></svg></a></nav>",
       "css": ".ds-nav{display:inline-flex;align-items:center;gap:14px;padding:6px 7px 6px 16px;border-radius:999px;background:rgba(250,248,244,.78);backdrop-filter:blur(22px) saturate(1.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px -23px rgba(10,15,21,.4);font:400 13px/1.6 Manrope,Arial,sans-serif;color:var(--ink,#0a0f15)}.ds-nav a{color:inherit;text-decoration:none;padding:12px 17px}.ds-nav .ds-brand{font:italic 37px/1 'Instrument Serif',Georgia,serif;color:var(--wine,#721919);padding:0 18px 5px 0}.ds-nav a:hover{color:var(--wine,#721919)}.ds-nav .ds-contact{display:flex;align-items:center;gap:15px;background:var(--wine,#721919);color:#fff;padding:12px 20px;border-radius:999px;font-weight:500;transition:background .3s}.ds-nav .ds-contact:hover{background:var(--red,#c1121f);color:#fff}.ds-nav a:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-contact{transition-duration:.01ms!important}}"
     },
     {
@@ -84,12 +210,36 @@
   "narrative": {
     "northStar": "The Editorial Portrait",
     "overview": "The implemented world follows the user-selected Leticia Bassan grammar: Manrope structure, Instrument Serif Italic expression, warm paper, editorial photography and compact rounded controls. Julia's wine and red accents make that grammar her own. Spacious reading regions alternate with compact evidence rows; portraits and actual artifacts carry the visual weight. Motion adds pacing while essential content remains accessible without it.",
-    "keyCharacteristics": ["Warm paper with wine anchors and active red details", "Manrope structure and Instrument Serif Italic expression", "Floating pill navigation and rolling-label circular-arrow controls", "Rounded photography with flat text and ruled evidence"],
-    "rules": [
-      { "name": "The Accent Continuity Rule", "body": "Carry wine and red through typography and controls rather than assigning a new accent to every section.", "section": "colors" },
-      { "name": "The Two Voices Rule", "body": "Keep Manrope for structure and Instrument Serif Italic for emphasis; preserve the selected pairing.", "section": "typography" }
+    "keyCharacteristics": [
+      "Warm paper with wine anchors and active red details",
+      "Manrope structure and Instrument Serif Italic expression",
+      "Floating pill navigation and rolling-label circular-arrow controls",
+      "Rounded photography with flat text and ruled evidence"
     ],
-    "dos": ["Do preserve the selected type pair and wine/red hierarchy.", "Do use actual artifacts and editorial portraits.", "Do preserve touch, keyboard and reduced-motion access.", "Do inspect final responsive overrides."],
-    "donts": ["Don't replace the selected visual identity.", "Don't turn every grouping into an elevated card.", "Don't hide essential outcomes behind hover.", "Don't bake headings or controls into photographs.", "Don't impose the current hero composition on every future page."]
+    "rules": [
+      {
+        "name": "The Accent Continuity Rule",
+        "body": "Carry wine and red through typography and controls rather than assigning a new accent to every section.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Keep Manrope for structure and Instrument Serif Italic for emphasis; preserve the selected pairing.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do preserve the selected type pair and wine/red hierarchy.",
+      "Do use actual artifacts and editorial portraits.",
+      "Do preserve touch, keyboard and reduced-motion access.",
+      "Do inspect final responsive overrides."
+    ],
+    "donts": [
+      "Don't replace the selected visual identity.",
+      "Don't turn every grouping into an elevated card.",
+      "Don't hide essential outcomes behind hover.",
+      "Don't bake headings or controls into photographs.",
+      "Don't impose the current hero composition on every future page."
+    ]
   }
 }

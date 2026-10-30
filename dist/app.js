@@ -63,7 +63,6 @@
       if (!$('dialog[open]') && dialogOrigin?.isConnected) dialogOrigin.focus({ preventScroll: true });
     });
   });
-  $$('[data-open-case]').forEach(button => button.addEventListener('click', () => openDialog($('#case-dialog'), button)));
   $$('[data-contact]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
     if (menuOpen) setMenu(false, false);
@@ -164,7 +163,13 @@
   const conceptWords = $$('.concept-word');
   const pills = $$('.concept-pill');
   let conceptVisible = false;
-  new IntersectionObserver(entries => { conceptVisible = entries[0].isIntersecting; }).observe(concept);
+  let litWords = -1;
+  let conceptTime = 0;
+  let lastFrameTime = 0;
+  new IntersectionObserver(entries => {
+    conceptVisible = entries[0].isIntersecting;
+    concept.classList.toggle('is-in-view', conceptVisible);
+  }).observe(concept);
 
   const navLinks = $$('.desktop-nav a');
   const navPill = $('.nav-pill');
@@ -194,11 +199,16 @@
   let previewShown = false;
   let pointerX = 0, pointerY = 0, previewX = 0, previewY = 0;
   if (fine.matches && !reduced.matches) {
-    $$('.project[data-preview]').forEach(project => {
+    $$('.project').forEach(project => {
       const summary = $('summary', project);
       summary.addEventListener('pointerenter', event => {
         if (project.open) return;
-        $('img', preview).src = project.dataset.preview;
+        const hasImage = !!project.dataset.preview;
+        preview.classList.toggle('is-text-preview', !hasImage);
+        if (hasImage) $('img', preview).src = project.dataset.preview;
+        $('.preview-name', preview).textContent = $('.project-name', project).firstChild.textContent;
+        $('.preview-result', preview).textContent = $('.project-result strong', project).textContent;
+        $('.preview-note', preview).textContent = project.dataset.previewNote || '';
         pointerX = event.clientX; pointerY = event.clientY;
         previewX = pointerX + 25; previewY = pointerY - 130;
         previewShown = true;
@@ -240,13 +250,26 @@
   $('#year').textContent = String(new Date().getFullYear());
 
   function frame(time) {
+    const delta = lastFrameTime ? Math.min(64, time - lastFrameTime) : 0;
+    lastFrameTime = time;
     if (!reduced.matches) lenis?.raf(time);
     if (videoVisible) nav.classList.toggle('over-footer', $('#contato').getBoundingClientRect().top < 90);
-    if (conceptVisible && conceptWords.length && !reduced.matches) {
+    if (conceptVisible && conceptWords.length && !reduced.matches && !document.hidden) {
       const rect = concept.getBoundingClientRect();
-      const progress = Math.min(1, Math.max(0, (innerHeight * 0.85 - rect.top) / (innerHeight * 0.6)));
-      conceptWords.forEach((word, i) => { word.style.opacity = String(0.55 + 0.45 * Math.min(1, Math.max(0, progress * conceptWords.length - i))); });
-      pills.forEach((pill, i) => { pill.style.setProperty('--dy', `${(progress - 0.5) * (i % 2 ? -18 : 18)}px`); });
+      const passage = (innerHeight - rect.top) / (innerHeight + rect.height);
+      const progress = Math.min(1, Math.max(0, (passage - 0.12) / 0.42));
+      const count = Math.min(conceptWords.length, Math.round(progress * (conceptWords.length + 2)));
+      if (count !== litWords) {
+        conceptWords.forEach((word, i) => word.classList.toggle('on', i < count));
+        litWords = count;
+      }
+      conceptTime += delta * 0.001;
+      pills.forEach((pill, i) => {
+        const phase = conceptTime * (0.65 + i * 0.09) + i * 2.1;
+        pill.style.setProperty('--dx', `${(Math.sin(phase) * 6).toFixed(2)}px`);
+        pill.style.setProperty('--dy', `${(Math.cos(phase) * 11 + (progress - 0.5) * (i % 2 ? -12 : 12)).toFixed(2)}px`);
+        pill.style.setProperty('--drift-rot', `${(Math.sin(phase * 0.8) * 3).toFixed(2)}deg`);
+      });
     }
     if (previewShown) {
       const targetX = Math.min(innerWidth - 225, Math.max(15, pointerX + 30));

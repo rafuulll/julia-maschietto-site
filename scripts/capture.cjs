@@ -21,8 +21,8 @@ const out=path.resolve(__dirname,'../docs/qa');
    await page.screenshot({path:path.join(out,`${label}-${id}-review.png`)});
   }
  }
- await page.locator('[data-open-case]').click();
- await page.screenshot({path:path.join(out,'case-dialog-review.png')});
+ await page.locator('[data-case="bahari"] summary').click();
+ await page.screenshot({path:path.join(out,'bahari-expanded-review.png')});
  await browser.close();
  console.log('Review recaptures saved.');
 })();

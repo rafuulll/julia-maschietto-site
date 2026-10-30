@@ -9,6 +9,7 @@ files+=list(root.glob('DESIGN*.json'))
 files+=[root/'.impeccable/design.json']
 files+=[p for p in (root/'docs').glob('*.md')]
 files+=[root/'docs/image-prompts.json',root/'docs/supporting-asset-prompts.json',root/'docs/qa/report.json',root/'docs/qa/finish-review.md']
+files+=[root/'docs/qa/refinements/report.json']
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as archive:
     for p in files:
         if p.is_file(): archive.write(p,p.relative_to(root).as_posix())

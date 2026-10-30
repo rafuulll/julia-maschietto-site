@@ -9,7 +9,7 @@ im=Image.open(source).convert('RGB'); im.save(assets/'hero-julia.webp',quality=9
 (root/'docs'/'hero-julia-source.png').write_bytes(source.read_bytes());source.unlink()
 im.thumbnail((1200,750));im.save(assets/'social-preview.jpg',quality=88)
 pdf=next(Path('C:/Users/WIN11/Downloads').glob('PORTFO*compressed.pdf'));r=PdfReader(str(pdf))
-for name,page,index in [('bahari-proof',9,5),('bruna-proof',9,1),('bruna-feed',8,2),('sepulveda-proof',10,1),('positioning-proof',10,2)]:
+for name,page,index in [('bahari-proof',9,5),('bruna-proof',9,1),('bruna-feed',8,2),('sepulveda-proof',10,2),('positioning-proof',10,1)]:
  im=r.pages[page].images[index].image.convert('RGB');im.save(assets/(name+'.webp'),quality=94,method=6)
 for page,index,name in [(3,1,'revista-work')]:
  r.pages[page].images[index].image.convert('RGB').save(assets/(name+'.webp'),quality=92)

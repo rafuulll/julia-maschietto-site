@@ -1,0 +1,281 @@
+{
+  "errors": [],
+  "failedAssets": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "buttons": [
+        {
+          "x": 1050,
+          "y": 823,
+          "right": 1254.546875,
+          "width": 204.546875
+        },
+        {
+          "x": 1264.546875,
+          "y": 823,
+          "right": 1380,
+          "width": 115.453125
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "buttons": [
+        {
+          "x": 684,
+          "y": 838,
+          "right": 848.546875,
+          "width": 164.546875
+        },
+        {
+          "x": 858.546875,
+          "y": 838,
+          "right": 974,
+          "width": 115.453125
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 900,
+      "scrollWidth": 900,
+      "buttons": [
+        {
+          "x": 50,
+          "y": 818,
+          "right": 294.546875,
+          "width": 244.546875
+        },
+        {
+          "x": 304.546875,
+          "y": 818,
+          "right": 420,
+          "width": 115.453125
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "buttons": [
+        {
+          "x": 50,
+          "y": 818,
+          "right": 294.546875,
+          "width": 244.546875
+        },
+        {
+          "x": 304.546875,
+          "y": 818,
+          "right": 420,
+          "width": 115.453125
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "buttons": [
+        {
+          "x": 32,
+          "y": 759,
+          "right": 246.1875,
+          "width": 214.1875
+        },
+        {
+          "x": 254.1875,
+          "y": 759.5,
+          "right": 358,
+          "width": 103.8125
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "buttons": [
+        {
+          "x": 29,
+          "y": 759,
+          "right": 232.84375,
+          "width": 203.84375
+        },
+        {
+          "x": 240.84375,
+          "y": 759.5,
+          "right": 331,
+          "width": 90.15625
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "buttons": [
+        {
+          "x": 29,
+          "y": 759,
+          "right": 192.84375,
+          "width": 163.84375
+        },
+        {
+          "x": 200.84375,
+          "y": 759.5,
+          "right": 291,
+          "width": 90.15625
+        }
+      ],
+      "mainActionVisible": true,
+      "secondActionVisible": true
+    }
+  ],
+  "motion": {
+    "start": {
+      "total": 27,
+      "lit": 0,
+      "opacity": [
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ]
+    },
+    "middle": {
+      "total": 27,
+      "lit": 22,
+      "opacity": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0.16,
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ]
+    },
+    "floating": true,
+    "end": {
+      "total": 27,
+      "lit": 27,
+      "opacity": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "reducedMotion": "static and readable"
+  },
+  "projects": [
+    {
+      "case": "bahari",
+      "preview": true,
+      "opens": true
+    },
+    {
+      "case": "sepulveda",
+      "preview": true,
+      "opens": true
+    },
+    {
+      "case": "campanha",
+      "preview": true,
+      "opens": true
+    },
+    {
+      "case": "bruna",
+      "preview": true,
+      "opens": true
+    },
+    {
+      "case": "novo",
+      "preview": true,
+      "opens": true
+    },
+    {
+      "case": "copa",
+      "preview": true,
+      "opens": true
+    }
+  ]
+}

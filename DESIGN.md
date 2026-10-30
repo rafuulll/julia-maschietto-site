@@ -140,7 +140,7 @@ Manrope supplies measured, closely tracked headings and quiet reading text. Inst
 
 - **Display:** hero scale in frontmatter; its emphasized phrase grows to (1.16em). Responsive overrides are described below.
 - **Headline:** fluid section headings; individual about and closing headings have narrower local clamps. Headings default to medium weight and tight tracking.
-- **Title:** service titles use the frontmatter role; project titles vary from (22px) row names to (33px) featured headings.
+- **Title:** service titles use the frontmatter role; project titles vary from (22px) row names to (25px) expanded case headings.
 - **Body:** the page default is the frontmatter role; most section copy uses (14–16px), line heights (1.65–1.8), and line lengths (32–60ch). Contact text is intentionally denser.
 - **Label:** navigation and links are compact; supporting project labels and credits use (9–12px). There is no separate mono face or general uppercase-label system.
 
@@ -150,9 +150,9 @@ Manrope supplies measured, closely tracked headings and quiet reading text. Inst
 
 The central container caps at (1280px), with a default width of the viewport minus (112px). Standard section padding is (104px) vertically, with authored exceptions. The outer photographic frame has a (12px) page margin. Three equal service columns, four process steps, and asymmetrical two-column proof, biography and FAQ layouts are separated by space or a thin rule rather than card grids.
 
-At widths up to (1200px), the container becomes viewport minus (80px), major gaps tighten, and the hero uses a smaller heading. At widths up to (1000px), hero content becomes one column with a horizontal supporting row; the book presentation stacks while its copy temporarily uses two columns. At widths up to (760px), the container becomes viewport minus (44px), standard vertical padding becomes (74px), and the outer frame becomes an (8px) margin with (22px) corners. Services, featured proof, biography, testimonials and FAQ stack; process steps use two columns; footer links use two columns. At widths up to (380px), selected hero and heading sizes tighten further. A large-screen override begins at (1600px), expanding hero insets and supporting copy.
+At widths up to (1200px), the container becomes viewport minus (80px), major gaps tighten, and the hero uses a smaller heading. At widths up to (1000px), hero content becomes one column with a compact supporting block; the book presentation stacks while its copy temporarily uses two columns. At widths up to (760px), the container becomes viewport minus (44px), standard vertical padding becomes (74px), and the outer frame becomes an (8px) margin with (22px) corners. Services, expanded case content, biography, testimonials and FAQ stack; process steps use two columns; footer links use two columns. At widths up to (380px), selected hero and heading sizes tighten further. A large-screen override begins at (1600px), expanding hero insets and supporting copy.
 
-The implemented hero is a framed portrait with text at the bottom: desktop heading left, supporting copy and actions right. Its default height is `min(92svh,1040px)` with a (730px) minimum. On mobile, it uses `calc(100svh - 16px)` with a (780px) minimum and (980px) maximum; the minimum is (760px) on the narrowest phones. The crop shifts from (67% 37%) to (77% 5%), and a stronger lower gradient supports readable copy. Mobile hero note and signature are hidden by the final cascade. The mobile heading uses `clamp(35px,8.9vw,51px)` and becomes (34px) below the narrowest breakpoint. Buttons stack at full available width.
+The implemented hero is a framed portrait with text at the bottom: desktop heading left, supporting copy and actions right. Its default height is `min(92svh,1040px)` with a (730px) minimum. On mobile, it uses `calc(100svh - 16px)` with a (780px) minimum and (980px) maximum; the minimum is (760px) on the narrowest phones. The crop shifts from (67% 37%) to (77% 5%), and a stronger lower gradient supports readable copy. The redundant top-left hero descriptor and signature have been removed at every width by explicit user request. The mobile heading uses `clamp(35px,8.9vw,51px)` and becomes (34px) below the narrowest breakpoint. Hero actions remain side by side at every tested width, including 320px; the primary label is “Vamos conversar”.
 
 ## Elevation & Depth
 
@@ -174,11 +174,11 @@ Pills and circles characterize controls; gently rounded rectangles characterize 
 
 ### Buttons
 
-Confident, compact pills pair a rolling text label with a circular arrow. The default minimum height is (54px), with a (38px) arrow circle and (18px) arrow. Light buttons use an active red circle; red buttons use a paper circle. Hover rolls duplicate visual labels in opposite vertical directions over (.55s), rotates the arrow circle (-45deg) over (.5s), and shifts the fill. Press scales the whole button to (.97). The ghost action has a translucent white fill, white outline and no colored disc. Mobile hero controls use (49px) and (43px) minimum heights, and (34px) circles. Text links use a bottom border and a diagonally shifting arrow.
+Confident, compact pills pair a rolling text label with a circular arrow. The default minimum height is (54px), with a (38px) arrow circle and (18px) arrow. Light buttons use an active red circle; red buttons use a paper circle. Hover rolls duplicate visual labels in opposite vertical directions over (.55s), rotates the arrow circle (-45deg) over (.5s), and shifts the fill. Press scales the whole button to (.97). The ghost action has a translucent white fill, white outline and no colored disc. Mobile hero controls use a (49px) minimum height, and (34px) circles. Text links use a bottom border and a diagonally shifting arrow.
 
 ### Navigation
 
-The fixed, centered desktop pill sits (20px) from the top, with a compact italic monogram, three links and a wine contact action. A translucent moving pill tracks hovered, focused or currently observed links. Its colors adapt over the hero and wine footer. At the mobile breakpoint, the bar spans between (17px) side insets, desktop links and contact action disappear, and a (44px) circular two-line toggle opens a full-screen paper menu. The toggle becomes an X; the menu uses large ruled links. Menu behavior locks scroll, makes background content inert, traps Tab and closes on Escape or selection.
+The fixed, centered desktop pill sits (20px) from the top, with only the three links Serviços, Projetos, Sobre and a wine contact action. A translucent moving pill tracks hovered, focused or currently observed links. Its colors adapt over the hero and wine footer. At the mobile breakpoint, the bar spans between (17px) side insets, desktop links collapse into the toggle while the contact action stays visible, and a (44px) circular two-line toggle opens a full-screen paper menu. The toggle becomes an X; the menu uses large ruled links. Menu behavior locks scroll, makes background content inert, traps Tab and closes on Escape or selection.
 
 ### Evidence rows and FAQ
 
@@ -190,7 +190,7 @@ Outlined pills select a single project book; the active pill is wine with white 
 
 ### Dialogs and fields
 
-Paper dialogs have rounded corners, a dark blurred backdrop, constrained height (90svh) and scrolling overflow. Case, contact and image variants cap at (900px), (550px) and (1100px). Case content padding reduces from (55px) to (50px 25px 30px); contact padding reduces from (44px) to (40px 25px 25px). Circular close controls are (40px). Opening uses a (.4s) upward fade and slight scale. Native modal behavior, explicit close buttons, backdrop click, Escape and focus restoration complete the interaction.
+Paper dialogs have rounded corners, a dark blurred backdrop, constrained height (90svh) and scrolling overflow. Contact and image variants cap at (550px) and (1100px). Contact padding reduces from (44px) to (40px 25px 25px). Cases, including Bahari, use inline native details rather than a dedicated case dialog. Circular close controls are (40px). Opening uses a (.4s) upward fade and slight scale. Native modal behavior, explicit close buttons, backdrop click, Escape and focus restoration complete the interaction.
 
 The contact textarea has a warm off-paper fill, thin muted border, soft corners, padding (14px), and a minimum height (115px). Its copy action shows a small persistent status area. The current presentation previews and copies a message; it does not imply that a message was sent. No custom error or disabled appearance exists.
 
@@ -199,6 +199,9 @@ The contact textarea has a warm off-paper fill, thin muted border, soft corners,
 Shared easing is `cubic-bezier(.16,1,.3,1)`; the second curve is `cubic-bezier(.22,1,.36,1)`. Reveals combine opacity, a (26px) rise and blur (5px) over roughly (.8–1s). Split headings rise word by word with (45ms) staggering. Fine-pointer users receive smooth wheel scrolling and decorative previews. The closing video has an explicit play/pause control and is synchronized to visibility.
 
 Keyboard focus is an offset red outline (2px, 6px offset), with a light outline inside dialogs and the closing section. Under reduced motion, smooth scrolling stops, animations and transitions reduce to (.01ms), content reveals immediately, pointer previews disappear, parallax stops, and the closing video begins paused. Preserve this behavior when extending controls.
+
+
+The concept paragraph uses word opacity from .16 to 1 as the section traverses the viewport, with a .45s ease-out transition. Tags drift independently in translation and rotation only while the section is visible; reduced motion shows all text immediately and stops the tags. All six project rows use hover previews on fine pointers and open their content through native details on click or keyboard. Bahari has no permanent feature block. Services omit the three redundant colored supporting phrases.
 
 ## Do's and Don'ts
 

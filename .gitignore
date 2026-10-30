@@ -6,4 +6,6 @@ docs/*-source.png
 node_modules/
 docs/qa/*.png
 docs/qa/*.jpg
+docs/qa/**/*.png
+docs/qa/**/*.jpg
 output/
