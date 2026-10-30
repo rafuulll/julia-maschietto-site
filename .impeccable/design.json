@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T03:09:44Z",
+  "title": "Design System: Julia Maschietto",
+  "extensions": {
+    "colorMeta": {
+      "wine": { "role": "primary", "displayName": "Wine" },
+      "red": { "role": "primary", "displayName": "Active Red" },
+      "paper": { "role": "neutral", "displayName": "Warm Paper" },
+      "ink": { "role": "neutral", "displayName": "Deep Ink" },
+      "rose": { "role": "neutral", "displayName": "Soft Rose" },
+      "muted": { "role": "neutral", "displayName": "Warm Muted Text" },
+      "line": { "role": "neutral", "displayName": "Warm Hairline" },
+      "deliverables": { "role": "neutral", "displayName": "Artifact Paper" },
+      "testimonials": { "role": "neutral", "displayName": "Quote Paper" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Editorial Display", "purpose": "Manrope hero heading; responsive overrides are documented in DESIGN.md." },
+      "headline": { "displayName": "Section Headline", "purpose": "Medium-weight section introductions." },
+      "title": { "displayName": "Service Title", "purpose": "Service headings; proof rows have smaller local sizes." },
+      "body": { "displayName": "Reading Text", "purpose": "Global base; local copy uses denser sizes and generous leading." },
+      "label": { "displayName": "Control Label", "purpose": "Navigation and text links." },
+      "emphasis": { "displayName": "Instrument Serif Italic", "purpose": "Expressive inline emphasis, signatures, outcomes and quotes; font-style italic is required." }
+    },
+    "shadows": [
+      { "name": "navigation", "value": "inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px -23px rgba(10,15,21,.4)", "purpose": "Floating translucent navigation." },
+      { "name": "project-preview", "value": "0 22px 55px -25px rgba(25,15,15,.45)", "purpose": "Transient pointer-following project image." },
+      { "name": "notebook", "value": "drop-shadow(0 20px 16px rgba(25,20,20,.1))", "purpose": "CSS filter on notebook artifact." },
+      { "name": "dialog", "value": "0 30px 100px -30px rgba(10,5,10,.6)", "purpose": "Native modal overlay." },
+      { "name": "contact", "value": "0 9px 25px -10px rgba(50,5,10,.5)", "purpose": "Floating contact shortcut." },
+      { "name": "concept-pill", "value": "0 10px 22px -17px rgba(114,25,25,.4)", "purpose": "Decorative positioning labels." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Primary authored easing." },
+      { "name": "spring", "value": "cubic-bezier(.22,1,.36,1)", "purpose": "Navigation indicator and reveal transforms." },
+      { "name": "button-label", "value": ".55s var(--ease)", "purpose": "Opposing vertical rolling labels." },
+      { "name": "button-circle", "value": ".5s var(--ease)", "purpose": "Arrow circle rotates -45deg on hover." },
+      { "name": "reveal", "value": "opacity .85s var(--ease),transform 1s var(--spring),filter .8s var(--ease)", "purpose": "26px rise, 5px blur; essential content visible without scripts." },
+      { "name": "word-in", "value": ".9s var(--ease), 45ms stagger", "purpose": "Word-level heading entrance." },
+      { "name": "dialog-in", "value": ".4s var(--ease)", "purpose": "20px rise and .98-to-1 scale." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Disable smooth scrolling, reveal transforms, parallax and previews; reduce animation/transition duration to .01ms, show content immediately, begin footer video paused." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "min-width:1600px" },
+      { "name": "compact-desktop", "value": "max-width:1200px" },
+      { "name": "tablet", "value": "max-width:1000px" },
+      { "name": "mobile", "value": "max-width:760px" },
+      { "name": "narrow", "value": "max-width:380px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Rolling Primary Button",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "Pill action with duplicate rolling label and circular arrow.",
+      "html": "<button class=\"ds-btn\"><span class=\"ds-roll\"><span>Vamos conversar</span><span aria-hidden=\"true\">Vamos conversar</span></span><span class=\"ds-circle\"><svg aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 12h16m-7-7 7 7-7 7\"/></svg></span></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;padding:7px 7px 7px 23px;border:1px solid transparent;border-radius:999px;background:var(--red,#c1121f);color:#fff;font:500 14px/1.4 Manrope,Arial,sans-serif;cursor:pointer;transition:background .3s,transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-circle{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:var(--paper,#eff0eb);color:var(--red,#c1121f);transition:transform .5s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-roll{display:grid;overflow:hidden;line-height:1.5;height:1.5em}.ds-roll>span{grid-area:1/1;transition:transform .55s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-roll>span+span{transform:translateY(115%)}.ds-btn:hover{background:var(--wine,#721919)}.ds-btn:hover .ds-circle{transform:rotate(-45deg)}.ds-btn:hover .ds-roll>span:first-child{transform:translateY(-115%)}.ds-btn:hover .ds-roll>span+span{transform:none}.ds-btn:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:6px}.ds-btn:active{transform:scale(.97)}@media(prefers-reduced-motion:reduce){.ds-btn,.ds-circle,.ds-roll>span{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Book Tab",
+      "kind": "chip",
+      "refersTo": "tab-selected",
+      "description": "Outlined book selector with wine selected treatment; runtime adds roving focus and arrow-key selection.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Books\"><button role=\"tab\" aria-selected=\"true\" class=\"ds-tab\">Leticia Isse</button><button role=\"tab\" aria-selected=\"false\" tabindex=\"-1\" class=\"ds-tab\">Dra. Nathalia</button></div>",
+      "css": ".ds-tabs{display:flex;flex-wrap:wrap;gap:8px}.ds-tab{padding:9px 14px;border:1px solid rgba(114,25,25,.25);border-radius:999px;background:transparent;color:var(--ink,#0a0f15);font:400 11px/1.6 Manrope,Arial,sans-serif;cursor:pointer;transition:background .3s,color .3s}.ds-tab[aria-selected=true]{background:var(--wine,#721919);color:#fff;border-color:var(--wine,#721919)}.ds-tab:hover{background:var(--rose,#f3e7e5);color:var(--wine,#721919)}.ds-tab[aria-selected=true]:hover{background:var(--wine,#721919);color:#fff}.ds-tab:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-tab{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Floating Navigation",
+      "kind": "nav",
+      "description": "Compact translucent pill; the production version adapts to hero/footer and replaces links with a circular mobile toggle.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-brand\" href=\"#inicio\">Jm.</a><a href=\"#servicos\">Serviços</a><a href=\"#projetos\">Projetos</a><a class=\"ds-contact\" href=\"#contato\">Vamos conversar <svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 12h16m-7-7 7 7-7 7\"/></svg></a></nav>",
+      "css": ".ds-nav{display:inline-flex;align-items:center;gap:14px;padding:6px 7px 6px 16px;border-radius:999px;background:rgba(250,248,244,.78);backdrop-filter:blur(22px) saturate(1.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px -23px rgba(10,15,21,.4);font:400 13px/1.6 Manrope,Arial,sans-serif;color:var(--ink,#0a0f15)}.ds-nav a{color:inherit;text-decoration:none;padding:12px 17px}.ds-nav .ds-brand{font:italic 37px/1 'Instrument Serif',Georgia,serif;color:var(--wine,#721919);padding:0 18px 5px 0}.ds-nav a:hover{color:var(--wine,#721919)}.ds-nav .ds-contact{display:flex;align-items:center;gap:15px;background:var(--wine,#721919);color:#fff;padding:12px 20px;border-radius:999px;font-weight:500;transition:background .3s}.ds-nav .ds-contact:hover{background:var(--red,#c1121f);color:#fff}.ds-nav a:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-contact{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Contact Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Editable message preview inside the paper contact dialog.",
+      "html": "<label class=\"ds-label\" for=\"ds-message\">Sua mensagem</label><textarea class=\"ds-field\" id=\"ds-message\">Olá, Julia! Quero conversar sobre um projeto para a minha marca.</textarea>",
+      "css": ".ds-label{display:block;font:400 11px/1.6 Manrope,Arial,sans-serif;color:var(--wine,#721919);margin-bottom:8px}.ds-field{width:100%;resize:vertical;min-height:115px;border:1px solid #b7a29d;border-radius:12px;background:#f8f4ef;color:var(--ink,#0a0f15);padding:14px;font:400 13px/1.65 Manrope,Arial,sans-serif}.ds-field:focus-visible{outline:2px solid #f4d1cd;outline-offset:6px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Portrait",
+    "overview": "The implemented world follows the user-selected Leticia Bassan grammar: Manrope structure, Instrument Serif Italic expression, warm paper, editorial photography and compact rounded controls. Julia's wine and red accents make that grammar her own. Spacious reading regions alternate with compact evidence rows; portraits and actual artifacts carry the visual weight. Motion adds pacing while essential content remains accessible without it.",
+    "keyCharacteristics": ["Warm paper with wine anchors and active red details", "Manrope structure and Instrument Serif Italic expression", "Floating pill navigation and rolling-label circular-arrow controls", "Rounded photography with flat text and ruled evidence"],
+    "rules": [
+      { "name": "The Accent Continuity Rule", "body": "Carry wine and red through typography and controls rather than assigning a new accent to every section.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Keep Manrope for structure and Instrument Serif Italic for emphasis; preserve the selected pairing.", "section": "typography" }
+    ],
+    "dos": ["Do preserve the selected type pair and wine/red hierarchy.", "Do use actual artifacts and editorial portraits.", "Do preserve touch, keyboard and reduced-motion access.", "Do inspect final responsive overrides."],
+    "donts": ["Don't replace the selected visual identity.", "Don't turn every grouping into an elevated card.", "Don't hide essential outcomes behind hover.", "Don't bake headings or controls into photographs.", "Don't impose the current hero composition on every future page."]
+  }
+}

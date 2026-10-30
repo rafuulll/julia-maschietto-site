@@ -1,0 +1,13 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "duration_seconds": 10.0,
+  "frames": 240,
+  "seam_mathematical_mean_absolute_error": 1.5190972222222222e-05,
+  "seam_mathematical_max_error": 1.0,
+  "last_to_first_mean_absolute_change": 0.5429018373842592,
+  "bytes": 542067,
+  "encoding": "H.264/yuv420p, silent, faststart",
+  "method": "periodic spatial displacement plus soft periodic illumination; no slideshow or crossfade"
+}

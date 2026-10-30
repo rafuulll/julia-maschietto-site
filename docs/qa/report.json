@@ -1,0 +1,61 @@
+{
+  "errors": [],
+  "failures": [],
+  "checks": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": []
+    },
+    {
+      "caseDialog": true
+    },
+    {
+      "contact": true,
+      "copyFeedback": "Mensagem copiada. Nenhuma mensagem foi enviada."
+    },
+    {
+      "projectOpen": true
+    },
+    {
+      "keyboardTab": "true"
+    },
+    {
+      "imageDialog": true
+    },
+    {
+      "videoPaused": true,
+      "videoLabel": "Reproduzir vídeo"
+    },
+    {
+      "label": "viewport-390",
+      "width": 390,
+      "scroll": 390,
+      "broken": []
+    },
+    {
+      "mobileMenu": "true",
+      "mainInert": true
+    },
+    {
+      "menuClosed": "false"
+    },
+    {
+      "label": "viewport-360",
+      "width": 360,
+      "scroll": 360,
+      "broken": []
+    },
+    {
+      "label": "viewport-768",
+      "width": 768,
+      "scroll": 768,
+      "broken": []
+    },
+    {
+      "reducedMotion": true,
+      "reducedVideoPaused": true
+    }
+  ]
+}
