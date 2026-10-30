@@ -1,4 +1,6 @@
-# Terceira execução — proposta, ainda não aplicada
+# Terceira execução — proposta aprovada e aplicada
+
+Atualização: o usuário autorizou esta execução. Os quatro itens abaixo foram aplicados, escolhendo Vamos conversar. Verificação desktop/mobile em docs/qa/round-three/report.json. O plano da quarta execução está em RETOMADA-RODADA-4.md. O texto abaixo preserva o registro original da proposta.
 
 Esta rodada está reservada para uma nova autorização do usuário. A segunda execução não remove o texto do notebook, a marca grande do footer, os CTAs antigos nem altera o comportamento do FAQ.
 

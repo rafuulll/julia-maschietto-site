@@ -1,0 +1,5 @@
+/* Third execution: reduce redundant copy and retain the FAQ introduction. */
+.closing{min-height:0}
+.faq{align-items:start}
+.faq-heading{position:sticky;top:110px;align-self:start}
+@media(max-width:900px),(max-height:550px){.faq-heading{position:static}}
