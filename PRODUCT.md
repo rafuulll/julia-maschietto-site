@@ -15,7 +15,7 @@ Near-faithful Leticia Bassan layout, Manrope + Instrument Serif Italic, floating
 ## Evidence on Hand
 Portfolio and LinkedIn markdown, Novo Método presentation, Leticia Isse and Nathalia books. Campaign metrics must retain their actual context and shared credits. Supporting images are supplied actual photos or explicitly illustrative generated media.
 ## Capabilities and Constraints
-WhatsApp number unknown: demo contact dialog previews and copies a message, sends nothing. Reserved example email only. User authorizes fictional commercial details for this first presentation, visibly marked where shown. Real testimonials remain unattributed unless attribution confirmed. No invented customers or fabricated performance metrics.
+Official contacts confirmed by the user: WhatsApp 5515997486580 with prefilled messages, jumaschietto3@gmail.com, LinkedIn /in/jumaschietto/. Contact CTAs open native WhatsApp links directly; the visitor sends the message there. User authorizes fictional commercial details for this first presentation, visibly marked where shown. Real testimonials remain unattributed unless attribution confirmed. No invented customers or fabricated performance metrics.
 ## Product Principles
 Show real work and outcomes. Three equivalent service paths. One commercial action. Every essential detail accessible on touch and keyboard. Reference fidelity over unsolicited reinvention.
 
@@ -34,3 +34,7 @@ Bahari is again a featured project with factual participation/outcome and expand
 
 ## Ninth execution — approved and applied
 The raster hero direction is approved with the explicit condition that Julia's original face be preserved. Reuse the supplied editable PSD portrait, without synthesizing a new face; export separate desktop/tablet/phone compositions. About biography precedes the badge at widths up to1000px. Add only two restrained wave accents, at Services and Testimonials. Use selected actual Bahari campaign material and Júlia Nunes insight captures from the newly supplied media folder, with bounded image heights, optional enlargement and user-controlled video. Correct the unrelated image formerly placed in Bruna's case using the actual portfolio evidence. Remove testimonial fade overlays entirely while retaining normal vertical page scrolling and manual carousel navigation. Earlier proposal-only notes are superseded by this approval.
+
+
+## Tenth execution media update
+User requests proportional image enlargement without white canvas or black thumbnail bars, automatic notebook videos from supplied originals, and updated covers from Copa, Sepulveda, Júlia Nunes and Bruna folders. Preserve existing factual case copy and results. Play previews muted and inline on arrival/tab change, with pause and reduced-motion support.

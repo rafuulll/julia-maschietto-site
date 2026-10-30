@@ -1,0 +1,10 @@
+/* Tags answer the section's scroll passage, with no clock-driven floating loop. */
+.concept .concept-pill{opacity:var(--tag-opacity,1);transition:none}
+@media(min-width:1101px){
+ .concept .concept-inner{padding:64px 112px}
+ .concept .pill-business{inset:48px auto auto -12px}
+ .concept .pill-identity{inset:36px -8px auto auto}
+ .concept .pill-story{inset:auto auto 40px 0}
+ .concept .pill-expression{inset:auto 0 28px auto}
+}
+@media(prefers-reduced-motion:reduce){.concept .concept-pill{opacity:1!important;transform:rotate(var(--rot))!important}}

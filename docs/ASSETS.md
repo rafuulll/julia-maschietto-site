@@ -55,3 +55,15 @@ A hero usa `hero-desktop-v9.webp`, `hero-tablet-v9.webp` e `hero-mobile-v9.webp`
 Mídia real da pasta `arquivos de midia`: `IMG_3357.JPG.jpeg` → `bahari-campaign-v9.webp`; `IMG_3358.PNG` → `bahari-story-v9.webp`; `IMG_3363.MOV` → vídeo `bahari-founder-v9.mp4` e poster; `IMG_3368.PNG` → `julia-nunes-results-v9.webp`; `IMG_3372.PNG` → `julia-nunes-reel-v9.webp`. Somente redimensionamento/compressão, sem retocar pessoas ou números. O vídeo mantém a duração completa e áudio.
 
 Bruna: perfil correto extraído da página8/índice3 e resultado3,4mil/1mil da página9/índice4 (índices zero-based do portfólio PDF fornecido), em `bruna-profile-v9.webp` e `bruna-result-v9.webp`. A imagem KR InsightFlow deixou de ser usada no case e na prévia. `bahari-cover.webp` e antigos retratos gerados permanecem apenas no histórico/arquivos legados; não são a abertura atual da Bahari ou o retrato atual da hero.
+
+
+## Rodada 10 — fonte atual da hero
+
+O PNG transparente original fornecido pelo cliente (`grdr 2025-08-01 163616.323 1.png`, 4058×4209) substitui o PSD e qualquer retrato gerado. Crop [160,600,3880,4209], RGB sem retoque, escala proporcional e fade apenas na base. Hash e procedência em `hero-round10-source.json`. As três fotos dos stories vêm dos assets fotográficos originais hero-story-julia.webp, hero-story-lipstick.webp e hero-story-profile.webp, convertidas em preto e branco e compostas em raster com interface decorativa. Não foram gerados novos rostos.
+
+A alternativa `output/imagegen/hero-textura-round10.png` utiliza somente um fundo gerado por image_gen integrado e o mesmo PNG e stories. O fundo sugere tecido de palco/papel fosco em tons claros; prompt em `hero-texture-round10-prompt.json`. Alternativa entregue separadamente, sem aplicação no site.
+
+
+### Complemento de mídia da rodada 10
+
+Arquivos originais das pastas videos mockup, copa, sepulveda, julia nunes e bruna foram fornecidos pelo cliente. As fotografias e peças foram dimensionadas para WebP, sem geração. Os três vídeos foram convertidos para H.264 1280×720, áudio removido e faststart. Fontes, nomes finais e dimensões em `media-update-round10.json`.

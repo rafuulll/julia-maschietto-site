@@ -14,7 +14,7 @@ Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência
 
 ## O que está implementado
 
-- Hero raster com retrato original do PSD fornecido, stories incorporados e versões para desktop, tablet e celular.
+- Hero raster com o PNG transparente original fornecido, stories fotográficos incorporados e versões para desktop, tablet e celular.
 - Manrope e Instrument Serif Italic hospedadas localmente.
 - Menu flutuante, menu móvel, botões com texto deslizante e seta circular.
 - Entrada de palavras, revelação do manifesto conforme a rolagem e navegação suave no desktop.
@@ -22,25 +22,27 @@ Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência
 - Materiais reais em um mockup de notebook, seleção por teclado e ampliação.
 - Sobre Julia com crachá 3D arrastável; carrossel de depoimentos ilustrativos; processo lateral com progresso e FAQ.
 - Rodapé em vídeo leve, controle de pausa e respeito à preferência por movimento reduzido.
-- Contato em modo de demonstração: abre a mensagem e permite copiá-la; não envia mensagens.
+- Contato oficial: os CTAs abrem o WhatsApp com mensagem preenchida; e-mail e LinkedIn estão ativos.
 
-## Ativar o WhatsApp oficial
+## Contatos oficiais
 
-Edite `dist/config.js` após receber o número confirmado:
+Os contatos fornecidos pelo cliente já estão em `dist/config.js` e nos links HTML:
 
 ```js
 window.JULIA_SITE = Object.freeze({
   demo: false,
-  whatsapp: '55DDNUMERO', // Somente dígitos: país, DDD e número confirmado.
-  defaultMessage: 'Olá, Julia! Quero conversar sobre um projeto para a minha marca.'
+  whatsapp: '5515997486580',
+  email: 'jumaschietto3@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/jumaschietto/',
+  defaultMessage: 'Olá, Julia! Vim pelo seu site e quero conversar sobre um projeto para a minha marca.'
 });
 ```
 
-Com um número válido, os botões abrem o WhatsApp com a mensagem preenchida. A pessoa confirma o envio no WhatsApp. Remova o e-mail `ola@julia.example` e substitua pelo contato oficial. Nenhuma solicitação ou formulário é armazenado por esta página.
+Os botões de contato abrem o WhatsApp com a mensagem preenchida, incluindo o serviço escolhido quando pertinente. A pessoa confirma o envio no WhatsApp. Os links Ver projetos e de navegação mantêm seus destinos. Nenhuma solicitação ou formulário é armazenado por esta página.
 
 ## Antes do lançamento comercial
 
-Consulte `docs/ANTES-DE-PUBLICAR.md`. Esta V1 é uma apresentação, com `noindex,nofollow`, contato demonstrativo, um prazo ilustrativo e uma imagem conceitual identificada. Os resultados apresentados foram extraídos dos materiais fornecidos e mantêm os créditos e contextos descritos.
+Consulte `docs/ANTES-DE-PUBLICAR.md`. Esta V1 mantém `noindex,nofollow`, depoimentos ilustrativos identificados e um prazo ilustrativo. Os contatos oficiais já estão ativos. Os resultados apresentados foram extraídos dos materiais fornecidos e mantêm os créditos e contextos descritos.
 
 ## Organização
 
@@ -72,3 +74,7 @@ A sétima execução refina a hero e seus stories, troca os depoimentos por cart
 A oitava execução restaura Bahari como destaque, mantém os outros cinco cases expansíveis, adota uma sequência vertical com progresso nos aparelhos sem pin e corrige a passagem pela seção dos depoimentos. Tags voltam às quatro pontas sem sobrepor o texto. A composição raster desktop da hero foi criada apenas para aprovação e não está integrada. Veja `docs/RODADA-8.md`; `dist/eighth-round.css` contém os novos refinamentos.
 
 A nona execução aplica a hero aprovada com o rosto do PSD original, sem nova geração facial. Acrescenta a ordem texto/crachá no mobile, duas ondas discretas, fotografia e vídeo reais da Bahari, capturas de Júlia Nunes e ampliação das evidências. Corrige a imagem de Bruna e elimina o fade dos depoimentos. Veja `docs/RODADA-9.md`, `docs/media-round9.json` e `docs/qa/round-nine/report.json`. `dist/ninth-round.css` contém os refinamentos atuais.
+
+A décima execução substitui o PSD pelo PNG transparente original, recompõe os stories com fotos originais e aproxima o superior direito. As tags acompanham a rolagem com entradas distintas e reversíveis. Contatos oficiais estão ativos. A textura gerada é uma alternativa separada para comparação. Veja `docs/RODADA-10.md`.
+
+O complemento da rodada 10 acrescenta três vídeos de reprodução automática no notebook, ampliação proporcional sem painel branco, miniaturas sem faixas e capas atualizadas de Copa, Sepulveda, Júlia Nunes e Bruna. `dist/media-update.css` contém o ajuste visual e `docs/media-update-round10.json` registra os arquivos utilizados.

@@ -1,0 +1,80 @@
+[
+  {
+    "source": "copa\\SaveClip.App_619181777_17920090440248810_6978610753797818160_n.jpg.jpeg",
+    "asset": "copa-art-1-v10.webp",
+    "dimensions": [
+      1280,
+      1600
+    ]
+  },
+  {
+    "source": "copa\\SaveClip.App_624321817_17985014459781761_8920099176612295760_n (1).jpg.jpeg",
+    "asset": "copa-art-2-v10.webp",
+    "dimensions": [
+      1280,
+      1600
+    ]
+  },
+  {
+    "source": "copa\\SaveClip.App_625311459_18032466545581964_4371793856668195857_n.jpg.jpeg",
+    "asset": "copa-art-3-v10.webp",
+    "dimensions": [
+      1280,
+      1600
+    ]
+  },
+  {
+    "source": "sepulveda\\IMG_3390.JPG.jpeg",
+    "asset": "sepulveda-cover-v10.webp",
+    "dimensions": [
+      1067,
+      1600
+    ]
+  },
+  {
+    "source": "bruna\\SaveClip.App_618084192_18051133475702578_3959756440922955239_n.jpg.jpeg",
+    "asset": "bruna-cover-v10.webp",
+    "dimensions": [
+      1280,
+      1600
+    ]
+  },
+  {
+    "source": "julia nunes\\IMG_1561.PNG",
+    "asset": "julia-nunes-cover-v10.webp",
+    "dimensions": [
+      1080,
+      1350
+    ]
+  },
+  {
+    "source": "videos mockup/IMG_3385.MOV",
+    "asset": "leticia-book-video-v10.mp4",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "audio": false,
+    "bytes": 3194526
+  },
+  {
+    "source": "videos mockup/IMG_3387.MOV",
+    "asset": "nathalia-book-video-v10.mp4",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "audio": false,
+    "bytes": 1997555
+  },
+  {
+    "source": "videos mockup/IMG_3388.MOV",
+    "asset": "novo-book-video-v10.mp4",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "audio": false,
+    "bytes": 1366682
+  }
+]

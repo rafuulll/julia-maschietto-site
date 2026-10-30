@@ -41,6 +41,21 @@ typography:
     fontSize: "13px"
     fontWeight: 500
     lineHeight: 1.5
+  caption:
+    fontFamily: "Manrope, Arial, sans-serif"
+    fontSize: "12px"
+    fontWeight: 400
+    lineHeight: 1.65
+  caption-small:
+    fontFamily: "Manrope, Arial, sans-serif"
+    fontSize: "11px"
+    fontWeight: 400
+    lineHeight: 1.5
+  caption-compact:
+    fontFamily: "Manrope, Arial, sans-serif"
+    fontSize: "10px"
+    fontWeight: 400
+    lineHeight: 1.5
   emphasis:
     fontFamily: "Instrument Serif, Georgia, serif"
     fontSize: "1.14em"
@@ -269,3 +284,17 @@ Biography comes before the badge on mobile/tablet up to1000px, with desktop grid
 Bahari now leads with the actual campaign photograph and a compact native video/story gallery inside its expandable evidence. Vertical screenshots cap at300px desktop/280px mobile, with separate compact gallery heights and a dialog for reading the full capture. Media frames use a near-ink #101416 background,12px corners, captions12px desktop/11px mobile, and native video controls. Bruna's horizontal evidence balances its short copy. Júlia Nunes uses paired compact evidence thumbnails.
 
 Testimonials have no fade masks or gradient edge overlays. Wider1120px rail window shows clean white cards with ordinary clipping and native scroll-snap. Preserve arrows, keyboard access and vertical page scrolling. Earlier notes about testimonial fades and pending hero approval are historical.
+
+
+### Tenth execution — original PNG and scroll-linked tags
+
+Use hero-desktop/tablet/mobile-v10.webp with the supplied transparent PNG portrait, no face synthesis or retouching. The three monochrome story cards use original photo assets, flattened into each raster composition. Upper-right card is closer to the portrait and contains no external hair artifact. Preserve the warm-gray rounded frame, dark lower readability overlay, white semantic copy and existing responsive layout.
+
+Concept tags now follow section passage with eased translations, small rotations and delayed lower-pair entrances. No elapsed-time drift. Reverse scrolling retraces the same positions. Desktop reserves side space; compact layouts preserve the four corner zones. Reduced motion is static and fully visible. tenth-round.css overrides prior motion styling.
+
+Contact links use official WhatsApp with prefilled message; email and LinkedIn are native links. The generated matte stage-muslin texture is a separate comparison proposal only. It is not a replacement for the published warm-gray hero.
+
+
+### Media update in tenth execution
+
+Image enlargement uses a transparent fit-content dialog exactly matching the displayed image or video, capped by the viewport, with an accessible close control outside the top corner. Proof thumbnails size to the source aspect ratio; no added dark pillarboxes. Notebook previews use muted looping inline H.264 video, start on viewport arrival and tab selection, pause away/hidden, and offer a restrained pause control. Reduced motion keeps the static cover. New original covers for Sepulveda, Júlia Nunes, Bruna and Copa; Copa gets three compact expandable pieces. media-update.css overrides the earlier fixed-size media frames.

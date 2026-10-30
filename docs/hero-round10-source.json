@@ -1,0 +1,14 @@
+{
+  "source": "grdr 2025-08-01 163616.323 1.png",
+  "crop": [
+    160,
+    600,
+    3880,
+    4209
+  ],
+  "sourceRGBPreserved": true,
+  "sourcePixelHash": "0b303fc1bfafb70e011c68fa2840be1f12529f98fdcfc727394e5ce9390cec74",
+  "faceGeneration": false,
+  "upperStorySource": "hero-story-lipstick.webp",
+  "upperStoryHairArtifactRemoved": true
+}

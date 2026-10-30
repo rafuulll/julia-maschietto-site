@@ -1,0 +1,597 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": 305,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-mobile-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 22,
+        "y": 948.265625,
+        "width": 261,
+        "height": 303.75
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 3.274402618408203,
+            "y": 871.008056640625,
+            "width": 73.62307739257812,
+            "height": 46.51513671875
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 217.3255157470703,
+            "y": 863.606201171875,
+            "width": 83.84895324707031,
+            "height": 45.31884765625
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 9.938055992126465,
+            "y": 1288.609130859375,
+            "width": 75.76451110839844,
+            "height": 42.81298828125
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 216.75979614257812,
+            "y": 1292.094482421875,
+            "width": 82.26165771484375,
+            "height": 43.84228515625
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": 375,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-mobile-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 22,
+        "y": 1016.03125,
+        "width": 331,
+        "height": 204.65625
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 3.274402618408203,
+            "y": 938.773681640625,
+            "width": 73.62307739257812,
+            "height": 46.51513671875
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 287.3255310058594,
+            "y": 931.371826171875,
+            "width": 83.84893798828125,
+            "height": 45.31884765625
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 9.938055992126465,
+            "y": 1257.281005859375,
+            "width": 75.76451110839844,
+            "height": 42.81298828125
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 286.7597961425781,
+            "y": 1260.766357421875,
+            "width": 82.26165771484375,
+            "height": 43.84228515625
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": 753,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-tablet-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 56,
+        "y": 1055.59375,
+        "width": 641,
+        "height": 163.1875
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 25.287673950195312,
+            "y": 965.2453002929688,
+            "width": 83.40902709960938,
+            "height": 49.6968994140625
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 628.38427734375,
+            "y": 959.9922485351562,
+            "width": 94.7939453125,
+            "height": 48.2030029296875
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 53.922454833984375,
+            "y": 1263.585205078125,
+            "width": 85.96759033203125,
+            "height": 45.39208984375
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 609.9356689453125,
+            "y": 1267.0206298828125,
+            "width": 93.097412109375,
+            "height": 46.521240234375
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "width": 1024,
+      "overflow": 1009,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-tablet-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 88,
+        "y": 1207.515625,
+        "width": 833,
+        "height": 110.578125
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 25.190872192382812,
+            "y": 1116.068115234375,
+            "width": 93.60263061523438,
+            "height": 53.89501953125
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 874.28662109375,
+            "y": 1111.06103515625,
+            "width": 104.9892578125,
+            "height": 51.9091796875
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 53.827579498291016,
+            "y": 1360.1279296875,
+            "width": 96.1573486328125,
+            "height": 48.931640625
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 855.8407592773438,
+            "y": 1363.563232421875,
+            "width": 103.2872314453125,
+            "height": 50.06103515625
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "width": 1200,
+      "overflow": 1185,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-desktop-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 154.5,
+        "y": 1016,
+        "width": 876,
+        "height": 129.5625
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 27.690872192382812,
+            "y": 990.5524291992188,
+            "width": 93.60263061523438,
+            "height": 53.89508056640625
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 1047.78662109375,
+            "y": 979.5454711914062,
+            "width": 104.9892578125,
+            "height": 51.90911865234375
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 40.327579498291016,
+            "y": 1127.5966796875,
+            "width": 96.1573486328125,
+            "height": 48.931640625
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 1041.3408203125,
+            "y": 1139.031982421875,
+            "width": 103.287109375,
+            "height": 50.06103515625
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": 1425,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-desktop-v10.webp",
+      "scroll": 0,
+      "title": {
+        "x": 274.5,
+        "y": 1016,
+        "width": 876,
+        "height": 207.375
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 147.6908721923828,
+            "y": 990.5524291992188,
+            "width": 93.60263061523438,
+            "height": 53.89508056640625
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 1167.78662109375,
+            "y": 979.5454711914062,
+            "width": 104.9892578125,
+            "height": 51.90911865234375
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 160.32757568359375,
+            "y": 1205.4091796875,
+            "width": 96.1573486328125,
+            "height": 48.931640625
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+          "opacity": "1",
+          "rect": {
+            "x": 1161.3408203125,
+            "y": 1216.844482421875,
+            "width": 103.287109375,
+            "height": 50.06103515625
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "stage": "Tags · meio",
+      "width": 1200,
+      "overflow": 1185,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-desktop-v10.webp",
+      "scroll": 495,
+      "title": {
+        "x": 154.5,
+        "y": 521,
+        "width": 876,
+        "height": 129.5625
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.969317, -0.245815, 0.245815, 0.969317, -6.97, -15.87)",
+          "opacity": "1",
+          "rect": {
+            "x": 20.578060150146484,
+            "y": 478.85302734375,
+            "width": 93.88825988769531,
+            "height": 55.553955078125
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.980853, 0.194748, -0.194748, 0.980853, 6.97, -15.87)",
+          "opacity": "1",
+          "rect": {
+            "x": 1054.5859375,
+            "y": 467.68505859375,
+            "width": 105.3306884765625,
+            "height": 53.889892578125
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.992778, 0.119964, -0.119964, 0.992778, -14.6, 7.73)",
+          "opacity": "1",
+          "rect": {
+            "x": 26.132158279418945,
+            "y": 641.9118041992188,
+            "width": 95.34818267822266,
+            "height": 45.76141357421875
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.992778, -0.119964, 0.119964, 0.992778, 14.6, 7.73)",
+          "opacity": "1",
+          "rect": {
+            "x": 1056.326904296875,
+            "y": 653.4788208007812,
+            "width": 102.514892578125,
+            "height": 46.62738037109375
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "stage": "Tags · saída",
+      "width": 1200,
+      "overflow": 1185,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-desktop-v10.webp",
+      "scroll": 834,
+      "title": {
+        "x": 154.5,
+        "y": 182,
+        "width": 876,
+        "height": 129.5625
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.968148, -0.25038, 0.25038, 0.968148, -8, -22)",
+          "opacity": "1",
+          "rect": {
+            "x": 19.51960563659668,
+            "y": 133.5426483154297,
+            "width": 93.94515991210938,
+            "height": 55.91468811035156
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.979925, 0.199368, -0.199368, 0.979925, 8, -22)",
+          "opacity": "1",
+          "rect": {
+            "x": 1055.581787109375,
+            "y": 122.33930969238281,
+            "width": 105.3990478515625,
+            "height": 54.321380615234375
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.991445, 0.130526, -0.130526, 0.991445, -3, -12)",
+          "opacity": "1",
+          "rect": {
+            "x": 37.608524322509766,
+            "y": 282.7202453613281,
+            "width": 95.595458984375,
+            "height": 46.68450927734375
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.991445, -0.130526, 0.130526, 0.991445, 3, -12)",
+          "opacity": "1",
+          "rect": {
+            "x": 1044.608154296875,
+            "y": 294.2491455078125,
+            "width": 102.75244140625,
+            "height": 47.626708984375
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    },
+    {
+      "stage": "Tags · voltar",
+      "width": 1200,
+      "overflow": 1185,
+      "src": "http://127.0.0.1:4174/dist/assets/hero-desktop-v10.webp",
+      "scroll": 495,
+      "title": {
+        "x": 154.5,
+        "y": 521,
+        "width": 876,
+        "height": 129.5625
+      },
+      "pills": [
+        {
+          "text": "Negócio",
+          "transform": "matrix(0.969317, -0.245815, 0.245815, 0.969317, -6.97, -15.87)",
+          "opacity": "1",
+          "rect": {
+            "x": 20.578060150146484,
+            "y": 478.85302734375,
+            "width": 93.88825988769531,
+            "height": 55.553955078125
+          }
+        },
+        {
+          "text": "Identidade",
+          "transform": "matrix(0.980853, 0.194748, -0.194748, 0.980853, 6.97, -15.87)",
+          "opacity": "1",
+          "rect": {
+            "x": 1054.5859375,
+            "y": 467.68505859375,
+            "width": 105.3306884765625,
+            "height": 53.889892578125
+          }
+        },
+        {
+          "text": "Narrativa",
+          "transform": "matrix(0.992778, 0.119964, -0.119964, 0.992778, -14.6, 7.73)",
+          "opacity": "1",
+          "rect": {
+            "x": 26.132158279418945,
+            "y": 641.9118041992188,
+            "width": 95.34818267822266,
+            "height": 45.76141357421875
+          }
+        },
+        {
+          "text": "Expressão",
+          "transform": "matrix(0.992778, -0.119964, 0.119964, 0.992778, 14.6, 7.73)",
+          "opacity": "1",
+          "rect": {
+            "x": 1056.326904296875,
+            "y": 653.4788208007812,
+            "width": 102.514892578125,
+            "height": 46.62738037109375
+          }
+        }
+      ],
+      "contactCount": 10,
+      "contactsValid": true,
+      "email": "mailto:jumaschietto3@gmail.com",
+      "linkedin": [
+        "https://www.linkedin.com/in/jumaschietto/",
+        "https://www.linkedin.com/in/jumaschietto/"
+      ]
+    }
+  ],
+  "idleStable": true,
+  "reverseMatches": true,
+  "notes": "Native browser responsive iframe checks; not physical-device certification."
+}

@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen built-in",
+  "asset": "background-only",
+  "prompt": "Use case: ads-marketing. Asset type: background-only raster texture for a refined editorial personal-brand website hero, landscape 1920x1000. Create a clean professional warm light gray and ivory background with an extremely subtle tactile matte paper / stage muslin character, connecting understated performing arts and editorial creative direction. Broad nearly imperceptible soft fabric folds and diffuse side lighting near the far sides, airy calm central area suitable behind a portrait. Low contrast, pale stone-gray palette, fine authentic grain visible only up close. No people, no portraits, no faces, no body, no cards, no objects, no typography, no logos, no border, no flares, no vignette, no artificial shiny satin. This is ONLY a background plate; another process will place the supplied original photographic PNG on top without modifying the face. Professional restrained visual texture, not dry flat white and not a busy decorative pattern.",
+  "portraitGeneration": false,
+  "application": "Separate comparison proposal; not the published hero"
+}

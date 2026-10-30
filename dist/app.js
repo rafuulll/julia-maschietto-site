@@ -63,7 +63,19 @@
       if (!$('dialog[open]') && dialogOrigin?.isConnected) dialogOrigin.focus({ preventScroll: true });
     });
   });
-  $$('[data-contact]').forEach(link => link.addEventListener('click', event => {
+  $$('[data-contact]').forEach(link => {
+    const phone = String(config.whatsapp || '').replace(/\D/g, '');
+    if (config.demo === false && /^\d{10,15}$/.test(phone) && link.tagName === 'A') {
+      const message = link.dataset.service
+        ? `Olá, Julia! Vim pelo seu site e quero conversar sobre ${link.dataset.service.toLocaleLowerCase('pt-BR')} para a minha marca.`
+        : config.defaultMessage;
+      link.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.addEventListener('click', () => { if (menuOpen) setMenu(false, false); });
+      return;
+    }
+    link.addEventListener('click', event => {
     event.preventDefault();
     if (menuOpen) setMenu(false, false);
     const message = link.dataset.service
@@ -77,7 +89,8 @@
     $('#contact-message').value = message;
     $('.copy-status').textContent = '';
     openDialog($('#contact-dialog'), link);
-  }));
+    });
+  });
   $('#copy-message').addEventListener('click', async () => {
     const field = $('#contact-message');
     try {
@@ -90,12 +103,36 @@
   });
 
   const books = {
-    leticia: { image: 'leticia-book.webp', name: 'Estratégia de marca', description: 'Negócio, posicionamento e comunicação para uma consultora de branding e estilo.', credit: 'Alinhamento visual do book: Larissa Gomes.', alt: 'Capa do book de estratégia de marca de Leticia Isse.' },
-    nathalia: { image: 'nathalia-book.webp', name: 'Posicionamento e conteúdo', description: 'Uma direção de marca traduzida em seis pilares editoriais e rituais de conteúdo para Dra. Nathalia.', credit: 'Recorte do material de estratégia fornecido por Julia.', alt: 'Capa da estratégia de marca desenvolvida para Dra. Nathalia.' },
-    novo: { image: 'novo-cover.webp', name: 'Narrativa comercial B2B', description: '“Da questão à nota”: uma apresentação que organiza a proposta e o funcionamento de uma operação de avaliações escolares.', credit: 'Conceito e apresentação comercial: Julia Maschietto.', alt: 'Capa da apresentação comercial Novo Método.' }
+    leticia: { image: 'leticia-book.webp', video: 'leticia-book-video-v10.mp4', name: 'Estratégia de marca', description: 'Negócio, posicionamento e comunicação para uma consultora de branding e estilo.', credit: 'Alinhamento visual do book: Larissa Gomes.', alt: 'Capa do book de estratégia de marca de Leticia Isse.' },
+    nathalia: { image: 'nathalia-book.webp', video: 'nathalia-book-video-v10.mp4', name: 'Posicionamento e conteúdo', description: 'Uma direção de marca traduzida em seis pilares editoriais e rituais de conteúdo para Dra. Nathalia.', credit: 'Recorte do material de estratégia fornecido por Julia.', alt: 'Capa da estratégia de marca desenvolvida para Dra. Nathalia.' },
+    novo: { image: 'novo-cover.webp', video: 'novo-book-video-v10.mp4', name: 'Narrativa comercial B2B', description: '“Da questão à nota”: uma apresentação que organiza a proposta e o funcionamento de uma operação de avaliações escolares.', credit: 'Conceito e apresentação comercial: Julia Maschietto.', alt: 'Capa da apresentação comercial Novo Método.' }
   };
   let currentBook = books.leticia;
   const tabs = $$('[data-book]');
+  const bookVideo = $('#book-video');
+  const bookPause = $('[data-pause-book]');
+  let bookVisible = false;
+  let bookPaused = false;
+  function syncBookVideo() {
+    if (bookVisible && !bookPaused && !document.hidden && !reduced.matches && !$('dialog[open]')) {
+      bookVideo.muted = true;
+      bookVideo.play().then(() => { bookVideo.hidden = false; }).catch(() => { bookVideo.hidden = true; });
+    } else bookVideo.pause();
+  }
+  new IntersectionObserver(entries => {
+    bookVisible = entries[0].isIntersecting;
+    syncBookVideo();
+  }, { threshold: .15 }).observe($('#book-panel'));
+  bookPause.hidden = reduced.matches;
+  bookPause.addEventListener('click', () => {
+    bookPaused = !bookPaused;
+    bookPause.setAttribute('aria-pressed', String(bookPaused));
+    bookPause.textContent = bookPaused ? 'Retomar prévia' : 'Pausar prévia';
+    syncBookVideo();
+  });
+  document.addEventListener('visibilitychange', syncBookVideo);
+  reduced.addEventListener('change', () => { bookPause.hidden = reduced.matches; syncBookVideo(); });
+  $$('dialog').forEach(dialog => dialog.addEventListener('toggle', syncBookVideo));
   function selectBook(tab) {
     currentBook = books[tab.dataset.book];
     tabs.forEach(item => { item.setAttribute('aria-selected', String(item === tab)); item.tabIndex = item === tab ? 0 : -1; });
@@ -105,6 +142,11 @@
     $('#book-panel').setAttribute('aria-labelledby', tab.id);
     $('#book-image').src = `assets/${currentBook.image}`;
     $('#book-image').alt = currentBook.alt;
+    bookVideo.pause();
+    bookVideo.hidden = true;
+    bookVideo.src = `assets/${currentBook.video}`;
+    bookVideo.setAttribute('aria-label', `Prévia em vídeo: ${currentBook.name}.`);
+    syncBookVideo();
   }
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => selectBook(tab));
@@ -117,17 +159,39 @@
       if (next !== undefined) { event.preventDefault(); selectBook(tabs[next]); tabs[next].focus(); }
     });
   });
+  const mediaDialog = $('#image-dialog');
+  const expandedVideo = $('#expanded-video');
+  const expandedPause = $('[data-pause-expanded]');
+  function prepareImage(src, alt) {
+    expandedVideo.pause();
+    expandedVideo.hidden = true;
+    expandedPause.hidden = true;
+    const image = $('#image-dialog img');
+    image.hidden = false;
+    image.src = src;
+    image.alt = alt;
+  }
   $('[data-enlarge-book]').addEventListener('click', event => {
-    const image = $('#image-dialog img');
-    image.src = `assets/${currentBook.image}`;
-    image.alt = currentBook.alt;
-    openDialog($('#image-dialog'), event.currentTarget);
+    prepareImage(`assets/${currentBook.image}`, currentBook.alt);
+    openDialog(mediaDialog, event.currentTarget);
+    if (!reduced.matches) {
+      $('#image-dialog img').hidden = true;
+      expandedVideo.src = `assets/${currentBook.video}`;
+      expandedVideo.muted = true;
+      expandedVideo.hidden = false;
+      expandedPause.hidden = false;
+      expandedPause.textContent = 'Pausar prévia';
+      expandedVideo.play().catch(() => prepareImage(`assets/${currentBook.image}`, currentBook.alt));
+    }
   });
+  expandedPause.addEventListener('click', () => {
+    if (expandedVideo.paused) { expandedVideo.play().catch(() => {}); expandedPause.textContent = 'Pausar prévia'; }
+    else { expandedVideo.pause(); expandedPause.textContent = 'Retomar prévia'; }
+  });
+  mediaDialog.addEventListener('close', () => { expandedVideo.pause(); syncBookVideo(); });
   $$('[data-open-media]').forEach(button => button.addEventListener('click', () => {
-    const image = $('#image-dialog img');
-    image.src = button.dataset.openMedia;
-    image.alt = button.dataset.mediaAlt;
-    openDialog($('#image-dialog'), button);
+    prepareImage(button.dataset.openMedia, button.dataset.mediaAlt);
+    openDialog(mediaDialog, button);
   }));
   $$('.case-media-item video').forEach(video => {
     new IntersectionObserver(entries => {
@@ -181,6 +245,8 @@
   let litWords = -1;
   let conceptTime = 0;
   let lastFrameTime = 0;
+  let lastTagPassage = NaN;
+  let lastTagWidth = 0;
   new IntersectionObserver(entries => {
     conceptVisible = entries[0].isIntersecting;
     concept.classList.toggle('is-in-view', conceptVisible);
@@ -278,14 +344,26 @@
         conceptWords.forEach((word, i) => word.classList.toggle('on', i < count));
         litWords = count;
       }
-      conceptTime += delta * 0.001;
-      const compactTags = innerWidth <= 760;
-      pills.forEach((pill, i) => {
-        const phase = conceptTime * (0.65 + i * 0.09) + i * 2.1;
-        pill.style.setProperty('--dx', `${(Math.sin(phase) * (compactTags ? 3 : 6)).toFixed(2)}px`);
-        pill.style.setProperty('--dy', `${(Math.cos(phase) * (compactTags ? 5 : 8)).toFixed(2)}px`);
-        pill.style.setProperty('--drift-rot', `${(Math.sin(phase * 0.8) * 3).toFixed(2)}deg`);
-      });
+      if (!Number.isFinite(lastTagPassage) || Math.abs(passage - lastTagPassage) > .0001 || lastTagWidth !== innerWidth) {
+        const compactTags = innerWidth <= 1000;
+        const clamp = value => Math.min(1, Math.max(0, value));
+        pills.forEach((pill, i) => {
+          const delayed = i > 1;
+          const entry = clamp((passage - (delayed ? .28 : .16)) / (delayed ? .30 : .32));
+          const eased = 1 - Math.pow(1 - entry, 3);
+          const side = i % 2 ? 1 : -1;
+          const travel = compactTags ? 22 : 62;
+          const x = side * ((1 - eased) * travel + entry * (delayed ? 3 : 8));
+          const y = (1 - eased) * (compactTags ? 22 : delayed ? 58 : 40) - entry * (compactTags ? 5 : delayed ? 12 : 22);
+          const angle = side * ((1 - eased) * 7 + entry * 1.5);
+          pill.style.setProperty('--dx', `${x.toFixed(2)}px`);
+          pill.style.setProperty('--dy', `${y.toFixed(2)}px`);
+          pill.style.setProperty('--drift-rot', `${angle.toFixed(2)}deg`);
+          pill.style.setProperty('--tag-opacity', clamp(entry * 3).toFixed(3));
+        });
+        lastTagPassage = passage;
+        lastTagWidth = innerWidth;
+      }
     }
     if (previewShown) {
       const targetX = Math.min(innerWidth - 225, Math.max(15, pointerX + 30));

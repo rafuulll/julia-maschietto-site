@@ -4,16 +4,16 @@ Esta primeira versão está concluída como apresentação visual e funcional. P
 
 | Item | Estado da V1 | Ação com Julia |
 |---|---|---|
-| WhatsApp | Prévia segura, sem envio | Informar e confirmar número, ativar em `config.js` |
-| E-mail | `ola@julia.example`, ilustrativo | Substituir pelo contato oficial |
+| WhatsApp | Oficial ativo: +55 15 99748-6580 | Confirmado pelo cliente na rodada 10 |
+| E-mail | jumaschietto3@gmail.com ativo | Confirmado pelo cliente na rodada 10 |
 | Projetos e indicadores | Resultados dos materiais fornecidos, com contexto | Confirmar período, números e autorização para exposição |
-| Bahari | Capa gerada identificada como ilustração; prova real no case | Substituir pela foto original da campanha, quando disponível |
+| Bahari | Fotografias e vídeos reais fornecidos pelo cliente | Aplicados na rodada 9 |
 | Depoimento de posicionamento | Relato real, sem identificação confirmada | Confirmar nome, atribuição e autorização; manter anônimo se preferido |
 | Depoimento Sepulveda | Relato do portfólio atribuído ao projeto | Confirmar grafia/nome de quem assina |
 | Prazo de estratégia | Exemplo de 4 a 6 semanas, marcado ilustrativo | Ajustar à operação e ao escopo oferecido |
 | Contratação e entregas | Exemplo por projeto | Validar formato, revisões, escopo, logística e investimento |
 | Formação e biografia | Conforme material fornecido | Conferir situação atual e grafia |
-| Fotografias | Edições de fotos da Julia com GPT Images | Aprovar aparência e tratamento final |
+| Fotografias | Hero atual usa PNG original, sem geração facial | Fonte registrada na rodada 10 |
 | Indexação e metadados | `noindex,nofollow`, compartilhamento de demonstração | Definir domínio, URL absoluta da imagem social e política de indexação |
 | Identificação da V1 | Selo de apresentação e avisos locais | Remover os avisos depois de substituir e validar os itens |
 

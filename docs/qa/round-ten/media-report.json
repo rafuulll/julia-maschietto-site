@@ -1,0 +1,201 @@
+{
+  "videos": [
+    {
+      "controls": false,
+      "hidden": false,
+      "loop": true,
+      "muted": true,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:4173/assets/novo-book-video-v10.mp4"
+    },
+    {
+      "controls": false,
+      "hidden": false,
+      "loop": true,
+      "muted": true,
+      "paused": false,
+      "ready": 4,
+      "src": "http://127.0.0.1:4173/assets/leticia-book-video-v10.mp4"
+    }
+  ],
+  "responsive": [
+    {
+      "width": 320,
+      "overflow": 305,
+      "allMediaFit": true,
+      "videoPaused": true
+    },
+    {
+      "width": 768,
+      "overflow": 753,
+      "allMediaFit": true,
+      "videoPaused": false
+    },
+    {
+      "width": 1200,
+      "overflow": 1185,
+      "allMediaFit": true,
+      "videoPaused": true
+    },
+    {
+      "width": 1440,
+      "overflow": 1425,
+      "allMediaFit": true,
+      "videoPaused": true
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "overflow": 375,
+    "src": "http://127.0.0.1:4174/dist/assets/hero-mobile-v10.webp",
+    "scroll": 4951,
+    "title": {
+      "x": 22,
+      "y": -3934.96875,
+      "width": 331,
+      "height": 204.65625
+    },
+    "pills": [
+      {
+        "text": "Negócio",
+        "transform": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+        "opacity": "1",
+        "rect": {
+          "x": 3.274402618408203,
+          "y": -4012.226318359375,
+          "width": 73.62307739257812,
+          "height": 46.51513671875
+        }
+      },
+      {
+        "text": "Identidade",
+        "transform": "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+        "opacity": "1",
+        "rect": {
+          "x": 287.3255310058594,
+          "y": -4019.628173828125,
+          "width": 83.84893798828125,
+          "height": 45.31884765625
+        }
+      },
+      {
+        "text": "Narrativa",
+        "transform": "matrix(0.987688, 0.156434, -0.156434, 0.987688, 0, 0)",
+        "opacity": "1",
+        "rect": {
+          "x": 9.938055992126465,
+          "y": -3693.718994140625,
+          "width": 75.76451110839844,
+          "height": 42.81298828125
+        }
+      },
+      {
+        "text": "Expressão",
+        "transform": "matrix(0.987688, -0.156434, 0.156434, 0.987688, 0, 0)",
+        "opacity": "1",
+        "rect": {
+          "x": 286.7597961425781,
+          "y": -3690.233642578125,
+          "width": 82.26165771484375,
+          "height": 43.84228515625
+        }
+      }
+    ],
+    "media": [
+      {
+        "button": {
+          "x": 37.296875,
+          "y": -528.125,
+          "width": 128.890625,
+          "height": 279.96875
+        },
+        "image": {
+          "x": 37.296875,
+          "y": -528.125,
+          "width": 128.875,
+          "height": 279.96875
+        },
+        "src": "http://127.0.0.1:4174/dist/assets/julia-nunes-results-v9.webp"
+      },
+      {
+        "button": {
+          "x": 208.796875,
+          "y": -528.125,
+          "width": 128.890625,
+          "height": 279.96875
+        },
+        "image": {
+          "x": 208.796875,
+          "y": -528.125,
+          "width": 128.875,
+          "height": 279.96875
+        },
+        "src": "http://127.0.0.1:4174/dist/assets/julia-nunes-reel-v9.webp"
+      },
+      {
+        "button": {
+          "x": 22,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "image": {
+          "x": 22,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "src": "http://127.0.0.1:4174/dist/assets/copa-art-3-v10.webp"
+      },
+      {
+        "button": {
+          "x": 135,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "image": {
+          "x": 135,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "src": "http://127.0.0.1:4174/dist/assets/copa-art-2-v10.webp"
+      },
+      {
+        "button": {
+          "x": 248,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "image": {
+          "x": 248,
+          "y": 612.9637451171875,
+          "width": 105,
+          "height": 131.25
+        },
+        "src": "http://127.0.0.1:4174/dist/assets/copa-art-1-v10.webp"
+      }
+    ],
+    "video": {
+      "src": "http://127.0.0.1:4174/dist/assets/leticia-book-video-v10.mp4",
+      "paused": true,
+      "time": 0.618558,
+      "ready": 4,
+      "controls": false
+    },
+    "contactCount": 10,
+    "contactsValid": true,
+    "email": "mailto:jumaschietto3@gmail.com",
+    "linkedin": [
+      "https://www.linkedin.com/in/jumaschietto/",
+      "https://www.linkedin.com/in/jumaschietto/"
+    ]
+  },
+  "dialogImageMatchesContainer": true,
+  "autoplayOnArrival": true,
+  "pausedWhenAway": true,
+  "proof": "image-dialog-final.png"
+}
