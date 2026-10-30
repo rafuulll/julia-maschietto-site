@@ -18,3 +18,7 @@ Portfolio and LinkedIn markdown, Novo Método presentation, Leticia Isse and Nat
 WhatsApp number unknown: demo contact dialog previews and copies a message, sends nothing. Reserved example email only. User authorizes fictional commercial details for this first presentation, visibly marked where shown. Real testimonials remain unattributed unless attribution confirmed. No invented customers or fabricated performance metrics.
 ## Product Principles
 Show real work and outcomes. Three equivalent service paths. One commercial action. Every essential detail accessible on touch and keyboard. Reference fidelity over unsolicited reinvention.
+
+
+## Approved second-execution interaction changes
+Process: pinned horizontal traversal on desktop, native horizontal scroll on mobile. About: a draggable Three.js badge using Julia's existing identity-preserving portrait; remove the separate signature. Testimonials: a visibly labelled fictional demonstration wall approved by the user, three alternating columns on desktop and two on mobile, pause and reduced-motion support. Real project evidence remains factual. Keep HTML/CSS/JS; load the local 3D module only near About. Third execution is planning only: notebook caption, footer wordmark, long CTA labels and FAQ layout remain pending.

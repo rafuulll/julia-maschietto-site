@@ -1,0 +1,79 @@
+{
+  "errors": [],
+  "warnings": [],
+  "assets": [],
+  "process": [
+    {
+      "sceneTop": 0.140625,
+      "progress": "0",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "sceneTop": 0,
+      "progress": "50",
+      "transform": "matrix(1, 0, 0, 1, -559.86, 0)"
+    },
+    {
+      "sceneTop": 0,
+      "progress": "100",
+      "transform": "matrix(1, 0, 0, 1, -1119.86, 0)"
+    },
+    {
+      "releaseTop": -249.859375
+    }
+  ],
+  "badge": {
+    "ready": "ready",
+    "captured": "true",
+    "moved": true,
+    "released": "false",
+    "keyboard": true
+  },
+  "testimonials": {
+    "before": [
+      {
+        "name": "quotes-down",
+        "y": -614.669,
+        "state": "running"
+      },
+      {
+        "name": "quotes-up",
+        "y": -8.0238,
+        "state": "running"
+      },
+      {
+        "name": "quotes-down",
+        "y": -615.262,
+        "state": "running"
+      }
+    ],
+    "after": [
+      {
+        "name": "quotes-down",
+        "y": -605.372
+      },
+      {
+        "name": "quotes-up",
+        "y": -18.2203
+      },
+      {
+        "name": "quotes-down",
+        "y": -606.719
+      }
+    ],
+    "pause": true
+  },
+  "mobile": {
+    "processProgress": "100",
+    "touchCaptured": "true",
+    "touchReleased": "false"
+  },
+  "thirdRound": {
+    "bookNote": 1,
+    "footerWordmark": 1,
+    "oldButtons": 4,
+    "faqText": "Antes da\nnossa conversa.\n\nAlgumas respostas para você entender como podemos trabalhar juntos.\n\nTirar uma dúvida"
+  },
+  "iconHover": "matrix(0.99863, -0.052336, 0.052336, 0.99863, 0, -4)",
+  "reducedMotion": "none"
+}

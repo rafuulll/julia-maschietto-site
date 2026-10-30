@@ -203,6 +203,17 @@ Keyboard focus is an offset red outline (2px, 6px offset), with a light outline 
 
 The concept paragraph uses word opacity from .16 to 1 as the section traverses the viewport, with a .45s ease-out transition. Tags drift independently in translation and rotation only while the section is visible; reduced motion shows all text immediately and stops the tags. All six project rows use hover previews on fine pointers and open their content through native details on click or keyboard. Bahari has no permanent feature block. Services omit the three redundant colored supporting phrases.
 
+
+### Approved second-execution components
+
+The process now uses a horizontally translated four-stage rail with a thin wine progress line. Above 1000px width and at least 680px height, a 100svh sticky scene maps vertical passage to horizontal travel and releases at completion. Smaller/reduced-motion layouts keep native horizontal scrolling. Process and About share continuous pastel wave artwork; the SVG is not clipped at internal section boundaries.
+
+About uses a genuine Three.js card with an extruded matte body, photograph texture, metal clasp, flexible wine strap, soft light and a real shadow. It loads only near the section, stops rendering out of view and accepts pointer drag, touch and keyboard. A static printed-card fallback stays visible if WebGL is unavailable. The separate About signature is removed; the factual biography remains unchanged.
+
+The testimonial treatment is an explicitly illustrative wall with three columns moving down/up/down in 68/62/74-second cycles and two columns on mobile. Paper cards sit on the existing rose surface, with initials rather than invented portrait photographs. Soft horizontal and vertical edge masks support the requested reference. Motion pauses offscreen, in a hidden tab, on hover and via a dedicated control. Reduced motion presents static, scrollable text with duplicates removed. The user-approved fictional status must remain visible until replaced by real client material.
+
+Service icons translate -4px and rotate -3 degrees on hover/focus, returning over .8s. Reduced motion disables this movement. No second-round CSS changes the hero, book caption, footer wordmark, commercial CTAs or FAQ; these latter refinements are held for a third execution.
+
 ## Do's and Don'ts
 
 ### Do:

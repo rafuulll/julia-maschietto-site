@@ -28,3 +28,10 @@ Prompts exatos em `image-prompts.json` e `supporting-asset-prompts.json`; arquiv
 - Lenis 1.3.17: biblioteca oficial, licença MIT; carregada localmente. Rolagem nativa no celular e com movimento reduzido.
 
 Licenças em `dist/assets/licenses/`. As fotografias e materiais enviados continuam pertencendo aos seus respectivos titulares; esta entrega não altera sua titularidade.
+
+
+## Atualização da segunda execução
+
+O retrato já tratado `hero-julia.webp` também é a textura fotográfica do crachá 3D, recortada em tempo de execução. O cartão e o cordão são geometria WebGL, sem novo retrato gerado e sem React. Three.js 0.180.0 é distribuído em `dist/assets/vendor`, com licença MIT em `dist/assets/licenses/Three-MIT.txt`. A interação toma o React Bits Lanyard como referência, com implementação própria para esta página.
+
+Os depoimentos da parede animada são exemplos fictícios aprovados para apresentação e identificados no bloco e em cada cartão; não são novos relatos ou provas de clientes reais. Os arquivos das evidências originais continuam em assets e no histórico.

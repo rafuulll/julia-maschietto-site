@@ -20,7 +20,7 @@ Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência
 - Entrada de palavras, revelação do manifesto conforme a rolagem e navegação suave no desktop.
 - Cases com resultados visíveis, detalhes expansíveis e prévia de imagem no mouse.
 - Materiais reais em um mockup de notebook, seleção por teclado e ampliação.
-- Sobre Julia com fotografia original tratada; depoimentos, processo e FAQ.
+- Sobre Julia com crachá 3D arrastável; depoimentos ilustrativos em colunas animadas; processo lateral com progresso e FAQ.
 - Rodapé em vídeo leve, controle de pausa e respeito à preferência por movimento reduzido.
 - Contato em modo de demonstração: abre a mensagem e permite copiá-la; não envia mensagens.
 
@@ -57,3 +57,12 @@ Consulte `docs/ANTES-DE-PUBLICAR.md`. Esta V1 é uma apresentação, com `noinde
 Referência principal indicada pelo cliente: Leticia Bassan, incluindo o exemplo do minicurso da Nat Designer. A implementação e a identidade de Julia foram produzidas para esta versão; fotos e vídeo da clínica de referência não foram reutilizados.
 
 Recursos: GPT Images (edições dos retratos, composição ilustrativa Bahari e textura de seda), Manrope, Instrument Serif, Phosphor Icons e Lenis. O vídeo foi produzido a partir da textura gerada, com movimento suave de tecido. Os créditos detalhados estão em `docs/ASSETS.md`.
+
+
+## Segunda execução
+
+Esta entrega inclui o crachá 3D local (Three.js 0.180.0, sem React), rolagem lateral do processo, ondas contínuas entre Processo e Sobre, depoimentos ilustrativos animados e hover dos ícones. Veja `docs/RODADA-2.md` e o relatório em `docs/qa/round-two/report.json`. Os relatos exibidos nesta experiência são fictícios e estão identificados. As evidências reais dos cases permanecem preservadas.
+
+`dist/second-round.js`, `dist/second-round.css` e `dist/badge-3d.js` implementam essa rodada. O módulo 3D é carregado próximo do Sobre; requer um servidor HTTP/HTTPS para importar os módulos locais. A alternativa estática funciona quando WebGL não estiver disponível. As bibliotecas locais já acompanham `dist/assets/vendor`; não é necessário instalar dependências ou compilar.
+
+As sugestões para a terceira execução constam de `docs/PLANO-RODADA-3.md` e ainda não foram aplicadas à interface.

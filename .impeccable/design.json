@@ -149,6 +149,26 @@
         "name": "concept-tags",
         "value": "visible-only requestAnimationFrame drift",
         "purpose": "Independent ±6px x, ±11px y and ±3deg rotation plus restrained scroll offset. Static under reduced motion."
+      },
+      {
+        "name": "process-rail",
+        "value": "sticky 100svh + measured horizontal travel",
+        "purpose": "Four-stage progress driven by vertical passage; native rail on smaller/reduced-motion viewports."
+      },
+      {
+        "name": "badge-scene",
+        "value": "local Three.js, pointer-driven Verlet strap",
+        "purpose": "Actual 3D printed card; lazy loaded, visibility paused, keyboard/touch and static fallback."
+      },
+      {
+        "name": "testimonial-columns",
+        "value": "68s down / 62s up / 74s down",
+        "purpose": "Clearly illustrative wall, edge masks, pause and reduced-motion readability."
+      },
+      {
+        "name": "service-icon-hover",
+        "value": "translateY(-4px) rotate(-3deg), .8s var(--spring)",
+        "purpose": "Subtle reference-matched feedback on service hover/focus."
       }
     ],
     "breakpoints": [

@@ -1,0 +1,83 @@
+/* Second execution only. Typography, palette and third-round content stay in place. */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.journey{position:relative;isolation:isolate}
+.journey-waves{position:absolute;inset:-100px 0 0;overflow:clip;pointer-events:none;z-index:-1}
+.journey-wave{position:absolute;top:0;width:290px;height:100%;fill:none;stroke:#e4d2cc;stroke-width:52;opacity:.55;overflow:visible}
+.journey-wave path{vector-effect:non-scaling-stroke}
+.journey-wave-left{left:-175px}.journey-wave-right{right:-178px}
+.journey .process{padding:100px 0 80px;overflow:visible}
+.process-scene{position:relative}
+.journey .process .section-heading{margin-bottom:60px}
+.process-window{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-x:contain;scroll-snap-type:x proximity;outline-offset:8px}
+.process-window::-webkit-scrollbar{display:none}
+.journey .process-steps{display:flex;gap:0;width:max-content;transform:translate3d(var(--process-x,0px),0,0);padding:0;list-style:none}
+.journey .process-steps li{flex:0 0 auto;width:min(600px,65vw);padding:0 60px;scroll-snap-align:start;min-height:240px}
+.journey .process-steps li:first-child{padding-left:0}
+.journey .process-steps li+li{border-left:1px solid var(--line)}
+.journey .process-steps h3{font-size:42px;margin-bottom:21px}
+.journey .process-steps p{font-size:17px;line-height:1.75;max-width:30ch}
+.journey .step-number{font-size:36px;margin-bottom:22px}
+.process-progress-row{display:flex;align-items:center;gap:18px;max-width:560px;margin:55px auto 0;color:var(--wine);font-size:10px}
+.process-progress{height:2px;background:rgba(114,25,25,.15);flex:1;overflow:hidden}
+.process-progress>span{display:block;height:100%;background:var(--wine);transform:scaleX(var(--process-progress,0));transform-origin:left center}
+.process-touch-hint{font-size:10px;color:var(--muted);text-align:center;margin-top:17px}
+.journey .process.is-pinned{height:var(--process-height,240svh);padding:0}
+.process.is-pinned .process-scene{position:sticky;top:0;height:100svh;display:flex;align-items:center}
+.process.is-pinned .process-scene>.wrap{padding-top:80px;padding-bottom:45px}
+.process.is-pinned .process-window{overflow:hidden;scroll-snap-type:none}
+.process.is-pinned .process-touch-hint{visibility:hidden}
+.journey .about{padding-top:80px;padding-bottom:100px}
+.about .badge-stage{height:690px;position:relative;min-width:0}
+.badge-scene{height:calc(100% - 42px);position:relative;isolation:isolate}
+.badge-scene canvas{width:100%;height:100%;display:block;touch-action:pan-y}
+.badge-handle{position:absolute;left:0;top:0;z-index:2;padding:0;border:0;background:transparent;border-radius:15px;touch-action:none;cursor:grab;will-change:transform}
+.badge-handle.is-dragging{cursor:grabbing}
+.badge-handle:focus-visible{outline:2px solid var(--wine);outline-offset:7px}
+.badge-help{position:absolute;bottom:8px;left:0;right:0;text-align:center;color:var(--wine);font-size:11px}
+.badge-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.badge-fallback-band{position:absolute;left:calc(50% - 9px);top:0;width:18px;height:33%;background:var(--wine)}
+.badge-fallback-card{width:270px;background:#fff;border-radius:16px;overflow:hidden;position:relative;transform:rotate(-4deg);box-shadow:0 25px 45px -27px rgba(30,12,12,.35)}
+.badge-fallback-card>img{height:310px;object-fit:cover;object-position:100% 35%}
+.badge-fallback-card>div{padding:24px 20px 27px}.badge-fallback-card strong{font-weight:500;font-size:19px;display:block}.badge-fallback-card span{display:block;font-size:9px;color:var(--wine);margin-top:9px}
+.badge-scene.is-ready .badge-fallback{display:none}
+.about-copy .credentials{margin-bottom:28px}
+.service .service-icon{transition:transform .8s var(--spring)}
+@media(hover:hover){.service:hover .service-icon,.service:focus-within .service-icon{transform:translateY(-4px) rotate(-3deg)}}
+.testimonials{padding-block:95px 55px}
+.testimonials-heading{text-align:center;margin-bottom:35px}.testimonials-heading h2{font-size:clamp(35px,3.2vw,50px)}
+.testimonial-demo{font-size:11px;color:var(--wine);margin-top:20px}
+.testimonial-field{mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.testimonial-wall{height:550px;overflow:hidden;mask-image:linear-gradient(180deg,transparent,#000 9%,#000 90%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 90%,transparent)}
+.testimonial-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-inline:20px;align-items:start}
+.testimonial-group{display:flex;flex-direction:column;gap:16px;padding-bottom:16px}
+.testimonial-card{background:rgba(255,255,255,.74);border-radius:14px;padding:26px;break-inside:avoid}
+.testimonial-card blockquote{margin:0;font-size:15px;line-height:1.75;color:#4f3432}
+.testimonial-card figcaption{display:flex;align-items:center;gap:11px;margin-top:24px}
+.testimonial-avatar{width:34px;height:34px;display:grid;place-items:center;flex:none;background:#ead4d1;color:var(--wine);border-radius:50%;font-size:12px}
+.testimonial-card strong{display:block;font-weight:500;font-size:12px;color:var(--wine)}
+.testimonial-card small{display:block;font-size:9px;color:#765654;margin-top:3px}
+.testimonial-track{animation:quotes-up 62s linear infinite;animation-play-state:paused}
+.testimonial-column[data-direction=down] .testimonial-track{animation-name:quotes-down;animation-duration:68s}
+.testimonial-column:nth-child(3) .testimonial-track{animation-duration:74s}
+.testimonial-wall.is-visible:not(.is-paused) .testimonial-track{animation-play-state:running}
+.testimonials-controls{display:flex;justify-content:center;margin-top:24px}
+.testimonials-controls button{display:flex;align-items:center;gap:9px;padding:6px 0;border-bottom:1px solid rgba(114,25,25,.3);color:var(--wine);font-size:11px}
+.testimonials-controls .icon{width:14px;height:14px}
+@keyframes quotes-up{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@keyframes quotes-down{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+@media(hover:hover){.testimonial-wall:hover .testimonial-track{animation-play-state:paused!important}}
+@media(max-width:1000px){.journey .process-steps li{width:65vw;padding-inline:35px}.journey .process-steps h3{font-size:36px}.journey .process-steps p{font-size:15px}.about .badge-stage{height:600px}.testimonial-card{padding:20px}.testimonial-card blockquote{font-size:13px}}
+@media(max-width:760px){
+ .journey .process{padding:70px 0 55px}.journey .process .section-heading{margin-bottom:42px}.journey .process .section-heading h2{font-size:34px}
+ .journey .process-steps li,.journey .process-steps li:first-child{width:77vw;padding:0 24px 0 0;min-height:225px}
+ .journey .process-steps li+li{padding-left:24px;border-left:1px solid var(--line)}
+ .journey .process-steps h3{font-size:31px;margin-bottom:17px}.journey .process-steps p{font-size:14px;max-width:29ch}.journey .step-number{font-size:30px;margin-bottom:22px}
+ .process-progress-row{margin-top:30px;gap:13px}.process-touch-hint{font-size:9px;margin-top:14px}
+ .journey-wave{width:190px;stroke-width:42;opacity:.48}.journey-wave-left{left:-138px}.journey-wave-right{right:-139px}
+ .journey .about{padding-block:35px 70px;gap:35px}.about .badge-stage{height:535px}.badge-help{font-size:10px}
+ .badge-fallback-card{width:245px}.badge-fallback-card>img{height:280px}
+ .testimonials{padding-block:65px 38px}.testimonials-heading{margin-bottom:24px}.testimonials-heading h2{font-size:36px}.testimonial-demo{font-size:10px;max-width:29ch;margin:18px auto 0}
+ .testimonial-wall{height:530px}.testimonial-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-inline:4px}.testimonial-column:nth-child(3){display:none}
+ .testimonial-card{padding:18px 14px;border-radius:12px}.testimonial-card blockquote{font-size:12px;line-height:1.75}.testimonial-card figcaption{gap:7px;margin-top:19px;align-items:flex-start}.testimonial-avatar{width:24px;height:24px;font-size:10px}.testimonial-card strong{font-size:10px}.testimonial-card small{font-size:8px;line-height:1.5}.testimonial-group{gap:10px;padding-bottom:10px}.testimonials-controls button{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.testimonial-track{animation:none!important;transform:none!important}.testimonial-group[aria-hidden=true]{display:none}.testimonial-wall{height:550px;overflow-y:auto;mask-image:none;-webkit-mask-image:none}.testimonial-field{mask-image:none;-webkit-mask-image:none}.testimonials-controls{display:none}.service .service-icon{transform:none!important}.process-steps{transform:none!important}}
