@@ -65,7 +65,6 @@
 .testimonials-controls .icon{width:14px;height:14px}
 @keyframes quotes-up{from{transform:translateY(0)}to{transform:translateY(-50%)}}
 @keyframes quotes-down{from{transform:translateY(-50%)}to{transform:translateY(0)}}
-@media(hover:hover){.testimonial-wall:hover .testimonial-track{animation-play-state:paused!important}}
 @media(max-width:1000px){.journey .process-steps li{width:65vw;padding-inline:35px}.journey .process-steps h3{font-size:36px}.journey .process-steps p{font-size:15px}.about .badge-stage{height:600px}.testimonial-card{padding:20px}.testimonial-card blockquote{font-size:13px}}
 @media(max-width:760px){
  .journey .process{padding:70px 0 55px}.journey .process .section-heading{margin-bottom:42px}.journey .process .section-heading h2{font-size:34px}

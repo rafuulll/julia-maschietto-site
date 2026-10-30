@@ -1,4 +1,6 @@
-# Ponto de retomada — terceira execução e plano da quarta
+# Ponto de retomada — registro do plano original da quarta
+
+Atualização: quarta execução aprovada e aplicada. Ver RODADA-4.md e docs/qa/round-four. Quinta execução em planejamento no PLANO-RODADA-5.md. O registro abaixo descreve o plano anterior à implementação.
 
 Terceira execução autorizada: retirar a nota do notebook e o nome grande do rodapé, padronizar os CTAs longos em Vamos conversar e tornar o bloco introdutório do FAQ sticky no desktop. Rodapé com altura pelo conteúdo, copyright preservado. FAQ em fluxo normal em telas estreitas ou muito baixas.
 

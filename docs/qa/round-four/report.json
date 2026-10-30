@@ -1,0 +1,53 @@
+{
+  "errors": [],
+  "process": [
+    {
+      "sceneTop": 0.140625,
+      "cardCenter": 683,
+      "progress": 0,
+      "bottom": 556.25
+    },
+    {
+      "sceneTop": 0,
+      "cardCenter": 683.1400146484375,
+      "progress": 33,
+      "bottom": 556.109375
+    },
+    {
+      "sceneTop": 0,
+      "cardCenter": 683.1400146484375,
+      "progress": 67,
+      "bottom": 556.109375
+    },
+    {
+      "sceneTop": 0,
+      "cardCenter": 683.1400146484375,
+      "progress": 100,
+      "bottom": 556.109375
+    }
+  ],
+  "badge": {
+    "rest": {
+      "left": 154.14999389648438,
+      "right": 168.33438110351562,
+      "top": 266.30999755859375,
+      "bottom": 49.75250244140625
+    },
+    "drag": {
+      "left": 227.1199951171875,
+      "right": 64.3643798828125,
+      "top": 272.29998779296875,
+      "bottom": 22.04376220703125
+    },
+    "mobile": {
+      "left": 57.66999816894531,
+      "right": 104.03314208984375,
+      "top": 200.58999633789062,
+      "bottom": 35.9725341796875
+    }
+  },
+  "quotes": {
+    "hover": "running",
+    "button": "paused"
+  }
+}

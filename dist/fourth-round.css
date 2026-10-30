@@ -1,0 +1,37 @@
+/* Fourth execution: centered process, bounded badge and inclined quote plane. */
+.pill-expression{right:35px;bottom:0;--rot:-9deg;background:#e6ceca;color:var(--wine)}
+.process.is-pinned .process-scene>.wrap{height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:100px;padding-bottom:24px}
+.journey .process.is-pinned .section-heading{margin-bottom:32px}
+.process.is-pinned .section-heading h2{font-size:clamp(32px,3.2vw,44px)}
+.process.is-pinned .section-heading p{font-size:14px;margin-top:18px}
+.process.is-pinned .process-window{flex:none}
+.journey .process.is-pinned .process-steps{padding-inline:var(--process-side,0px)}
+.journey .process.is-pinned .process-steps li,.journey .process.is-pinned .process-steps li:first-child{width:min(480px,65vw);padding:0 40px;min-height:200px;text-align:center}
+.journey .process.is-pinned .process-steps h3{font-size:36px;margin-bottom:17px}
+.journey .process.is-pinned .process-steps p{font-size:16px;max-width:29ch;margin-inline:auto}
+.journey .process.is-pinned .step-number{font-size:30px;margin-bottom:14px}
+.process.is-pinned .process-progress-row{width:min(560px,80%);margin-top:28px}
+.process.is-pinned .process-touch-hint{display:none}
+.badge-scene{overflow:visible}
+.testimonial-field{overflow:hidden;perspective:1200px}
+.testimonial-wall{height:600px}
+.testimonial-columns{width:108%;margin-left:-4%;transform:rotateX(24deg) rotateY(-10deg) rotateZ(-8deg) scale(.96);transform-origin:50% 260px}
+@media(max-height:550px) and (min-width:1001px){
+ .process.is-pinned .process-scene>.wrap{padding-top:88px;padding-bottom:18px}
+ .journey .process.is-pinned .section-heading{margin-bottom:20px}
+ .process.is-pinned .section-heading h2{font-size:30px}
+ .process.is-pinned .section-heading p{font-size:12px;margin-top:12px}
+ .journey .process.is-pinned .process-steps li{min-height:160px}
+ .journey .process.is-pinned .process-steps h3{font-size:30px;margin-bottom:12px}
+ .journey .process.is-pinned .process-steps p{font-size:14px}
+ .journey .process.is-pinned .step-number{font-size:26px;margin-bottom:10px}
+ .process.is-pinned .process-progress-row{margin-top:20px}
+}
+@media(max-width:760px){
+ .concept-inner{padding-bottom:75px}
+ .concept-pill{padding:10px 11px;bottom:0;top:auto;right:auto;font-size:9px}
+ .pill-business{left:0}.pill-story{left:25%}.pill-identity{left:50%}.pill-expression{left:75%}
+ .testimonial-field{perspective:none}.testimonial-wall{height:530px}
+ .testimonial-columns{width:104%;margin-left:-2%;transform:rotate(-4deg);transform-origin:50% 240px}
+}
+@media(prefers-reduced-motion:reduce){.testimonial-columns{transform:none;width:100%;margin-left:0}}

@@ -3,7 +3,7 @@
 ## Platform
 web
 ## Stack
-Static HTML, CSS and JavaScript, explicitly requested. Buildless dist directory. Private Sites preview and downloadable source.
+Static HTML, CSS and JavaScript, explicitly requested. Buildless dist directory. Sites publication and downloadable source; preserve the audience currently configured by the owner.
 ## Users
 People commissioning work for personal brands and companies, without a gender restriction.
 ## Product Purpose
@@ -21,4 +21,7 @@ Show real work and outcomes. Three equivalent service paths. One commercial acti
 
 
 ## Approved second-execution interaction changes
-Process: pinned horizontal traversal on desktop, native horizontal scroll on mobile. About: a draggable Three.js badge using Julia's existing identity-preserving portrait; remove the separate signature. Testimonials: a visibly labelled fictional demonstration wall approved by the user, three alternating columns on desktop and two on mobile, pause and reduced-motion support. Real project evidence remains factual. Keep HTML/CSS/JS; load the local 3D module only near About. Third execution is planning only: notebook caption, footer wordmark, long CTA labels and FAQ layout remain pending.
+Process: pinned horizontal traversal on desktop, native horizontal scroll on mobile. About: a draggable Three.js badge using Julia's existing identity-preserving portrait; remove the separate signature. Testimonials: a visibly labelled fictional demonstration wall approved by the user, three alternating columns on desktop and two on mobile, pause and reduced-motion support. Real project evidence remains factual. Keep HTML/CSS/JS; load the local 3D module only near About.
+
+## Approved third and fourth executions
+Third: notebook caption and large footer wordmark removed, long commercial CTAs standardized to Vamos conversar, desktop FAQ introduction sticky. Fourth: Expressão tag added; process starts and finishes centered, including 600px-high desktop windows; badge has a visible mount and bounded drag; quote wall inclined in perspective, continues under hover and pauses manually with its button; redundant brand-name strip removed. Fifth execution is planning only: a new centered studio portrait with story frames on white. Do not generate or replace the hero until the user approves that plan.

@@ -83,7 +83,15 @@ export async function createBadge(host) {
   bandGeometry.setAttribute('uv',new THREE.BufferAttribute(bandUV,2));bandGeometry.setIndex(indices);
   const band=new THREE.Mesh(bandGeometry,new THREE.MeshStandardMaterial({map:strapTexture,roughness:.95,side:THREE.DoubleSide}));
   band.frustumCulled=false;scene.add(band);
-  const nodeCount=7,link=.45,anchor=new THREE.Vector3(0,5,0);
+  const nodeCount=7,link=.31,anchor=new THREE.Vector3(0,3.2,0);
+  // Visible wall bracket: the strap has a physical attachment inside the frame.
+  const bracket=new THREE.Mesh(new THREE.BoxGeometry(.76,.13,.10),metal);
+  bracket.position.copy(anchor);scene.add(bracket);
+  const screwMaterial=new THREE.MeshStandardMaterial({color:0x777572,metalness:.7,roughness:.4});
+  for(const x of [-.27,.27]){
+    const screw=new THREE.Mesh(new THREE.SphereGeometry(.025,12,8),screwMaterial);
+    screw.position.set(x,anchor.y,.065);scene.add(screw);
+  }
   const nodes=Array.from({length:nodeCount},(_,i)=>({p:anchor.clone().add(new THREE.Vector3(0,-link*i,0)),old:anchor.clone().add(new THREE.Vector3(0,-link*i,0))}));
   const curve=new THREE.CatmullRomCurve3(nodes.map(n=>n.p));
   const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),plane=new THREE.Plane(new THREE.Vector3(0,0,1),0);
@@ -113,6 +121,8 @@ export async function createBadge(host) {
     if(dragging){
       if(!projectPointer(event))return;
       dragTarget.copy(point).add(dragOffset);
+      dragTarget.x=THREE.MathUtils.clamp(dragTarget.x,-.65,.65);
+      dragTarget.y=THREE.MathUtils.clamp(dragTarget.y,1.15,1.8);
       const reach=dragTarget.clone().sub(anchor),max=link*(nodeCount-1)*1.16;
       if(reach.length()>max)dragTarget.copy(anchor).add(reach.setLength(max));
       dragTarget.z=0;
@@ -128,7 +138,7 @@ export async function createBadge(host) {
     if(!dragging)return;
     dragging=false;handle.classList.remove('is-dragging');host.dataset.dragging='false';
     if(handle.hasPointerCapture(event.pointerId))handle.releasePointerCapture(event.pointerId);
-    if(!moved)angleVelocity+=.65;
+    if(!moved)angleVelocity+=.22;
     wake();
   }
   handle.addEventListener('pointerdown',begin);handle.addEventListener('pointermove',move);
@@ -138,8 +148,8 @@ export async function createBadge(host) {
     if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' ','Home','Escape'].includes(event.key))return;
     event.preventDefault();
     if(event.key==='Home'||event.key==='Escape'){nodes.forEach((n,i)=>{n.p.copy(anchor).add(new THREE.Vector3(0,-link*i,0));n.old.copy(n.p);});angle=0;angleVelocity=0;}
-    else if(event.key==='ArrowLeft'||event.key==='ArrowRight'){end.old.x+=(event.key==='ArrowLeft'?.055:-.055);angleVelocity+=(event.key==='ArrowLeft'?-.6:.6);}
-    else angleVelocity+=.85;
+    else if(event.key==='ArrowLeft'||event.key==='ArrowRight'){end.old.x+=(event.key==='ArrowLeft'?.025:-.025);angleVelocity+=(event.key==='ArrowLeft'?-.22:.22);}
+    else angleVelocity+=.28;
     wake();
   });
   function simulate(dt){
@@ -163,10 +173,13 @@ export async function createBadge(host) {
         nodes[0].p.copy(anchor);if(dragging)end.p.copy(dragTarget);
       }
     }
+    end.p.x=THREE.MathUtils.clamp(end.p.x,-.68,.68);
+    end.p.y=THREE.MathUtils.clamp(end.p.y,1.15,1.8);
     vector.copy(end.p).sub(nodes.at(-2).p);
-    const desired=Math.max(-.55,Math.min(.55,Math.atan2(vector.x,-vector.y)*.52));
+    const desired=Math.max(-.13,Math.min(.13,Math.atan2(vector.x,-vector.y)*.3));
     angleVelocity+=(desired-angle)*25*dt;angleVelocity*=Math.exp(-5*dt);angle+=angleVelocity*dt;
     yaw+=(pointerTilt+Math.max(-.32,Math.min(.32,(end.p.x-end.old.x)*9))-yaw)*Math.min(1,dt*7);
+    angle=THREE.MathUtils.clamp(angle,-.16,.16);
     card.rotation.set(pointerPitch,yaw,angle);
     card.position.copy(end.p).sub(attachOffset.clone().applyEuler(card.rotation));
     let energy=Math.abs(angleVelocity)+Math.abs(angle-desired)+Math.abs(yaw-pointerTilt);
@@ -203,7 +216,11 @@ export async function createBadge(host) {
   function wake(){if(visible&&!document.hidden&&!raf){lastTime=0;raf=requestAnimationFrame(tick);}}
   function resize(){
     const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;
-    renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();render();wake();
+    renderer.setSize(w,h,false);camera.aspect=w/h;
+    // Fit the entire bracket, strap and card; preserve a safe drag margin.
+    const visibleHeight=Math.max(7,4.4/camera.aspect);
+    camera.position.set(0,.35,visibleHeight/(2*Math.tan(THREE.MathUtils.degToRad(camera.fov/2))));
+    camera.lookAt(0,.35,0);camera.updateProjectionMatrix();render();wake();
   }
   // Settle to a quiet initial pose; reduced motion does not auto-swing.
   for(let i=0;i<160;i++)simulate(.016);

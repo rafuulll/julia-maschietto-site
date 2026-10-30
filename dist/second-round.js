@@ -1,5 +1,5 @@
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-const desktop = matchMedia('(min-width: 1001px) and (min-height: 680px)');
+const desktop = matchMedia('(min-width: 1001px) and (min-height: 480px)');
 const process = document.getElementById('processo');
 const scene = process.querySelector('.process-scene');
 const windowEl = process.querySelector('.process-window');
@@ -10,6 +10,8 @@ let pinned = false, travel = 0, processVisible = false, lastProgress = -1;
 function layoutProcess() {
   pinned = desktop.matches && !reduced.matches;
   process.classList.toggle('is-pinned', pinned);
+  const cardWidth = track.firstElementChild.getBoundingClientRect().width;
+  track.style.setProperty('--process-side', `${Math.max(0,(windowEl.clientWidth-cardWidth)/2)}px`);
   travel = Math.max(0, track.scrollWidth - windowEl.clientWidth);
   process.style.setProperty('--process-height', `${innerHeight + travel}px`);
   if (pinned) windowEl.scrollLeft = 0;
@@ -68,7 +70,7 @@ const loadBadge = new IntersectionObserver(async entries => {
   loadBadge.disconnect();
   try {
     await document.fonts.ready;
-    const {createBadge} = await import('./badge-3d.js?v=20261030-round2');
+    const {createBadge} = await import('./badge-3d.js?v=20261030-round4');
     await createBadge(badge);
   } catch (error) {
     badge.dataset.state = 'fallback';
