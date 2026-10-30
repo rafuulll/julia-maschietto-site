@@ -48,29 +48,13 @@ windowEl.addEventListener('keydown', event => {
 function frame() { if (processVisible) paintProcess(); requestAnimationFrame(frame); }
 layoutProcess();requestAnimationFrame(frame);
 
-const wall = document.getElementById('testimonial-wall');
-const pause = document.getElementById('testimonials-toggle');
-let userPaused = reduced.matches;
-function syncQuotes() {
-  wall.classList.toggle('is-paused', userPaused || reduced.matches);
-  pause.setAttribute('aria-pressed', String(userPaused || reduced.matches));
-  pause.querySelector('span:last-child').textContent = userPaused ? 'Reproduzir depoimentos' : 'Pausar depoimentos';
-  pause.querySelector('.icon').className = `icon ${userPaused ? 'i-play' : 'i-pause'}`;
-  if (reduced.matches) { wall.tabIndex=0;wall.setAttribute('aria-label','Depoimentos ilustrativos. Role para ler.'); }
-}
-new IntersectionObserver(entries => wall.classList.toggle('is-visible', entries[0].isIntersecting)).observe(wall);
-pause.addEventListener('click', () => { userPaused=!userPaused;syncQuotes(); });
-reduced.addEventListener('change', () => {userPaused=reduced.matches;syncQuotes();});
-document.addEventListener('visibilitychange', () => { if(document.hidden) wall.classList.remove('is-visible'); else wall.classList.toggle('is-visible',wall.getBoundingClientRect().bottom>0&&wall.getBoundingClientRect().top<innerHeight); });
-syncQuotes();
-
 const badge = document.getElementById('badge-scene');
 const loadBadge = new IntersectionObserver(async entries => {
   if (!entries[0].isIntersecting) return;
   loadBadge.disconnect();
   try {
     await document.fonts.ready;
-    const {createBadge} = await import('./badge-3d.js?v=20261030-round4');
+    const {createBadge} = await import('./badge-3d.js?v=20261030-round6');
     await createBadge(badge);
   } catch (error) {
     badge.dataset.state = 'fallback';

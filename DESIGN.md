@@ -234,4 +234,10 @@ Service icons translate -4px and rotate -3 degrees on hover/focus, returning ove
 
 ### Approved fifth-execution hero
 
-The owner approved a local composition change: centered waist-up studio portrait over warm white #faf9f6, with three independent story frames on wide desktop and two at widths of 1100px or less. Black/wine HTML headings and wine circular-arrow CTA replace the former white-on-dark hero copy. Keep the selected type pair, editorial rhythm, pill navigation and established control geometry. Transparent portrait asset uses contain with no zoom; static framing preserves headroom. Stories use a single short entry and tiny pointer displacement, with a static reduced-motion state. Other page sections retain their existing composition. Sixth-round changes remain a plan.
+Historical fifth-round direction, superseded by the sixth correction below: centered generated portrait over white with independent stories and dark text.
+
+### Approved sixth-execution correction
+
+Restore the incumbent rounded frame, warm gray #d1cec8, dark lower fade and white hero copy. Reuse the earlier approved portrait with unchanged facial RGB and no body extension. Center the photo at a controlled scale. All three 9:16 story frames are monochrome and static, with two behind the person and the profile shot in front; they have decorative Instagram-like UI and no links or interaction. Keep the Manrope/Instrument Serif pair and pill/circle-arrow controls.
+
+Editorial testimonials show one quote at a time, a wine serif highlight, attribution/context and understated manual navigation with a short transition. No endless wall or automatic rotation. Waves stay fixed in the viewport during the process traversal and end at the About boundary. The badge has wider elastic drag and release inertia; camera-aware bounds prevent clipping. Existing service/project/FAQ/footer content is retained.

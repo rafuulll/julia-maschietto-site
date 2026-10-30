@@ -1,4 +1,6 @@
-# Sexta execução — proposta para decidir com o usuário
+# Sexta execução — proposta aprovada e implementada
+
+Atualização: o usuário escolheu a opção editorial e autorizou os demais itens. Implementação concluída junto da restauração da hero. Ver RODADA-6.md e docs/qa/round-six/report.json. O texto abaixo registra a proposta original.
 
 Quinta rodada é a execução atualmente autorizada. Os itens abaixo permanecem em planejamento.
 

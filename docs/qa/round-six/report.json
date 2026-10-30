@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "assets": [],
+  "hero": [
+    {
+      "width": 1440,
+      "height": 900,
+      "image": {
+        "x": 372.3125,
+        "y": 161.046875,
+        "width": 695.375,
+        "height": 678.953125,
+        "top": 161.046875,
+        "right": 1067.6875,
+        "bottom": 840,
+        "left": 372.3125
+      },
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "width": 1416,
+        "height": 828,
+        "top": 12,
+        "right": 1428,
+        "bottom": 840,
+        "left": 12
+      },
+      "overflow": false,
+      "bg": "rgb(209, 206, 200)",
+      "radius": "28px",
+      "grayscale": [
+        "grayscale(1)",
+        "grayscale(1)",
+        "grayscale(1)"
+      ],
+      "frontZ": "3"
+    },
+    {
+      "width": 1366,
+      "height": 600,
+      "image": {
+        "x": 376.46875,
+        "y": 143.40625,
+        "width": 613.0625,
+        "height": 598.59375,
+        "top": 143.40625,
+        "right": 989.53125,
+        "bottom": 742,
+        "left": 376.46875
+      },
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "width": 1342,
+        "height": 730,
+        "top": 12,
+        "right": 1354,
+        "bottom": 742,
+        "left": 12
+      },
+      "overflow": false,
+      "bg": "rgb(209, 206, 200)",
+      "radius": "28px",
+      "grayscale": [
+        "grayscale(1)",
+        "grayscale(1)",
+        "grayscale(1)"
+      ],
+      "frontZ": "3"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": -72.3125,
+        "y": 98,
+        "width": 534.625,
+        "height": 522,
+        "top": 98,
+        "right": 462.3125,
+        "bottom": 620,
+        "left": -72.3125
+      },
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "width": 374,
+        "height": 900,
+        "top": 8,
+        "right": 382,
+        "bottom": 908,
+        "left": 8
+      },
+      "overflow": false,
+      "bg": "rgb(209, 206, 200)",
+      "radius": "22px",
+      "grayscale": [
+        "grayscale(1)",
+        "grayscale(1)",
+        "grayscale(1)"
+      ],
+      "frontZ": "3"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "image": {
+        "x": -87.3125,
+        "y": 98,
+        "width": 534.625,
+        "height": 522,
+        "top": 98,
+        "right": 447.3125,
+        "bottom": 620,
+        "left": -87.3125
+      },
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "width": 344,
+        "height": 900,
+        "top": 8,
+        "right": 352,
+        "bottom": 908,
+        "left": 8
+      },
+      "overflow": false,
+      "bg": "rgb(209, 206, 200)",
+      "radius": "22px",
+      "grayscale": [
+        "grayscale(1)",
+        "grayscale(1)",
+        "grayscale(1)"
+      ],
+      "frontZ": "3"
+    }
+  ],
+  "waves": [
+    {
+      "top": 0.140625,
+      "svgTop": 0.140625
+    },
+    {
+      "top": 0,
+      "svgTop": 0
+    },
+    {
+      "top": 0,
+      "svgTop": 0
+    }
+  ],
+  "badge": {
+    "movedX": 73.7427978515625,
+    "verticalShift": 170.5899887084961,
+    "horizontalRange": 189.21435546875,
+    "released": "false"
+  },
+  "quotes": {
+    "buttons": true,
+    "keyboard": true,
+    "touchSwipe": true
+  },
+  "waveBoundaryClip": true
+}

@@ -13,6 +13,7 @@ files+=[root/'docs/qa/refinements/report.json']
 files+=[root/'docs/qa/round-two/report.json',root/'docs/qa/round-two/finish-review.md']
 files+=[root/'docs/qa/round-three/report.json',root/'docs/qa/round-four/report.json',root/'docs/qa/round-four/finish-review.md']
 files+=[root/'docs/hero-v5-prompt.json',root/'docs/qa/round-five/report.json',root/'docs/qa/round-five/finish-review.md']
+files+=[root/'docs/qa/round-six/report.json',root/'docs/qa/round-six/finish-review.md']
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as archive:
     for p in files:
         if p.is_file(): archive.write(p,p.relative_to(root).as_posix())

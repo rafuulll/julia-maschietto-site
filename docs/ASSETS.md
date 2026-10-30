@@ -41,3 +41,9 @@ Os depoimentos da parede animada são exemplos fictícios aprovados para apresen
 `hero-julia-v5.webp`: retrato com transparência gerado pelo image_gen integrado, preservando a identidade das fotografias fornecidas. Prompt integral e fontes em `docs/hero-v5-prompt.json`. Original gerado permanece no diretório de geração do Codex; a versão otimizada usada pelo site está no projeto. Não substitui a textura anterior do crachá.
 
 `hero-story-julia.webp`: versão WebP otimizada da foto original sorrindo com batom, sem retoque criativo adicional. Os outros stories usam o retrato já existente `about-julia.webp` e a capa real `nathalia-book.webp`. Molduras, barras, legendas e links são HTML/CSS; não são capturas autênticas de stories publicados.
+
+## Sexta execução — composição atual
+
+O retrato gerado na quinta rodada deixou de ser usado pela hero. `hero-julia-original-cutout.webp` deriva da fotografia anteriormente aprovada `hero-julia.webp`: máscara de fundo e enquadramento, exportação lossless, sem geração de rosto/corpo e com RGB facial conferido contra o arquivo anterior. A foto do crachá foi preservada.
+
+Os stories atuais são `hero-story-julia.webp` (sorrindo com batom), `hero-story-lipstick.webp` (original grdr 2025-08-01 170528.175.jpg, atrás) e `hero-story-profile.webp` (original grdr 2025-08-01 164250.415.jpg, à frente). Todas as fotografias ficam em preto e branco por CSS. Os frames são HTML/CSS/SVG decorativos, não possuem links e não simulam interações funcionais. Referência de moldura: https://snaplytics.io/tools/instagram-story-generator/.

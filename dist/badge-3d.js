@@ -96,6 +96,7 @@ export async function createBadge(host) {
   const curve=new THREE.CatmullRomCurve3(nodes.map(n=>n.p));
   const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),plane=new THREE.Plane(new THREE.Vector3(0,0,1),0);
   const point=new THREE.Vector3(),dragOffset=new THREE.Vector3(),dragTarget=new THREE.Vector3();
+  const dragVelocity=new THREE.Vector3(),previousTarget=new THREE.Vector3();
   const handle=host.querySelector('.badge-handle');
   let dragging=false,visible=false,raf=0,lastTime=0,lastEnergy=2,angle=-.045,angleVelocity=0,yaw=0;
   let pointerTilt=0,pointerPitch=0,downX=0,downY=0,moved=false;
@@ -114,18 +115,19 @@ export async function createBadge(host) {
     ray.setFromCamera(pointer,camera);
     if(!ray.intersectObject(card,true).length)return;
     event.preventDefault();dragging=true;moved=false;downX=event.clientX;downY=event.clientY;
-    dragOffset.copy(end.p).sub(point);dragTarget.copy(end.p);
+    dragOffset.copy(end.p).sub(point);dragTarget.copy(end.p);dragVelocity.set(0,0,0);
     handle.setPointerCapture(event.pointerId);handle.classList.add('is-dragging');host.dataset.dragging='true';wake();
   }
   function move(event){
     if(dragging){
       if(!projectPointer(event))return;
-      dragTarget.copy(point).add(dragOffset);
-      dragTarget.x=THREE.MathUtils.clamp(dragTarget.x,-.65,.65);
-      dragTarget.y=THREE.MathUtils.clamp(dragTarget.y,1.15,1.8);
-      const reach=dragTarget.clone().sub(anchor),max=link*(nodeCount-1)*1.16;
+      previousTarget.copy(dragTarget);dragTarget.copy(point).add(dragOffset);
+      dragTarget.x=1.8*Math.tanh(dragTarget.x/1.8);
+      dragTarget.y=2+1.4*Math.tanh((dragTarget.y-2)/1.4);
+      const reach=dragTarget.clone().sub(anchor),max=link*(nodeCount-1)*1.8;
       if(reach.length()>max)dragTarget.copy(anchor).add(reach.setLength(max));
       dragTarget.z=0;
+      dragVelocity.copy(dragTarget).sub(previousTarget).multiplyScalar(.55).clampLength(0,.20);
       moved ||= Math.hypot(event.clientX-downX,event.clientY-downY)>5;
       event.preventDefault();wake();
     }else{
@@ -138,7 +140,7 @@ export async function createBadge(host) {
     if(!dragging)return;
     dragging=false;handle.classList.remove('is-dragging');host.dataset.dragging='false';
     if(handle.hasPointerCapture(event.pointerId))handle.releasePointerCapture(event.pointerId);
-    if(!moved)angleVelocity+=.22;
+    if(!reduce.matches){end.old.copy(end.p).sub(dragVelocity);angleVelocity+=moved?dragVelocity.x*3:.6;}
     wake();
   }
   handle.addEventListener('pointerdown',begin);handle.addEventListener('pointermove',move);
@@ -148,8 +150,8 @@ export async function createBadge(host) {
     if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' ','Home','Escape'].includes(event.key))return;
     event.preventDefault();
     if(event.key==='Home'||event.key==='Escape'){nodes.forEach((n,i)=>{n.p.copy(anchor).add(new THREE.Vector3(0,-link*i,0));n.old.copy(n.p);});angle=0;angleVelocity=0;}
-    else if(event.key==='ArrowLeft'||event.key==='ArrowRight'){end.old.x+=(event.key==='ArrowLeft'?.025:-.025);angleVelocity+=(event.key==='ArrowLeft'?-.22:.22);}
-    else angleVelocity+=.28;
+    else if(event.key==='ArrowLeft'||event.key==='ArrowRight'){end.old.x+=(event.key==='ArrowLeft'?.06:-.06);angleVelocity+=(event.key==='ArrowLeft'?-.6:.6);}
+    else angleVelocity+=.65;
     wake();
   });
   function simulate(dt){
@@ -158,7 +160,7 @@ export async function createBadge(host) {
       nodes[0].p.copy(anchor);nodes[0].old.copy(anchor);
       for(let i=1;i<nodeCount;i++){
         const n=nodes[i];if(dragging&&i===nodeCount-1){n.old.copy(n.p);n.p.copy(dragTarget);continue;}
-        vector.copy(n.p).sub(n.old).multiplyScalar(.982);vector.clampLength(0,.14);
+        vector.copy(n.p).sub(n.old).multiplyScalar(.987);vector.clampLength(0,.20);
         n.old.copy(n.p);n.p.add(vector);n.p.y-=14*h*h;
       }
       const stretch=dragging?Math.max(1,dragTarget.distanceTo(anchor)/(link*(nodeCount-1))):1;
@@ -173,15 +175,22 @@ export async function createBadge(host) {
         nodes[0].p.copy(anchor);if(dragging)end.p.copy(dragTarget);
       }
     }
-    end.p.x=THREE.MathUtils.clamp(end.p.x,-.68,.68);
-    end.p.y=THREE.MathUtils.clamp(end.p.y,1.15,1.8);
     vector.copy(end.p).sub(nodes.at(-2).p);
-    const desired=Math.max(-.13,Math.min(.13,Math.atan2(vector.x,-vector.y)*.3));
-    angleVelocity+=(desired-angle)*25*dt;angleVelocity*=Math.exp(-5*dt);angle+=angleVelocity*dt;
+    const desired=Math.max(-.32,Math.min(.32,Math.atan2(vector.x,-vector.y)*.55));
+    angleVelocity+=(desired-angle)*22*dt;angleVelocity*=Math.exp(-3.8*dt);angle+=angleVelocity*dt;
     yaw+=(pointerTilt+Math.max(-.32,Math.min(.32,(end.p.x-end.old.x)*9))-yaw)*Math.min(1,dt*7);
-    angle=THREE.MathUtils.clamp(angle,-.16,.16);
+    angle=THREE.MathUtils.clamp(angle,-.38,.38);
     card.rotation.set(pointerPitch,yaw,angle);
     card.position.copy(end.p).sub(attachOffset.clone().applyEuler(card.rotation));
+    // Keep the projected card in the available view without a tiny fixed drag box.
+    const viewHeight=camera.position.z*2*Math.tan(THREE.MathUtils.degToRad(camera.fov/2));
+    const halfX=Math.abs(Math.cos(angle))*width/2+Math.abs(Math.sin(angle))*height/2+.18;
+    const halfY=Math.abs(Math.cos(angle))*height/2+Math.abs(Math.sin(angle))*width/2+.18;
+    const limitX=Math.max(.1,viewHeight*camera.aspect/2-halfX);
+    const safeX=THREE.MathUtils.clamp(card.position.x,-limitX,limitX);
+    const safeY=THREE.MathUtils.clamp(card.position.y,.35-viewHeight/2+halfY,.35+viewHeight/2-halfY);
+    end.p.x+=safeX-card.position.x;end.p.y+=safeY-card.position.y;
+    card.position.x=safeX;card.position.y=safeY;
     let energy=Math.abs(angleVelocity)+Math.abs(angle-desired)+Math.abs(yaw-pointerTilt);
     nodes.forEach(n=>energy+=n.p.distanceTo(n.old));return energy;
   }
