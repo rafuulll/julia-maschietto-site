@@ -1,4 +1,6 @@
-# Quinta execução — direção proposta, sem gerar ou alterar a hero
+# Quinta execução — direção aprovada e implementada
+
+Atualização: o usuário aprovou a proposta. Novo retrato gerado com GPT Images, hero montada em camadas e verificada em desktop/mobile. Prompt e origem em hero-v5-prompt.json; ver RODADA-5.md. A sexta execução permanece em planejamento.
 
 Referência: ref.png enviada pelo usuário. Extrair a composição de retrato principal com stories secundários; preservar fundo claro e universo visual atual da Julia.
 

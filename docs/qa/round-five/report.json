@@ -1,0 +1,187 @@
+{
+  "errors": [],
+  "assets": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "width": 1416,
+        "height": 864,
+        "top": 12,
+        "right": 1428,
+        "bottom": 876,
+        "left": 12
+      },
+      "portrait": {
+        "x": 501.28125,
+        "y": 112,
+        "width": 437.4375,
+        "height": 546.609375,
+        "top": 112,
+        "right": 938.71875,
+        "bottom": 658.609375,
+        "left": 501.28125
+      },
+      "copy": {
+        "x": 60,
+        "y": 686.609375,
+        "width": 1320,
+        "height": 145.390625,
+        "top": 686.609375,
+        "right": 1380,
+        "bottom": 832,
+        "left": 60
+      },
+      "overflow": false,
+      "storyCount": 3
+    },
+    {
+      "width": 1366,
+      "height": 600,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "width": 1342,
+        "height": 740,
+        "top": 12,
+        "right": 1354,
+        "bottom": 752,
+        "left": 12
+      },
+      "portrait": {
+        "x": 513.890625,
+        "y": 112,
+        "width": 338.203125,
+        "height": 422.609375,
+        "top": 112,
+        "right": 852.09375,
+        "bottom": 534.609375,
+        "left": 513.890625
+      },
+      "copy": {
+        "x": 60,
+        "y": 562.609375,
+        "width": 1246,
+        "height": 145.390625,
+        "top": 562.609375,
+        "right": 1306,
+        "bottom": 708,
+        "left": 60
+      },
+      "overflow": false,
+      "storyCount": 3
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "width": 1000,
+        "height": 850,
+        "top": 12,
+        "right": 1012,
+        "bottom": 862,
+        "left": 12
+      },
+      "portrait": {
+        "x": 306.375,
+        "y": 107,
+        "width": 411.234375,
+        "height": 513.875,
+        "top": 107,
+        "right": 717.609375,
+        "bottom": 620.875,
+        "left": 306.375
+      },
+      "copy": {
+        "x": 44,
+        "y": 642.875,
+        "width": 936,
+        "height": 184.125,
+        "top": 642.875,
+        "right": 980,
+        "bottom": 827,
+        "left": 44
+      },
+      "overflow": false,
+      "storyCount": 2
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "width": 374,
+        "height": 850.65625,
+        "top": 8,
+        "right": 382,
+        "bottom": 858.65625,
+        "left": 8
+      },
+      "portrait": {
+        "x": 40.15625,
+        "y": 106,
+        "width": 309.6875,
+        "height": 390,
+        "top": 106,
+        "right": 349.84375,
+        "bottom": 496,
+        "left": 40.15625
+      },
+      "copy": {
+        "x": 32,
+        "y": 518,
+        "width": 326,
+        "height": 308.65625,
+        "top": 518,
+        "right": 358,
+        "bottom": 826.65625,
+        "left": 32
+      },
+      "overflow": false,
+      "storyCount": 2
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "width": 344,
+        "height": 813.71875,
+        "top": 8,
+        "right": 352,
+        "bottom": 821.71875,
+        "left": 8
+      },
+      "portrait": {
+        "x": 35.953125,
+        "y": 106,
+        "width": 288.09375,
+        "height": 360,
+        "top": 106,
+        "right": 324.046875,
+        "bottom": 466,
+        "left": 35.953125
+      },
+      "copy": {
+        "x": 28,
+        "y": 488,
+        "width": 304,
+        "height": 301.71875,
+        "top": 488,
+        "right": 332,
+        "bottom": 789.71875,
+        "left": 28
+      },
+      "overflow": false,
+      "storyCount": 2
+    }
+  ],
+  "tabletSimplificationVerified": true
+}

@@ -1,0 +1,11 @@
+{
+  "mode": "built-in image_gen",
+  "use_case": "identity-preserve",
+  "prompt": "Edit target: the first photograph of Julia Maschietto (front-facing, black shirt, red lipstick). Second reference is the same woman's smile and identity. Create a premium editorial studio portrait cutout for her own professional brand strategy website. Preserve her exact facial identity, green-hazel eyes, face shape, natural asymmetry, skin texture, wavy brown hair with honey highlights, red lipstick, black shirt and delicate gold pendant. Reframe and extend to a relaxed standing waist-up portrait, both shoulders and complete hair visible, hands naturally resting together at waist, believable anatomy. Straight-on eye-level camera, calm confident expression with a tiny natural smile, not a different model. Person exactly centered horizontally, generous transparent headroom 12% and side breathing room, include down to upper hips, no tight close-up. Diffuse professional studio lighting, neutral white-balanced skin, clean refined retouch without plastic smoothing, softly lit hair edges. Genuine transparent background, precise clean alpha hair edges, NO white matte outline. Output a single high-resolution vertical 4:5 photographic portrait asset. No text, lettering, UI, frames, stories, props, flares or decorative effects. We will compose website story frames separately in code.",
+  "source_images": [
+    "grdr 2025-08-01 163616.323.jpg",
+    "grdr 2025-08-01 170147.522.jpg"
+  ],
+  "output": "dist/assets/hero-julia-v5.webp",
+  "note": "Generated portrait with transparent alpha; resized/compressed only for delivery. Existing source images and prior badge portrait retained."
+}

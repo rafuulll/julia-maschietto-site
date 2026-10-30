@@ -65,4 +65,4 @@ Esta entrega inclui o crachá 3D local (Three.js 0.180.0, sem React), rolagem la
 
 `dist/second-round.js`, `dist/second-round.css` e `dist/badge-3d.js` implementam essa rodada. O módulo 3D é carregado próximo do Sobre; requer um servidor HTTP/HTTPS para importar os módulos locais. A alternativa estática funciona quando WebGL não estiver disponível. As bibliotecas locais já acompanham `dist/assets/vendor`; não é necessário instalar dependências ou compilar.
 
-As sugestões para a terceira execução constam de `docs/PLANO-RODADA-3.md` e ainda não foram aplicadas à interface.
+A terceira e a quarta execuções foram aplicadas. A quinta atualiza a hero com um retrato central gerado por edição no GPT Images, fundo claro e stories independentes: três no desktop amplo e dois em telas menores. O retrato do crachá foi preservado. Veja `docs/RODADA-5.md`, `docs/hero-v5-prompt.json` e `docs/qa/round-five/report.json`. A sexta permanece em planejamento em `docs/PLANO-RODADA-6.md`.

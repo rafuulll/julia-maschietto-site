@@ -35,3 +35,9 @@ Licenças em `dist/assets/licenses/`. As fotografias e materiais enviados contin
 O retrato já tratado `hero-julia.webp` também é a textura fotográfica do crachá 3D, recortada em tempo de execução. O cartão e o cordão são geometria WebGL, sem novo retrato gerado e sem React. Three.js 0.180.0 é distribuído em `dist/assets/vendor`, com licença MIT em `dist/assets/licenses/Three-MIT.txt`. A interação toma o React Bits Lanyard como referência, com implementação própria para esta página.
 
 Os depoimentos da parede animada são exemplos fictícios aprovados para apresentação e identificados no bloco e em cada cartão; não são novos relatos ou provas de clientes reais. Os arquivos das evidências originais continuam em assets e no histórico.
+
+## Quinta execução
+
+`hero-julia-v5.webp`: retrato com transparência gerado pelo image_gen integrado, preservando a identidade das fotografias fornecidas. Prompt integral e fontes em `docs/hero-v5-prompt.json`. Original gerado permanece no diretório de geração do Codex; a versão otimizada usada pelo site está no projeto. Não substitui a textura anterior do crachá.
+
+`hero-story-julia.webp`: versão WebP otimizada da foto original sorrindo com batom, sem retoque criativo adicional. Os outros stories usam o retrato já existente `about-julia.webp` e a capa real `nathalia-book.webp`. Molduras, barras, legendas e links são HTML/CSS; não são capturas autênticas de stories publicados.

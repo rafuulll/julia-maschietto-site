@@ -231,3 +231,7 @@ Service icons translate -4px and rotate -3 degrees on hover/focus, returning ove
 - **Don't** hide essential outcomes behind hover-only interactions.
 - **Don't** bake semantic headings or actions into photographic assets.
 - **Don't** treat the current hero composition as a mandatory layout for every future page.
+
+### Approved fifth-execution hero
+
+The owner approved a local composition change: centered waist-up studio portrait over warm white #faf9f6, with three independent story frames on wide desktop and two at widths of 1100px or less. Black/wine HTML headings and wine circular-arrow CTA replace the former white-on-dark hero copy. Keep the selected type pair, editorial rhythm, pill navigation and established control geometry. Transparent portrait asset uses contain with no zoom; static framing preserves headroom. Stories use a single short entry and tiny pointer displacement, with a static reduced-motion state. Other page sections retain their existing composition. Sixth-round changes remain a plan.

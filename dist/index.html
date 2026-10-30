@@ -13,15 +13,17 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" as="font" href="assets/fonts/manrope.ttf" type="font/ttf" crossorigin>
   <link rel="preload" as="font" href="assets/fonts/instrument-serif-italic.ttf" type="font/ttf" crossorigin>
-  <link rel="preload" as="image" href="assets/hero-julia.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-julia-v5.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css?v=20261030-round2">
   <link rel="stylesheet" href="second-round.css?v=20261030-round4">
   <link rel="stylesheet" href="third-round.css?v=20261030-round3">
   <link rel="stylesheet" href="fourth-round.css?v=20261030-round4">
+  <link rel="stylesheet" href="fifth-round.css?v=20261030-round5">
   <script src="assets/lenis.min.js" defer></script>
   <script src="config.js" defer></script>
   <script src="app.js?v=20261030-2" defer></script>
   <script type="module" src="second-round.js?v=20261030-round4"></script>
+  <script src="fifth-round.js?v=20261030-round5" defer></script>
 </head>
 <body>
 <!-- THESIS: Julia's positioning becomes visible communication, in the explicitly selected Leticia Bassan grammar.
@@ -45,8 +47,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </nav>
 <main id="conteudo">
   <section class="hero outer-frame" id="inicio" aria-labelledby="hero-title">
-    <img class="hero-image" src="assets/hero-julia.webp" width="1586" height="992" fetchpriority="high" alt="Julia Maschietto, com batom vermelho e roupa preta, em retrato editorial.">
-    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-visual">
+      <a class="hero-story story-person" href="#sobre" aria-label="Conheça Julia, além dos projetos">
+        <figure><div class="story-chrome" aria-hidden="true"><div class="story-bars"><i></i><i></i><i></i></div><span>Julia Maschietto</span></div><img src="assets/hero-story-julia.webp" width="667" height="1000" alt="Julia sorrindo com seu batom vermelho."><figcaption>Além dos projetos <span class="icon i-up" aria-hidden="true"></span></figcaption></figure>
+      </a>
+      <a class="hero-story story-work" href="#sobre" aria-label="Conheça a forma de trabalhar de Julia">
+        <figure><div class="story-chrome" aria-hidden="true"><div class="story-bars"><i></i><i></i><i></i></div><span>Julia Maschietto</span></div><img src="assets/about-julia.webp" width="1086" height="1448" alt="Julia trabalhando no notebook."><figcaption>Nos bastidores <span class="icon i-up" aria-hidden="true"></span></figcaption></figure>
+      </a>
+      <a class="hero-story story-project" href="#projetos" aria-label="Ver os projetos e resultados de Julia">
+        <figure><div class="story-chrome" aria-hidden="true"><div class="story-bars"><i></i><i></i><i></i></div><span>Do conceito à entrega</span></div><img src="assets/nathalia-book.webp" width="1600" height="900" alt="Capa do projeto de estratégia de marca da Dra. Nathalia."><figcaption>Estratégia em prática <span class="icon i-up" aria-hidden="true"></span></figcaption></figure>
+      </a>
+      <div class="hero-portrait"><img class="hero-image" src="assets/hero-julia-v5.webp" width="1136" height="1400" fetchpriority="high" alt="Retrato editorial de Julia Maschietto, centralizada, com roupa preta e batom vermelho."></div>
+    </div>
     <div class="hero-bottom">
       <h1 id="hero-title" data-split>Estratégia para posicionar.<br> <em>Criatividade para comunicar.</em></h1>
       <div class="hero-aside">
