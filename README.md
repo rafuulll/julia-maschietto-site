@@ -14,7 +14,7 @@ Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência
 
 ## O que está implementado
 
-- Retrato editorial tratado com GPT Images e recorte responsivo.
+- Hero raster com retrato original do PSD fornecido, stories incorporados e versões para desktop, tablet e celular.
 - Manrope e Instrument Serif Italic hospedadas localmente.
 - Menu flutuante, menu móvel, botões com texto deslizante e seta circular.
 - Entrada de palavras, revelação do manifesto conforme a rolagem e navegação suave no desktop.
@@ -70,3 +70,5 @@ A sexta execução restaura a fotografia aprovada anteriormente na hero, fundo c
 A sétima execução refina a hero e seus stories, troca os depoimentos por cartões em carrossel e libera as ondas após o percurso lateral. Inclui revisão de celulares, tablets, telas baixas e monitores largos, com CTAs compactos e áreas de toque ampliadas. `dist/seventh-round.css` e `dist/testimonials-carousel.{css,js}` controlam os refinamentos atuais. Veja `docs/RODADA-7.md` e `docs/qa/round-seven/report.json`; as rodadas anteriores documentam o histórico.
 
 A oitava execução restaura Bahari como destaque, mantém os outros cinco cases expansíveis, adota uma sequência vertical com progresso nos aparelhos sem pin e corrige a passagem pela seção dos depoimentos. Tags voltam às quatro pontas sem sobrepor o texto. A composição raster desktop da hero foi criada apenas para aprovação e não está integrada. Veja `docs/RODADA-8.md`; `dist/eighth-round.css` contém os novos refinamentos.
+
+A nona execução aplica a hero aprovada com o rosto do PSD original, sem nova geração facial. Acrescenta a ordem texto/crachá no mobile, duas ondas discretas, fotografia e vídeo reais da Bahari, capturas de Júlia Nunes e ampliação das evidências. Corrige a imagem de Bruna e elimina o fade dos depoimentos. Veja `docs/RODADA-9.md`, `docs/media-round9.json` e `docs/qa/round-nine/report.json`. `dist/ninth-round.css` contém os refinamentos atuais.

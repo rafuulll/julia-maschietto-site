@@ -47,3 +47,11 @@ Os depoimentos da parede animada são exemplos fictícios aprovados para apresen
 O retrato gerado na quinta rodada deixou de ser usado pela hero. `hero-julia-original-cutout.webp` deriva da fotografia anteriormente aprovada `hero-julia.webp`: máscara de fundo e enquadramento, exportação lossless, sem geração de rosto/corpo e com RGB facial conferido contra o arquivo anterior. A foto do crachá foi preservada.
 
 Os stories atuais são `hero-story-julia.webp` (sorrindo com batom), `hero-story-lipstick.webp` (original grdr 2025-08-01 170528.175.jpg, atrás) e `hero-story-profile.webp` (original grdr 2025-08-01 164250.415.jpg, à frente). Todas as fotografias ficam em preto e branco por CSS. Os frames são HTML/CSS/SVG decorativos, não possuem links e não simulam interações funcionais. Referência de moldura: https://snaplytics.io/tools/instagram-story-generator/.
+
+## Nona execução — fontes atuais
+
+A hero usa `hero-desktop-v9.webp`, `hero-tablet-v9.webp` e `hero-mobile-v9.webp`. Retrato exportado de `Julia-recorte.psd`, fornecido pelo usuário; o RGB do recorte original é preservado antes da reamostragem/compressão. Somente alpha da borda e da base foi tratado. Stories raster reaproveitados da proposta aprovada da oitava rodada, documentada em `hero-desktop-round8-prompt.json`. Não houve nova geração facial.
+
+Mídia real da pasta `arquivos de midia`: `IMG_3357.JPG.jpeg` → `bahari-campaign-v9.webp`; `IMG_3358.PNG` → `bahari-story-v9.webp`; `IMG_3363.MOV` → vídeo `bahari-founder-v9.mp4` e poster; `IMG_3368.PNG` → `julia-nunes-results-v9.webp`; `IMG_3372.PNG` → `julia-nunes-reel-v9.webp`. Somente redimensionamento/compressão, sem retocar pessoas ou números. O vídeo mantém a duração completa e áudio.
+
+Bruna: perfil correto extraído da página8/índice3 e resultado3,4mil/1mil da página9/índice4 (índices zero-based do portfólio PDF fornecido), em `bruna-profile-v9.webp` e `bruna-result-v9.webp`. A imagem KR InsightFlow deixou de ser usada no case e na prévia. `bahari-cover.webp` e antigos retratos gerados permanecem apenas no histórico/arquivos legados; não são a abertura atual da Bahari ou o retrato atual da hero.

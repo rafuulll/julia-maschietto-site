@@ -123,6 +123,21 @@
     image.alt = currentBook.alt;
     openDialog($('#image-dialog'), event.currentTarget);
   });
+  $$('[data-open-media]').forEach(button => button.addEventListener('click', () => {
+    const image = $('#image-dialog img');
+    image.src = button.dataset.openMedia;
+    image.alt = button.dataset.mediaAlt;
+    openDialog($('#image-dialog'), button);
+  }));
+  $$('.case-media-item video').forEach(video => {
+    new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) video.pause();
+    }).observe(video);
+    video.closest('details')?.addEventListener('toggle', event => {
+      if (!event.target.open) video.pause();
+    });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); });
+  });
 
   // Split only text nodes so emphasis, breaks and accessible heading names survive.
   function wrapWords(element, className, inner = false) {

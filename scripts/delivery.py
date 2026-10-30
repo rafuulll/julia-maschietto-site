@@ -17,6 +17,8 @@ files+=[root/'docs/qa/round-six/report.json',root/'docs/qa/round-six/finish-revi
 files+=list((root/'docs/qa/round-seven').glob('*.json'))+list((root/'docs/qa/round-seven').glob('*.md'))
 files+=list((root/'docs/qa/round-eight').glob('*.json'))+list((root/'docs/qa/round-eight').glob('*.md'))
 files+=[root/'docs/hero-desktop-round8-prompt.json']
+files+=list((root/'docs/qa/round-nine').glob('*.json'))+list((root/'docs/qa/round-nine').glob('*.md'))
+files+=[root/'docs/media-round9.json']
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as archive:
     for p in files:
         if p.is_file(): archive.write(p,p.relative_to(root).as_posix())

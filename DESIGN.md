@@ -259,3 +259,13 @@ The baseline process is a single vertical column with a2px wine progress line,8p
 The testimonial rail no longer opts out of vertical wheel handling. Native horizontal swipe and normal vertical scrolling coexist; fade width is12–28px. Concept tags reserve four corner zones outside an88px top/bottom text inset (78px on mobile); mobile corners may bleed modestly but never overlap the heading. Drift amplitudes are bounded to3/5px mobile and6/8px desktop.
 
 The new imagegen desktop composition is a separate approval proposal, not the current live hero or a responsive template. Keep the seventh-round live hero until the user approves the raster direction.
+
+### Ninth execution — approved photographic implementation
+
+The raster direction is approved and now uses the portrait exported from the user's native PSD, with no new face generation. Supply three flattened compositions through picture, keeping semantic white copy separate. Warm-gray background, lower charcoal overlay and two rear/one front story frames persist. Portrait matte fades only near the base; the face is untouched. Local overlay recipe uses rgba(14,10,12) with opacity0.10/0.12 through0.76/0.86/0.98 according to viewport. These are photographic readability overlays, not new accents.
+
+Biography comes before the badge on mobile/tablet up to1000px, with desktop grid retaining photograph left. Add two static pale-rose52px wave strokes at the outside edges of Services and Testimonials, opacity0.42/0.36; preserve existing Process/About art. SVG overflow is visible; section overflow clips only at the viewport edge.
+
+Bahari now leads with the actual campaign photograph and a compact native video/story gallery inside its expandable evidence. Vertical screenshots cap at300px desktop/280px mobile, with separate compact gallery heights and a dialog for reading the full capture. Media frames use a near-ink #101416 background,12px corners, captions12px desktop/11px mobile, and native video controls. Bruna's horizontal evidence balances its short copy. Júlia Nunes uses paired compact evidence thumbnails.
+
+Testimonials have no fade masks or gradient edge overlays. Wider1120px rail window shows clean white cards with ordinary clipping and native scroll-snap. Preserve arrows, keyboard access and vertical page scrolling. Earlier notes about testimonial fades and pending hero approval are historical.

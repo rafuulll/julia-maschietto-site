@@ -1,0 +1,62 @@
+[
+  {
+    "source": "IMG_3357.JPG.jpeg",
+    "asset": "bahari-campaign-v9.webp",
+    "size": [
+      1800,
+      2400
+    ]
+  },
+  {
+    "source": "IMG_3361.JPG.jpeg",
+    "asset": "bahari-film-poster-v9.webp",
+    "size": [
+      900,
+      1600
+    ]
+  },
+  {
+    "source": "IMG_3358.PNG",
+    "asset": "bahari-story-v9.webp",
+    "size": [
+      800,
+      1731
+    ]
+  },
+  {
+    "source": "IMG_3368.PNG",
+    "asset": "julia-nunes-results-v9.webp",
+    "size": [
+      900,
+      1955
+    ]
+  },
+  {
+    "source": "IMG_3372.PNG",
+    "asset": "julia-nunes-reel-v9.webp",
+    "size": [
+      900,
+      1955
+    ]
+  },
+  {
+    "source": "IMG_3377.PNG",
+    "asset": "bahari-results-v9.webp",
+    "size": [
+      900,
+      1948
+    ]
+  },
+  {
+    "portraitSource": "Julia-recorte.psd",
+    "nativeCrop": [
+      801,
+      1248,
+      2072,
+      4033
+    ],
+    "portraitRGBUnchanged": true,
+    "newFaceGeneration": false,
+    "originalPortraitSHA256": "a79dde4b172c868b72e93bc976ff8f11d3334652bd84fac0a519e7caf8f4b764"
+  }
+]
