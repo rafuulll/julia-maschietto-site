@@ -20,7 +20,7 @@ Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência
 - Entrada de palavras, revelação do manifesto conforme a rolagem e navegação suave no desktop.
 - Cases com resultados visíveis, detalhes expansíveis e prévia de imagem no mouse.
 - Materiais reais em um mockup de notebook, seleção por teclado e ampliação.
-- Sobre Julia com crachá 3D arrastável; depoimentos ilustrativos em colunas animadas; processo lateral com progresso e FAQ.
+- Sobre Julia com crachá 3D arrastável; carrossel de depoimentos ilustrativos; processo lateral com progresso e FAQ.
 - Rodapé em vídeo leve, controle de pausa e respeito à preferência por movimento reduzido.
 - Contato em modo de demonstração: abre a mensagem e permite copiá-la; não envia mensagens.
 
@@ -66,3 +66,5 @@ Esta entrega inclui o crachá 3D local (Three.js 0.180.0, sem React), rolagem la
 `dist/second-round.js`, `dist/second-round.css` e `dist/badge-3d.js` implementam essa rodada. O módulo 3D é carregado próximo do Sobre; requer um servidor HTTP/HTTPS para importar os módulos locais. A alternativa estática funciona quando WebGL não estiver disponível. As bibliotecas locais já acompanham `dist/assets/vendor`; não é necessário instalar dependências ou compilar.
 
 A sexta execução restaura a fotografia aprovada anteriormente na hero, fundo cinza quente, fade escuro e três stories monocromáticos decorativos. Substitui a parede de relatos por depoimentos editoriais com seleção manual, amplia o arraste do crachá e fixa as ondas durante o processo. Veja `docs/RODADA-6.md` e `docs/qa/round-six/report.json`. A quinta permanece documentada como versão anterior, sem controlar a composição atual.
+
+A sétima execução refina a hero e seus stories, troca os depoimentos por cartões em carrossel e libera as ondas após o percurso lateral. Inclui revisão de celulares, tablets, telas baixas e monitores largos, com CTAs compactos e áreas de toque ampliadas. `dist/seventh-round.css` e `dist/testimonials-carousel.{css,js}` controlam os refinamentos atuais. Veja `docs/RODADA-7.md` e `docs/qa/round-seven/report.json`; as rodadas anteriores documentam o histórico.

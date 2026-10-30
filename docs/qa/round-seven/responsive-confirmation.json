@@ -1,0 +1,2024 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "w": 320,
+      "h": 568,
+      "documentWidth": 320,
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "w": 304,
+        "h": 720.125,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 28,
+        "y": 386,
+        "w": 264,
+        "h": 149.734375,
+        "font": "30px",
+        "maxW": "900px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 28,
+        "y": 555.734375,
+        "w": 264,
+        "h": 140.390625,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 28,
+        "y": 555.734375,
+        "w": 264,
+        "h": 71.390625,
+        "font": "14px",
+        "maxW": "341.6px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 46.109375,
+        "y": 14,
+        "w": 227.78125,
+        "h": 54,
+        "font": "16px",
+        "maxW": "296px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 52.109375,
+        "y": 19,
+        "w": 153.78125,
+        "h": 44,
+        "font": "12px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 28,
+          "y": 648.125,
+          "w": 151.796875,
+          "h": 48,
+          "font": "11.5px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 187.796875,
+          "y": 648.125,
+          "w": 90.984375,
+          "h": 48,
+          "font": "11.5px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 79,
+          "y": 1931.936279296875,
+          "w": 178.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 79,
+          "y": 2330.748779296875,
+          "w": 174.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 79,
+          "y": 2702.311279296875,
+          "w": 162.390625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 22,
+          "y": 4723.9208984375,
+          "w": 89.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 117.5,
+          "y": 4723.9208984375,
+          "w": 98.015625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 22,
+          "y": 4773.9208984375,
+          "w": 101.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 90.640625,
+          "y": 5195.2646484375,
+          "w": 138.703125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 22,
+          "y": 7205.8115234375,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 109,
+          "y": 7540.265625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 165,
+          "y": 7540.265625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 22,
+          "y": 8272.640625,
+          "w": 127.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 30,
+          "y": 9403.296875,
+          "w": 66.78125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 30,
+          "y": 9447.296875,
+          "w": 107.765625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 30,
+          "y": 9549.171875,
+          "w": 119.53125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 30,
+          "y": 9593.171875,
+          "w": 132.484375,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 30,
+          "y": 9637.171875,
+          "w": 92.40625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 186.484375,
+          "y": 9549.171875,
+          "w": 127.46875,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 186.484375,
+          "y": 9593.171875,
+          "w": 65.203125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 186.484375,
+          "y": 9637.171875,
+          "w": 131.515625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "menu": {
+        "overflowY": "auto",
+        "clientH": 568,
+        "scrollH": 568,
+        "scrollTop": 0,
+        "lastTop": 356.5625,
+        "lastBottom": 444.75,
+        "lastReachable": true
+      },
+      "expandedDocumentWidth": 320,
+      "contactDialog": {
+        "width": 277.6976318359375,
+        "height": 503.3885498046875,
+        "clientH": 511,
+        "scrollH": 621,
+        "closeW": 43.3287353515625
+      }
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "documentWidth": 390,
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "w": 374,
+        "h": 790.03125,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 32,
+        "y": 446,
+        "w": 326,
+        "h": 159.640625,
+        "font": "31.98px",
+        "maxW": "900px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 32,
+        "y": 625.640625,
+        "w": 326,
+        "h": 140.390625,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 32,
+        "y": 625.640625,
+        "w": 326,
+        "h": 71.390625,
+        "font": "14px",
+        "maxW": "341.6px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 81.109375,
+        "y": 14,
+        "w": 227.78125,
+        "h": 54,
+        "font": "16px",
+        "maxW": "366px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 87.109375,
+        "y": 19,
+        "w": 153.78125,
+        "h": 44,
+        "font": "12px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 32,
+          "y": 718.03125,
+          "w": 161.78125,
+          "h": 48,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 202.78125,
+          "y": 718.03125,
+          "w": 101.8125,
+          "h": 48,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 79,
+          "y": 1836.1875,
+          "w": 178.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 79,
+          "y": 2208.75,
+          "w": 174.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 79,
+          "y": 2555.5625,
+          "w": 162.390625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 22,
+          "y": 4419.5,
+          "w": 89.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 117.5,
+          "y": 4419.5,
+          "w": 98.015625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 221.515625,
+          "y": 4419.5,
+          "w": 101.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 125.640625,
+          "y": 4895.46875,
+          "w": 138.703125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 22,
+          "y": 6804.171875,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 144,
+          "y": 7138.625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 200,
+          "y": 7138.625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 22,
+          "y": 7866.875,
+          "w": 127.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 30,
+          "y": 8910.453125,
+          "w": 66.78125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 30,
+          "y": 8954.453125,
+          "w": 107.765625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 30,
+          "y": 9056.328125,
+          "w": 119.53125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 30,
+          "y": 9100.328125,
+          "w": 132.484375,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 30,
+          "y": 9144.328125,
+          "w": 92.40625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 207,
+          "y": 9056.328125,
+          "w": 127.46875,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 207,
+          "y": 9100.328125,
+          "w": 65.203125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 207,
+          "y": 9144.328125,
+          "w": 131.515625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "menu": {
+        "overflowY": "auto",
+        "clientH": 844,
+        "scrollH": 844,
+        "scrollTop": 0,
+        "lastTop": 356.5625,
+        "lastBottom": 444.75,
+        "lastReachable": true
+      },
+      "expandedDocumentWidth": 390,
+      "contactDialog": {
+        "width": 344.96002197265625,
+        "height": 608.9781494140625,
+        "clientH": 621,
+        "scrollH": 621,
+        "closeW": 43.120025634765625
+      }
+    },
+    {
+      "w": 740,
+      "h": 360,
+      "documentWidth": 740,
+      "hero": {
+        "x": 8,
+        "y": 8,
+        "w": 724,
+        "h": 566.359375,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 36,
+        "y": 386,
+        "w": 668,
+        "h": 88.359375,
+        "font": "34px",
+        "maxW": "900px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 36,
+        "y": 496.359375,
+        "w": 668,
+        "h": 48,
+        "font": "16px",
+        "maxW": "none",
+        "display": "grid"
+      },
+      "copy": {
+        "x": 36,
+        "y": 498.265625,
+        "w": 375.40625,
+        "h": 44.1875,
+        "font": "13px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "nav": {
+        "x": 256.109375,
+        "y": 14,
+        "w": 227.78125,
+        "h": 54,
+        "font": "16px",
+        "maxW": "716px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 262.109375,
+        "y": 19,
+        "w": 153.78125,
+        "h": 44,
+        "font": "12px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 431.40625,
+          "y": 496.359375,
+          "w": 161.78125,
+          "h": 48,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 602.1875,
+          "y": 496.359375,
+          "w": 101.8125,
+          "h": 48,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 79,
+          "y": 1520.21875,
+          "w": 178.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 79,
+          "y": 1867.03125,
+          "w": 174.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 79,
+          "y": 2213.84375,
+          "w": 162.390625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 22,
+          "y": 4037.140625,
+          "w": 89.5,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 117.5,
+          "y": 4037.140625,
+          "w": 98.015625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 221.515625,
+          "y": 4037.140625,
+          "w": 101.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 300.640625,
+          "y": 4786.203125,
+          "w": 138.703125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 22,
+          "y": 6356.046875,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 319,
+          "y": 6714.5,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 375,
+          "y": 6714.5,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 22,
+          "y": 7431.875,
+          "w": 127.5625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 30,
+          "y": 8412.390625,
+          "w": 66.78125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 30,
+          "y": 8456.390625,
+          "w": 107.765625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 30,
+          "y": 8558.265625,
+          "w": 119.53125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 30,
+          "y": 8602.265625,
+          "w": 132.484375,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 30,
+          "y": 8646.265625,
+          "w": 92.40625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 382,
+          "y": 8558.265625,
+          "w": 127.46875,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 382,
+          "y": 8602.265625,
+          "w": 65.203125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 382,
+          "y": 8646.265625,
+          "w": 131.515625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "menu": {
+        "overflowY": "auto",
+        "clientH": 360,
+        "scrollH": 439,
+        "scrollTop": 79,
+        "lastTop": 202.78125,
+        "lastBottom": 269.375,
+        "lastReachable": true
+      },
+      "expandedDocumentWidth": 740,
+      "contactDialog": {
+        "width": 541.6224365234375,
+        "height": 319.0648498535156,
+        "clientH": 324,
+        "scrollH": 570,
+        "closeW": 43.329833984375
+      }
+    },
+    {
+      "w": 768,
+      "h": 1024,
+      "documentWidth": 768,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "w": 744,
+        "h": 820,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 44,
+        "y": 545.5625,
+        "w": 680,
+        "h": 111.4375,
+        "font": "44px",
+        "maxW": "900px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 44,
+        "y": 679,
+        "w": 680,
+        "h": 117,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 44,
+        "y": 679,
+        "w": 469.6875,
+        "h": 49,
+        "font": "14px",
+        "maxW": "469.7px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 164.9609375,
+        "y": 20,
+        "w": 438.078125,
+        "h": 56.796875,
+        "font": "16px",
+        "maxW": "744px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 422.2734375,
+        "y": 26,
+        "w": 174.765625,
+        "h": 44.796875,
+        "font": "13px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 44,
+          "y": 746,
+          "w": 176.765625,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 230.765625,
+          "y": 746,
+          "w": 111.453125,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 40,
+          "y": 2009.546875,
+          "w": 165.703125,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 296.328125,
+          "y": 2052.421875,
+          "w": 162.09375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 525.65625,
+          "y": 2009.546875,
+          "w": 150.953125,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 404,
+          "y": 3590.359375,
+          "w": 86.375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 498.375,
+          "y": 3590.359375,
+          "w": 94.171875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 600.546875,
+          "y": 3590.359375,
+          "w": 97.296875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 318.671875,
+          "y": 4321.421875,
+          "w": 130.65625,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 395.6875,
+          "y": 5801.8125,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 333,
+          "y": 6231.25,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 389,
+          "y": 6231.25,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 40,
+          "y": 7053.015625,
+          "w": 135.28125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 52,
+          "y": 7860.578125,
+          "w": 62.953125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 52,
+          "y": 7904.578125,
+          "w": 99.484375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 313.5,
+          "y": 7860.578125,
+          "w": 110.34375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 313.5,
+          "y": 7904.578125,
+          "w": 122.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 313.5,
+          "y": 7948.578125,
+          "w": 85.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 539.75,
+          "y": 7860.578125,
+          "w": 117.671875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 539.75,
+          "y": 7904.578125,
+          "w": 60.1875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 539.75,
+          "y": 7948.578125,
+          "w": 121.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "expandedDocumentWidth": 768,
+      "contactDialog": {
+        "width": 541.613037109375,
+        "height": 593.450927734375,
+        "clientH": 603,
+        "scrollH": 603,
+        "closeW": 43.32904052734375
+      }
+    },
+    {
+      "w": 820,
+      "h": 1180,
+      "documentWidth": 820,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "w": 796,
+        "h": 820,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 44,
+        "y": 545.5625,
+        "w": 732,
+        "h": 111.4375,
+        "font": "44px",
+        "maxW": "900px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 44,
+        "y": 679,
+        "w": 732,
+        "h": 117,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 44,
+        "y": 679,
+        "w": 469.6875,
+        "h": 49,
+        "font": "14px",
+        "maxW": "469.7px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 190.9609375,
+        "y": 20,
+        "w": 438.078125,
+        "h": 56.796875,
+        "font": "16px",
+        "maxW": "796px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 448.2734375,
+        "y": 26,
+        "w": 174.765625,
+        "h": 44.796875,
+        "font": "13px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 44,
+          "y": 746,
+          "w": 176.765625,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 230.765625,
+          "y": 746,
+          "w": 111.453125,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 40,
+          "y": 2009.546875,
+          "w": 165.703125,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 313.65625,
+          "y": 2030.984375,
+          "w": 162.09375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 560.328125,
+          "y": 2009.546875,
+          "w": 150.953125,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 430,
+          "y": 3568.921875,
+          "w": 86.375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 524.375,
+          "y": 3568.921875,
+          "w": 94.171875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 626.546875,
+          "y": 3568.921875,
+          "w": 97.296875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 344.671875,
+          "y": 4338.453125,
+          "w": 130.65625,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 421.015625,
+          "y": 5818.84375,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 359,
+          "y": 6248.28125,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 415,
+          "y": 6248.28125,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 40,
+          "y": 7070.046875,
+          "w": 135.28125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 52,
+          "y": 7845.578125,
+          "w": 62.953125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 52,
+          "y": 7889.578125,
+          "w": 99.484375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 333,
+          "y": 7845.578125,
+          "w": 110.34375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 333,
+          "y": 7889.578125,
+          "w": 122.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 333,
+          "y": 7933.578125,
+          "w": 85.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 575.5,
+          "y": 7845.578125,
+          "w": 117.671875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 575.5,
+          "y": 7889.578125,
+          "w": 60.1875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 575.5,
+          "y": 7933.578125,
+          "w": 121.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "expandedDocumentWidth": 820,
+      "contactDialog": {
+        "width": 541.6337890625,
+        "height": 593.4737548828125,
+        "clientH": 603,
+        "scrollH": 603,
+        "closeW": 43.33074951171875
+      }
+    },
+    {
+      "w": 1366,
+      "h": 600,
+      "documentWidth": 1366,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "w": 1342,
+        "h": 576,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 44,
+        "y": 442.0625,
+        "w": 920,
+        "h": 115.9375,
+        "font": "45.761px",
+        "maxW": "950px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 1012,
+        "y": 419.75,
+        "w": 310,
+        "h": 138.25,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 1012,
+        "y": 419.75,
+        "w": 301.328125,
+        "h": 68.25,
+        "font": "13px",
+        "maxW": "301.34px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 463.9609375,
+        "y": 20,
+        "w": 438.078125,
+        "h": 56.796875,
+        "font": "16px",
+        "maxW": "1342px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 721.2734375,
+        "y": 26,
+        "w": 174.765625,
+        "h": 44.796875,
+        "font": "13px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 1012,
+          "y": 508,
+          "w": 176.765625,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 1198.765625,
+          "y": 508,
+          "w": 111.453125,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 56,
+          "y": 1799.515625,
+          "w": 201.296875,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 511,
+          "y": 1799.515625,
+          "w": 197.015625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 929,
+          "y": 1799.515625,
+          "w": 183.84375,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 56,
+          "y": 3581.546875,
+          "w": 86.375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 150.375,
+          "y": 3581.546875,
+          "w": 94.171875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 252.546875,
+          "y": 3581.546875,
+          "w": 97.296875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 891.890625,
+          "y": 3813.046875,
+          "w": 130.65625,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 718.203125,
+          "y": 6637.515625,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 632,
+          "y": 7139.65625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 688,
+          "y": 7139.65625,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 56,
+          "y": 7979.859375,
+          "w": 135.28125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 68,
+          "y": 8736.953125,
+          "w": 62.953125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 68,
+          "y": 8780.953125,
+          "w": 99.484375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 541.75,
+          "y": 8736.953125,
+          "w": 110.34375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 541.75,
+          "y": 8780.953125,
+          "w": 122.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 541.75,
+          "y": 8824.953125,
+          "w": 85.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 944.875,
+          "y": 8736.953125,
+          "w": 117.671875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 944.875,
+          "y": 8780.953125,
+          "w": 60.1875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 944.875,
+          "y": 8824.953125,
+          "w": 121.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "expandedDocumentWidth": 1366,
+      "contactDialog": {
+        "width": 539,
+        "height": 529.199951171875,
+        "clientH": 540,
+        "scrollH": 603,
+        "closeW": 43.12005615234375
+      }
+    },
+    {
+      "w": 2560,
+      "h": 1440,
+      "documentWidth": 2560,
+      "hero": {
+        "x": 12,
+        "y": 12,
+        "w": 2536,
+        "h": 960,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "title": {
+        "x": 640,
+        "y": 776,
+        "w": 922,
+        "h": 152,
+        "font": "60px",
+        "maxW": "950px",
+        "display": "block"
+      },
+      "aside": {
+        "x": 1610,
+        "y": 784.5,
+        "w": 310,
+        "h": 143.5,
+        "font": "16px",
+        "maxW": "none",
+        "display": "block"
+      },
+      "copy": {
+        "x": 1610,
+        "y": 784.5,
+        "w": 310,
+        "h": 73.5,
+        "font": "14px",
+        "maxW": "324.52px",
+        "display": "block"
+      },
+      "nav": {
+        "x": 1060.9609375,
+        "y": 20,
+        "w": 438.078125,
+        "h": 56.796875,
+        "font": "16px",
+        "maxW": "2536px",
+        "display": "flex"
+      },
+      "navContact": {
+        "x": 1318.2734375,
+        "y": 26,
+        "w": 174.765625,
+        "h": 44.796875,
+        "font": "13px",
+        "maxW": "none",
+        "display": "flex"
+      },
+      "actions": [
+        {
+          "x": 1610,
+          "y": 878,
+          "w": 176.765625,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "x": 1796.765625,
+          "y": 878,
+          "w": 111.453125,
+          "h": 50,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "targets": [
+        {
+          "text": "Conversar sobre estratégia",
+          "x": 640,
+          "y": 2190.546875,
+          "w": 201.296875,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre conteúdo",
+          "x": 1103.65625,
+          "y": 2190.546875,
+          "w": 197.015625,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conversar sobre direção",
+          "x": 1530.328125,
+          "y": 2190.546875,
+          "w": 183.84375,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Leticia Isse",
+          "x": 640,
+          "y": 3999,
+          "w": 86.375,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Dra. Nathalia",
+          "x": 734.375,
+          "y": 3999,
+          "w": 94.171875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Novo Método",
+          "x": 836.546875,
+          "y": 3999,
+          "w": 97.296875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "block"
+        },
+        {
+          "text": "Ampliar a entrega",
+          "x": 1494.203125,
+          "y": 4229.28125,
+          "w": 130.65625,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "Conhecer minha trajetória",
+          "x": 1314.859375,
+          "y": 7900.359375,
+          "w": 170.046875,
+          "h": 44,
+          "font": "11px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "",
+          "x": 1229,
+          "y": 8411.53125,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "",
+          "x": 1285,
+          "y": 8411.53125,
+          "w": 46,
+          "h": 46,
+          "font": "16px",
+          "maxW": "none",
+          "display": "grid"
+        },
+        {
+          "text": "Tirar uma dúvida",
+          "x": 640,
+          "y": 9265.5625,
+          "w": 135.28125,
+          "h": 44,
+          "font": "13px",
+          "maxW": "none",
+          "display": "inline-flex"
+        },
+        {
+          "text": "LinkedIn",
+          "x": 640,
+          "y": 10008.828125,
+          "w": 62.953125,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "ola@julia.example contato ilustrativo",
+          "x": 640,
+          "y": 10052.828125,
+          "w": 99.484375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Estratégia de marca",
+          "x": 1132.5,
+          "y": 10008.828125,
+          "w": 110.34375,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Conteúdo estratégico",
+          "x": 1132.5,
+          "y": 10052.828125,
+          "w": 122.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Direção criativa",
+          "x": 1132.5,
+          "y": 10096.828125,
+          "w": 85.296875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Projetos e resultados",
+          "x": 1551.25,
+          "y": 10008.828125,
+          "w": 117.671875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Sobre Julia",
+          "x": 1551.25,
+          "y": 10052.828125,
+          "w": 60.1875,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        },
+        {
+          "text": "Perguntas frequentes",
+          "x": 1551.25,
+          "y": 10096.828125,
+          "w": 121.40625,
+          "h": 44,
+          "font": "12px",
+          "maxW": "none",
+          "display": "flex"
+        }
+      ],
+      "horizontalControls": [],
+      "expandedDocumentWidth": 2560,
+      "contactDialog": {
+        "width": 539,
+        "height": 590.587890625,
+        "clientH": 603,
+        "scrollH": 603,
+        "closeW": 43.1201171875
+      }
+    }
+  ],
+  "waves": [
+    {
+      "y": 3935,
+      "waveTop": 0.046875,
+      "aboutTop": 2040.046875,
+      "progress": "0"
+    },
+    {
+      "y": 4655,
+      "waveTop": -0.00311279296875,
+      "aboutTop": 1320.046875,
+      "progress": "50"
+    },
+    {
+      "y": 5375,
+      "waveTop": -0.003173828125,
+      "aboutTop": 600.046875,
+      "progress": "100"
+    },
+    {
+      "y": 5575,
+      "waveTop": -199.953125,
+      "aboutTop": 400.046875,
+      "progress": "100"
+    },
+    {
+      "y": 5775,
+      "waveTop": -399.953125,
+      "aboutTop": 200.046875,
+      "progress": "100"
+    }
+  ]
+}

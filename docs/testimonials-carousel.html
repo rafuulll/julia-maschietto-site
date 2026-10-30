@@ -1,0 +1,40 @@
+<!-- Integration: replace the previous #depoimentos section with this snippet.
+     Load testimonials-carousel.css after the existing styles and testimonials-carousel.js with defer.
+     Remove the old sixth-round.js script (it initializes only the retired editorial carousel).
+     Quotes are reused from the user-approved fictional wall, without new client claims. -->
+<section class="testimonials-carousel section" id="depoimentos" aria-labelledby="testimonials-title" aria-roledescription="carrossel" data-testimonials-carousel data-initial-slide="2">
+  <div class="testimonials-carousel__heading">
+    <h2 id="testimonials-title">O que fica<br><em>depois do projeto.</em></h2>
+    <p class="testimonials-carousel__disclosure">Depoimentos fictícios e ilustrativos para esta apresentação.</p>
+    <div class="testimonials-carousel__controls" data-testimonials-controls hidden>
+      <button class="testimonials-carousel__button testimonials-carousel__button--previous" type="button" aria-label="Depoimento anterior" aria-controls="testimonials-rail" data-testimonials-previous><span class="icon i-arrow" aria-hidden="true"></span></button>
+      <button class="testimonials-carousel__button" type="button" aria-label="Próximo depoimento" aria-controls="testimonials-rail" data-testimonials-next><span class="icon i-arrow" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  <p class="testimonials-carousel__sr" id="testimonials-help">Deslize para ler os depoimentos. Pelo teclado, use as setas para mudar de cartão, Home para o primeiro e End para o último.</p>
+  <div class="testimonials-carousel__window">
+    <div class="testimonials-carousel__rail" id="testimonials-rail" tabindex="0" role="group" aria-label="Depoimentos ilustrativos" aria-describedby="testimonials-help" data-testimonials-rail data-lenis-prevent>
+      <figure class="testimonials-carousel__card" role="group" aria-roledescription="slide" aria-label="1 de 5" data-testimonial-card>
+        <blockquote>“O processo trouxe organização e escolhas que fazem sentido para a marca. Cada entrega veio acompanhada de um porquê.”</blockquote>
+        <figcaption><strong>Henrique M.</strong><span class="testimonials-carousel__role">Negócio próprio</span><small class="testimonials-carousel__fiction">Exemplo fictício</small></figcaption>
+      </figure>
+      <figure class="testimonials-carousel__card" role="group" aria-roledescription="slide" aria-label="2 de 5" data-testimonial-card>
+        <blockquote>“A ideia inicial virou um conceito claro para orientar imagens, textos e vídeos. Foi muito bom acompanhar as peças ganhando forma.”</blockquote>
+        <figcaption><strong>Caio R.</strong><span class="testimonials-carousel__role">Campanha criativa</span><small class="testimonials-carousel__fiction">Exemplo fictício</small></figcaption>
+      </figure>
+      <figure class="testimonials-carousel__card" role="group" aria-roledescription="slide" aria-label="3 de 5" data-testimonial-card>
+        <blockquote>“Eu tinha muitas ideias, mas faltava uma direção. Hoje consigo explicar meu trabalho com clareza e reconhecer minha voz no conteúdo.”</blockquote>
+        <figcaption><strong>Marina A.</strong><span class="testimonials-carousel__role">Marca pessoal</span><small class="testimonials-carousel__fiction">Exemplo fictício</small></figcaption>
+      </figure>
+      <figure class="testimonials-carousel__card" role="group" aria-roledescription="slide" aria-label="4 de 5" data-testimonial-card>
+        <blockquote>“A comunicação ganhou unidade. Ficou mais fácil escolher os temas e entender como quero me apresentar para o meu público.”</blockquote>
+        <figcaption><strong>Paula L.</strong><span class="testimonials-carousel__role">Marca pessoal</span><small class="testimonials-carousel__fiction">Exemplo fictício</small></figcaption>
+      </figure>
+      <figure class="testimonials-carousel__card" role="group" aria-roledescription="slide" aria-label="5 de 5" data-testimonial-card>
+        <blockquote>“Gostei de sentir que minha história foi ouvida. O resultado tem personalidade e se conecta com o que eu queria construir.”</blockquote>
+        <figcaption><strong>Renata C.</strong><span class="testimonials-carousel__role">Projeto autoral</span><small class="testimonials-carousel__fiction">Exemplo fictício</small></figcaption>
+      </figure>
+    </div>
+  </div>
+  <p class="testimonials-carousel__sr" role="status" aria-live="polite" aria-atomic="true" data-testimonials-status></p>
+</section>
