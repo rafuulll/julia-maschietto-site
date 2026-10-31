@@ -1,0 +1,21 @@
+{
+  "htmlValid": true,
+  "htmlMessages": [],
+  "missingAssets": [],
+  "missingFragments": [],
+  "duplicateIds": [],
+  "h1Count": 1,
+  "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/",
+  "indexable": true,
+  "structuredDataTypes": [
+    "Person",
+    "WebSite",
+    "WebPage",
+    "Service",
+    "Service",
+    "Service"
+  ],
+  "hasReviewSchema": false,
+  "crawlFiles": true,
+  "stylesheets": 1
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://julia-maschietto-estudio.classyscout131.chatgpt.site/sitemap.xml

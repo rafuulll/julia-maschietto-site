@@ -1,0 +1,221 @@
+[
+  {
+    "name": "WhatsApp nativo",
+    "pass": true,
+    "detail": 10
+  },
+  {
+    "name": "Email",
+    "pass": true
+  },
+  {
+    "name": "LinkedIn",
+    "pass": true
+  },
+  {
+    "name": "Abrir Ver resultados e minha partici",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Sepulveda ChocolatesEstratégia",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Delegada Júlia NunesEstratégia",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Bruna MarianaConteúdo e lançam",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Novo MétodoNarrativa e apresen",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Copa das SeleçõesDesign gráfic",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Preciso contratar as três fren",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Já tenho identidade visual. Fa",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir O atendimento pode ser a distâ",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Qual é o prazo de um projeto?",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir Como funciona o investimento?",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Abrir O que acontece depois do prime",
+    "pass": true
+  },
+  {
+    "name": "Fechar disclosure",
+    "pass": true
+  },
+  {
+    "name": "Tab Leticia Isse",
+    "pass": true
+  },
+  {
+    "name": "Autoplay Leticia Isse",
+    "pass": true,
+    "detail": {
+      "time": 1.54891,
+      "source": "http://127.0.0.1:4176/dist/assets/leticia-book-video-final.mp4"
+    }
+  },
+  {
+    "name": "Tab Dra. Nathalia",
+    "pass": true
+  },
+  {
+    "name": "Autoplay Dra. Nathalia",
+    "pass": true,
+    "detail": {
+      "time": 1.552499,
+      "source": "http://127.0.0.1:4176/dist/assets/nathalia-book-video-final.mp4"
+    }
+  },
+  {
+    "name": "Tab Novo Método",
+    "pass": true
+  },
+  {
+    "name": "Autoplay Novo Método",
+    "pass": true,
+    "detail": {
+      "time": 1.563467,
+      "source": "http://127.0.0.1:4176/dist/assets/novo-book-video-final.mp4"
+    }
+  },
+  {
+    "name": "Pausar book",
+    "pass": true
+  },
+  {
+    "name": "Retomar book",
+    "pass": true
+  },
+  {
+    "name": "Abrir imagem",
+    "pass": true
+  },
+  {
+    "name": "Dialog ajustado à imagem",
+    "pass": true,
+    "detail": {
+      "image": {
+        "x": 466.256103515625,
+        "y": 24.172119140625,
+        "w": 347.48779296875,
+        "h": 751.9059448242188
+      },
+      "dialog": {
+        "x": 466.256103515625,
+        "y": 24.172119140625,
+        "w": 347.48779296875,
+        "h": 751.9059448242188
+      }
+    }
+  },
+  {
+    "name": "Fechar imagem e restaurar foco",
+    "pass": true
+  },
+  {
+    "name": "Ampliar vídeo",
+    "pass": true
+  },
+  {
+    "name": "Fechar vídeo",
+    "pass": true
+  },
+  {
+    "name": "Navegação de depoimentos",
+    "pass": true
+  },
+  {
+    "name": "Rolagem após depoimentos",
+    "pass": true
+  },
+  {
+    "name": "Vídeo footer",
+    "pass": true,
+    "detail": {
+      "time": 0.85613,
+      "src": "http://127.0.0.1:4176/dist/assets/footer-silk.mp4"
+    }
+  },
+  {
+    "name": "Rótulo removido",
+    "pass": true
+  },
+  {
+    "name": "Vídeo fora da tela pausado",
+    "pass": true
+  },
+  {
+    "name": "Menu aberto",
+    "pass": true
+  },
+  {
+    "name": "Menu fecha na navegação",
+    "pass": true
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Processo desktop habilitado",
+    "pass": true
+  },
+  {
+    "name": "Progresso 0",
+    "pass": true,
+    "detail": {
+      "value": 0,
+      "offset": "matrix(1, 0, 0, 1, 0, 0.08)"
+    }
+  },
+  {
+    "name": "Progresso 0.5",
+    "pass": true,
+    "detail": {
+      "value": 50,
+      "offset": "matrix(1, 0, 0, 1, 0, 720.08)"
+    }
+  },
+  {
+    "name": "Progresso 1",
+    "pass": true,
+    "detail": {
+      "value": 100,
+      "offset": "matrix(1, 0, 0, 1, 0, 1440)"
+    }
+  },
+  {
+    "name": "Ondas seguem o documento após o pin",
+    "pass": true
+  },
+  {
+    "name": "Paisagem 844×390",
+    "pass": true,
+    "detail": {
+      "page": 829,
+      "width": 844
+    }
+  },
+  {
+    "name": "Paisagem 1024×600",
+    "pass": true,
+    "detail": {
+      "page": 1009,
+      "width": 1024
+    }
+  },
+  {
+    "name": "Paisagem 1280×600",
+    "pass": true,
+    "detail": {
+      "page": 1265,
+      "width": 1280
+    }
+  },
+  {
+    "name": "Reflow equivalente a 200% em 1440px",
+    "pass": true
+  },
+  {
+    "name": "Crachá: cena ou alternativa pronta",
+    "pass": true,
+    "detail": "ready"
+  }
+]

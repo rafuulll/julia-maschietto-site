@@ -298,3 +298,12 @@ Contact links use official WhatsApp with prefilled message; email and LinkedIn a
 ### Media update in tenth execution
 
 Image enlargement uses a transparent fit-content dialog exactly matching the displayed image or video, capped by the viewport, with an accessible close control outside the top corner. Proof thumbnails size to the source aspect ratio; no added dark pillarboxes. Notebook previews use muted looping inline H.264 video, start on viewport arrival and tab selection, pause away/hidden, and offer a restrained pause control. Reduced motion keeps the static cover. New original covers for Sepulveda, Júlia Nunes, Bruna and Copa; Copa gets three compact expandable pieces. media-update.css overrides the earlier fixed-size media frames.
+
+
+### Final production refinement
+
+The final source of truth is the existing editorial world with `hero-desktop/tablet/mobile-final.webp`. Original PNG portrait, warm-gray ground and front story are retained. Rear cards overlap the portrait by approximately16–20% of their area at each export. The biography stays before the badge up to1000px. The notebook frame aperture is16:9 to fit supplied recordings without cutting slide content; its percentages cover the pale inner lip.
+
+The production stylesheet is `dist/site.min.css`, generated from the preserved ordered sources in `styles/`. Fonts are complete WOFF2 exports. A custom path-based JM monogram supplies SVG/ICO/Apple icons. Deferred modal/hover media and video posters avoid speculative downloads. Static contacts remain native links. Concept inactive words use opacity.56 rather than.16 for readable contrast. A26px lower endpoint is an intentional narrow-screen display size; body copy retains the existing ramp. The footer fallback uses the existing wine token.
+
+No testimonial fades or automatic rotation were reintroduced. The final crawl files and accurate Person/WebSite/WebPage/Service data contain no illustrative ratings. `docs/FINALIZACAO.md` records the verification evidence and external limits.

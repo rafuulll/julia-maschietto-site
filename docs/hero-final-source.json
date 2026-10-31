@@ -1,0 +1,99 @@
+{
+  "source": "grdr 2025-08-01 163616.323 1.png",
+  "crop": [
+    160,
+    600,
+    3880,
+    4209
+  ],
+  "originalRGBHash": "0b303fc1bfafb70e011c68fa2840be1f12529f98fdcfc727394e5ce9390cec74",
+  "faceGeneration": false,
+  "faceRetouching": false,
+  "change": "Only the two rear card coordinates changed. Front card, portrait and background preserved.",
+  "exports": [
+    {
+      "asset": "hero-desktop-final.webp",
+      "size": [
+        1920,
+        1000
+      ],
+      "layout": [
+        [
+          0,
+          600,
+          245,
+          178
+        ],
+        [
+          1,
+          1060,
+          120,
+          174
+        ],
+        [
+          2,
+          1190,
+          470,
+          154
+        ]
+      ],
+      "bytes": 121632
+    },
+    {
+      "asset": "hero-tablet-final.webp",
+      "size": [
+        1400,
+        1100
+      ],
+      "layout": [
+        [
+          0,
+          335,
+          285,
+          168
+        ],
+        [
+          1,
+          810,
+          145,
+          166
+        ],
+        [
+          2,
+          960,
+          440,
+          142
+        ]
+      ],
+      "bytes": 132450
+    },
+    {
+      "asset": "hero-mobile-final.webp",
+      "size": [
+        900,
+        1050
+      ],
+      "layout": [
+        [
+          0,
+          108,
+          310,
+          148
+        ],
+        [
+          1,
+          550,
+          165,
+          142
+        ],
+        [
+          2,
+          660,
+          515,
+          128
+        ]
+      ],
+      "bytes": 109000
+    }
+  ]
+}

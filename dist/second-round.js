@@ -7,7 +7,7 @@ const track = process.querySelector('.process-steps');
 const bar = process.querySelector('.process-progress');
 const timelineBar = process.querySelector('.process-timeline-progress');
 const journey = process.closest('.journey');
-let pinned = false, travel = 0, processVisible = false, lastProgress = -1, needsPaint = true;
+let pinned = false, travel = 0, processVisible = false, lastProgress = -1, needsPaint = true, paintFrame = 0;
 
 function layoutProcess() {
   pinned = desktop.matches && !reduced.matches && CSS.supports('position', 'sticky');
@@ -46,8 +46,8 @@ function paintProcess() {
   needsPaint = false;
 }
 new ResizeObserver(layoutProcess).observe(windowEl);
-new IntersectionObserver(entries => { processVisible = entries[0].isIntersecting;needsPaint=true; }).observe(process);
-window.addEventListener('scroll', () => {needsPaint=true;}, {passive:true});
+new IntersectionObserver(entries => { processVisible = entries[0].isIntersecting;needsPaint=true;requestPaint(); }).observe(process);
+window.addEventListener('scroll', () => {needsPaint=true;requestPaint();}, {passive:true});
 desktop.addEventListener('change', layoutProcess);
 reduced.addEventListener('change', layoutProcess);
 window.addEventListener('resize', layoutProcess, {passive:true});
@@ -62,16 +62,30 @@ windowEl.addEventListener('keydown', event => {
   const top = scrollY + process.getBoundingClientRect().top + Math.max(0,Math.min(3,target)) / 3 * travel;
   scrollTo({top,behavior:'smooth'});
 });
-function frame() { if (processVisible || needsPaint) paintProcess(); requestAnimationFrame(frame); }
-layoutProcess();requestAnimationFrame(frame);
+function requestPaint() {
+  if (!paintFrame && !document.hidden) paintFrame=requestAnimationFrame(() => {
+    paintFrame=0;
+    if (processVisible || needsPaint) paintProcess();
+  });
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) { cancelAnimationFrame(paintFrame);paintFrame=0; }
+  else requestPaint();
+});
+layoutProcess();requestPaint();
 
 const badge = document.getElementById('badge-scene');
 const loadBadge = new IntersectionObserver(async entries => {
   if (!entries[0].isIntersecting) return;
   loadBadge.disconnect();
+  if (reduced.matches || navigator.connection?.saveData) {
+    badge.dataset.state='fallback';
+    document.getElementById('badge-help').textContent='Julia Maschietto · Estratégia, conteúdo e direção criativa';
+    return;
+  }
   try {
     await document.fonts.ready;
-    const {createBadge} = await import('./badge-3d.js?v=20261030-round6');
+    const {createBadge} = await import('./badge-3d.js?v=final-20261031');
     await createBadge(badge);
   } catch (error) {
     badge.dataset.state = 'fallback';

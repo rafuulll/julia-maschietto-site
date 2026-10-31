@@ -1,0 +1,292 @@
+[
+  {
+    "width": 320,
+    "viewport": 320,
+    "page": 305,
+    "overflow": false,
+    "title": {
+      "x": 28,
+      "y": -260.65625,
+      "w": 249,
+      "h": 129.765625
+    },
+    "hero": {
+      "x": 8,
+      "y": -682,
+      "w": 289,
+      "h": 770.296875
+    },
+    "cta": {
+      "x": 28,
+      "y": 8.296875,
+      "w": 243.953125,
+      "h": 48
+    },
+    "heroSource": "hero-mobile-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 360,
+    "viewport": 360,
+    "page": 345,
+    "overflow": false,
+    "title": {
+      "x": 28,
+      "y": -257,
+      "w": 289,
+      "h": 149.734375
+    },
+    "hero": {
+      "x": 8,
+      "y": -725,
+      "w": 329,
+      "h": 813.125
+    },
+    "cta": {
+      "x": 28,
+      "y": 8.125,
+      "w": 250.78125,
+      "h": 48
+    },
+    "heroSource": "hero-mobile-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 390,
+    "viewport": 390,
+    "page": 375,
+    "overflow": false,
+    "title": {
+      "x": 32,
+      "y": -267,
+      "w": 311,
+      "h": 159.640625
+    },
+    "hero": {
+      "x": 8,
+      "y": -770,
+      "w": 359,
+      "h": 858.03125
+    },
+    "cta": {
+      "x": 32,
+      "y": 8.03125,
+      "w": 272.59375,
+      "h": 48
+    },
+    "heroSource": "hero-mobile-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 430,
+    "viewport": 430,
+    "page": 415,
+    "overflow": false,
+    "title": {
+      "x": 32,
+      "y": -283.328125,
+      "w": 351,
+      "h": 176.046875
+    },
+    "hero": {
+      "x": 8,
+      "y": -833,
+      "w": 399,
+      "h": 921.109375
+    },
+    "cta": {
+      "x": 32,
+      "y": 8.109375,
+      "w": 272.59375,
+      "h": 48
+    },
+    "heroSource": "hero-mobile-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 768,
+    "viewport": 768,
+    "page": 753,
+    "overflow": false,
+    "title": {
+      "x": 44,
+      "y": -188.40625,
+      "w": 665,
+      "h": 107
+    },
+    "hero": {
+      "x": 12,
+      "y": -766,
+      "w": 729,
+      "h": 863.59375
+    },
+    "cta": {
+      "x": 44,
+      "y": 11.59375,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-tablet-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 820,
+    "viewport": 820,
+    "page": 805,
+    "overflow": false,
+    "title": {
+      "x": 44,
+      "y": -195,
+      "w": 717,
+      "h": 114.234375
+    },
+    "hero": {
+      "x": 12,
+      "y": -809,
+      "w": 781,
+      "h": 907.234375
+    },
+    "cta": {
+      "x": 44,
+      "y": 12.234375,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-tablet-final.webp?v=20261031b",
+    "copyBeforeBadge": true,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": false
+  },
+  {
+    "width": 1024,
+    "viewport": 1024,
+    "page": 1009,
+    "overflow": false,
+    "title": {
+      "x": 44,
+      "y": -198,
+      "w": 900,
+      "h": 116.515625
+    },
+    "hero": {
+      "x": 12,
+      "y": -898,
+      "w": 985,
+      "h": 995.515625
+    },
+    "cta": {
+      "x": 44,
+      "y": 11.515625,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-tablet-final.webp?v=20261031b",
+    "copyBeforeBadge": false,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": true
+  },
+  {
+    "width": 1280,
+    "viewport": 1280,
+    "page": 1265,
+    "overflow": false,
+    "title": {
+      "x": 44,
+      "y": -64.34375,
+      "w": 819,
+      "h": 118.34375
+    },
+    "hero": {
+      "x": 12,
+      "y": -638,
+      "w": 1241,
+      "h": 736
+    },
+    "cta": {
+      "x": 911,
+      "y": 4,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-desktop-final.webp?v=20261031b",
+    "copyBeforeBadge": false,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": true
+  },
+  {
+    "width": 1440,
+    "viewport": 1440,
+    "page": 1425,
+    "overflow": false,
+    "title": {
+      "x": 72.5,
+      "y": -79.140625,
+      "w": 922,
+      "h": 133.140625
+    },
+    "hero": {
+      "x": 12,
+      "y": -638,
+      "w": 1401,
+      "h": 736
+    },
+    "cta": {
+      "x": 1042.5,
+      "y": 4,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-desktop-final.webp?v=20261031b",
+    "copyBeforeBadge": false,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": true
+  },
+  {
+    "width": 1920,
+    "viewport": 1920,
+    "page": 1905,
+    "overflow": false,
+    "title": {
+      "x": 312.5,
+      "y": -98,
+      "w": 922,
+      "h": 152
+    },
+    "hero": {
+      "x": 12,
+      "y": -638,
+      "w": 1881,
+      "h": 736
+    },
+    "cta": {
+      "x": 1282.5,
+      "y": 4,
+      "w": 298.21875,
+      "h": 50
+    },
+    "heroSource": "hero-desktop-final.webp?v=20261031b",
+    "copyBeforeBadge": false,
+    "textOverflow": [],
+    "tagOverlaps": [],
+    "processPinned": true
+  }
+]

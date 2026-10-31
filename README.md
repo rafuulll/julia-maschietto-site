@@ -78,3 +78,10 @@ A nona execução aplica a hero aprovada com o rosto do PSD original, sem nova g
 A décima execução substitui o PSD pelo PNG transparente original, recompõe os stories com fotos originais e aproxima o superior direito. As tags acompanham a rolagem com entradas distintas e reversíveis. Contatos oficiais estão ativos. A textura gerada é uma alternativa separada para comparação. Veja `docs/RODADA-10.md`.
 
 O complemento da rodada 10 acrescenta três vídeos de reprodução automática no notebook, ampliação proporcional sem painel branco, miniaturas sem faixas e capas atualizadas de Copa, Sepulveda, Júlia Nunes e Bruna. `dist/media-update.css` contém o ajuste visual e `docs/media-update-round10.json` registra os arquivos utilizados.
+
+
+## Final production build
+
+The published static directory is `dist/`. Ordered CSS authoring files live in `styles/`; run `npm install`, `npm run build`, then `npm run check` with Node. Production needs no Node runtime. Old media remain in `assets-source/` and are excluded from the hosted package.
+
+Final implementation, QA and limits: [docs/FINALIZACAO.md](docs/FINALIZACAO.md). Contact links are configured in `dist/config.js` and have usable HTML fallbacks. For a domain change, update canonical, social URLs, JSON-LD, robots, sitemap, llms.txt and index.md together. Source migration scripts named finalize-site/finalize-interactions are one-time records, not build steps.

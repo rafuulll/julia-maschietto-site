@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Movimento reduzido: conteúdo estático",
+    "pass": true
+  },
+  {
+    "name": "Movimento reduzido: crachá estático",
+    "pass": true
+  },
+  {
+    "name": "Movimento reduzido: book pausado",
+    "pass": true
+  },
+  {
+    "name": "Falha WebGL: fallback visível",
+    "pass": true
+  },
+  {
+    "name": "Falha WebGL: controle oculto",
+    "pass": true
+  },
+  {
+    "name": "Autoplay bloqueado: capa permanece",
+    "pass": true
+  },
+  {
+    "name": "Autoplay bloqueado: controle coerente",
+    "pass": true
+  },
+  {
+    "name": "Sem JS: texto disponível",
+    "pass": true
+  },
+  {
+    "name": "Sem JS: WhatsApp nativo",
+    "pass": true
+  },
+  {
+    "name": "Sem JS: projeto abre",
+    "pass": true
+  },
+  {
+    "name": "Sem JS: processo vertical",
+    "pass": true
+  },
+  {
+    "name": "Sem JS: crachá alternativo",
+    "pass": true
+  }
+]

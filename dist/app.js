@@ -12,6 +12,7 @@
   let menuOpen = false;
   let dialogOrigin = null;
   let activeNav = $('.desktop-nav a');
+  let appFrame = 0;
   const lenis = !reduced.matches && fine.matches && window.Lenis
     ? new Lenis({ lerp: 0.09, smoothWheel: true, anchors: true }) : null;
 
@@ -37,7 +38,7 @@
     if (!menuOpen) return;
     if (event.key === 'Escape') setMenu(false);
     if (event.key === 'Tab') {
-      const stops = [toggle, ...$$('a', menu)];
+      const stops = [$('.nav-contact', nav), toggle, ...$$('a', menu)];
       const index = stops.indexOf(document.activeElement);
       if (event.shiftKey && index === 0) { event.preventDefault(); stops.at(-1).focus(); }
       else if (!event.shiftKey && index === stops.length - 1) { event.preventDefault(); toggle.focus(); }
@@ -63,49 +64,23 @@
       if (!$('dialog[open]') && dialogOrigin?.isConnected) dialogOrigin.focus({ preventScroll: true });
     });
   });
-  $$('[data-contact]').forEach(link => {
+  // Native contact links remain usable even when JavaScript is unavailable.
+  $$('a[data-contact]').forEach(link => {
     const phone = String(config.whatsapp || '').replace(/\D/g, '');
-    if (config.demo === false && /^\d{10,15}$/.test(phone) && link.tagName === 'A') {
-      const message = link.dataset.service
-        ? `Olá, Julia! Vim pelo seu site e quero conversar sobre ${link.dataset.service.toLocaleLowerCase('pt-BR')} para a minha marca.`
-        : config.defaultMessage;
-      link.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.addEventListener('click', () => { if (menuOpen) setMenu(false, false); });
-      return;
-    }
-    link.addEventListener('click', event => {
-    event.preventDefault();
-    if (menuOpen) setMenu(false, false);
+    if (!/^\d{10,15}$/.test(phone)) return;
     const message = link.dataset.service
-      ? `Olá, Julia! Quero conversar sobre ${link.dataset.service.toLocaleLowerCase('pt-BR')} para a minha marca.`
-      : config.defaultMessage || 'Olá, Julia! Quero conversar sobre um projeto para a minha marca.';
-    const phone = String(config.whatsapp || '').replace(/\D/g, '');
-    if (config.demo === false && /^\d{10,15}$/.test(phone)) {
-      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
-      return;
-    }
-    $('#contact-message').value = message;
-    $('.copy-status').textContent = '';
-    openDialog($('#contact-dialog'), link);
-    });
-  });
-  $('#copy-message').addEventListener('click', async () => {
-    const field = $('#contact-message');
-    try {
-      await navigator.clipboard.writeText(field.value);
-      $('.copy-status').textContent = 'Mensagem copiada. Nenhuma mensagem foi enviada.';
-    } catch {
-      field.focus(); field.select();
-      $('.copy-status').textContent = 'Selecione e copie a mensagem com Ctrl+C ou pelo menu do seu celular.';
-    }
+      ? `Olá, Julia! Vim pelo seu site e quero conversar sobre ${link.dataset.service.toLocaleLowerCase('pt-BR')} para a minha marca.`
+      : config.defaultMessage;
+    link.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.addEventListener('click', () => { if (menuOpen) setMenu(false, false); });
   });
 
   const books = {
-    leticia: { image: 'leticia-book.webp', video: 'leticia-book-video-v10.mp4', name: 'Estratégia de marca', description: 'Negócio, posicionamento e comunicação para uma consultora de branding e estilo.', credit: 'Alinhamento visual do book: Larissa Gomes.', alt: 'Capa do book de estratégia de marca de Leticia Isse.' },
-    nathalia: { image: 'nathalia-book.webp', video: 'nathalia-book-video-v10.mp4', name: 'Posicionamento e conteúdo', description: 'Uma direção de marca traduzida em seis pilares editoriais e rituais de conteúdo para Dra. Nathalia.', credit: 'Recorte do material de estratégia fornecido por Julia.', alt: 'Capa da estratégia de marca desenvolvida para Dra. Nathalia.' },
-    novo: { image: 'novo-cover.webp', video: 'novo-book-video-v10.mp4', name: 'Narrativa comercial B2B', description: '“Da questão à nota”: uma apresentação que organiza a proposta e o funcionamento de uma operação de avaliações escolares.', credit: 'Conceito e apresentação comercial: Julia Maschietto.', alt: 'Capa da apresentação comercial Novo Método.' }
+    leticia: { image: 'leticia-book.webp', video: 'leticia-book-video-final.mp4', name: 'Estratégia de marca', description: 'Negócio, posicionamento e comunicação para uma consultora de branding e estilo.', credit: 'Alinhamento visual do book: Larissa Gomes.', alt: 'Capa do book de estratégia de marca de Leticia Isse.' },
+    nathalia: { image: 'nathalia-book.webp', video: 'nathalia-book-video-final.mp4', name: 'Posicionamento e conteúdo', description: 'Uma direção de marca traduzida em seis pilares editoriais e rituais de conteúdo para Dra. Nathalia.', credit: 'Recorte do material de estratégia fornecido por Julia.', alt: 'Capa da estratégia de marca desenvolvida para Dra. Nathalia.' },
+    novo: { image: 'novo-cover.webp', video: 'novo-book-video-final.mp4', name: 'Narrativa comercial B2B', description: '“Da questão à nota”: uma apresentação que organiza a proposta e o funcionamento de uma operação de avaliações escolares.', credit: 'Conceito e apresentação comercial: Julia Maschietto.', alt: 'Capa da apresentação comercial Novo Método.' }
   };
   let currentBook = books.leticia;
   const tabs = $$('[data-book]');
@@ -116,13 +91,14 @@
   function syncBookVideo() {
     if (bookVisible && !bookPaused && !document.hidden && !reduced.matches && !$('dialog[open]')) {
       bookVideo.muted = true;
-      bookVideo.play().then(() => { bookVideo.hidden = false; }).catch(() => { bookVideo.hidden = true; });
+      bookVideo.play().then(() => { bookVideo.hidden = false; bookPause.hidden = false; }).catch(() => { bookVideo.hidden = true; bookPause.hidden = true; });
     } else bookVideo.pause();
   }
   new IntersectionObserver(entries => {
     bookVisible = entries[0].isIntersecting;
     syncBookVideo();
   }, { threshold: .15 }).observe($('#book-panel'));
+  bookVideo.addEventListener('error', () => { bookVideo.hidden = true; bookPause.hidden = true; });
   bookPause.hidden = reduced.matches;
   bookPause.addEventListener('click', () => {
     bookPaused = !bookPaused;
@@ -134,6 +110,10 @@
   reduced.addEventListener('change', () => { bookPause.hidden = reduced.matches; syncBookVideo(); });
   $$('dialog').forEach(dialog => dialog.addEventListener('toggle', syncBookVideo));
   function selectBook(tab) {
+    bookPaused = false;
+    bookPause.hidden = reduced.matches;
+    bookPause.setAttribute('aria-pressed', 'false');
+    bookPause.textContent = 'Pausar prévia';
     currentBook = books[tab.dataset.book];
     tabs.forEach(item => { item.setAttribute('aria-selected', String(item === tab)); item.tabIndex = item === tab ? 0 : -1; });
     $('#book-name').textContent = currentBook.name;
@@ -199,6 +179,7 @@
     }).observe(video);
     video.closest('details')?.addEventListener('toggle', event => {
       if (!event.target.open) video.pause();
+      else if (video.dataset.poster && !video.poster) video.poster=video.dataset.poster;
     });
     document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); });
   });
@@ -243,13 +224,12 @@
   const pills = $$('.concept-pill');
   let conceptVisible = false;
   let litWords = -1;
-  let conceptTime = 0;
-  let lastFrameTime = 0;
   let lastTagPassage = NaN;
   let lastTagWidth = 0;
   new IntersectionObserver(entries => {
     conceptVisible = entries[0].isIntersecting;
     concept.classList.toggle('is-in-view', conceptVisible);
+    requestFrame();
   }).observe(concept);
 
   const navLinks = $$('.desktop-nav a');
@@ -294,6 +274,7 @@
         previewX = pointerX + 25; previewY = pointerY - 130;
         previewShown = true;
         preview.classList.add('is-visible');
+        requestFrame();
       });
       summary.addEventListener('pointermove', e => { pointerX = e.clientX; pointerY = e.clientY; });
       summary.addEventListener('pointerleave', hidePreview);
@@ -308,7 +289,8 @@
   let videoVisible = false;
   let userPaused = reduced.matches;
   function syncVideo() {
-    if (videoVisible && !document.hidden && !userPaused) {
+    if (videoVisible && video.dataset.poster && !video.poster) video.poster=video.dataset.poster;
+    if (videoVisible && !document.hidden && !userPaused && !$('dialog[open]')) {
       if (!video.getAttribute('src')) video.src = video.dataset.video;
       video.play().catch(() => { userPaused = true; updateVideoButton(); });
     } else video.pause();
@@ -319,6 +301,8 @@
     $('span:last-child', videoButton).textContent = userPaused ? 'Reproduzir vídeo' : 'Pausar vídeo';
     $('.icon', videoButton).className = `icon ${userPaused ? 'i-play' : 'i-pause'}`;
   }
+  $$('dialog').forEach(dialog => dialog.addEventListener('toggle', syncVideo));
+  video.addEventListener('error', () => { videoButton.hidden = true; });
   videoButton.addEventListener('click', () => { userPaused = !userPaused; syncVideo(); });
   new IntersectionObserver(entries => {
     videoVisible = entries[0].isIntersecting;
@@ -330,9 +314,11 @@
   reduced.addEventListener('change', () => { if (reduced.matches) { userPaused = true; document.body.classList.remove('motion-enabled'); lenis?.destroy(); syncVideo(); } });
   $('#year').textContent = String(new Date().getFullYear());
 
+  function requestFrame() {
+    if (!appFrame && !document.hidden) appFrame = requestAnimationFrame(frame);
+  }
   function frame(time) {
-    const delta = lastFrameTime ? Math.min(64, time - lastFrameTime) : 0;
-    lastFrameTime = time;
+    appFrame = 0;
     if (!reduced.matches) lenis?.raf(time);
     if (videoVisible) nav.classList.toggle('over-footer', $('#contato').getBoundingClientRect().top < 90);
     if (conceptVisible && conceptWords.length && !reduced.matches && !document.hidden) {
@@ -372,7 +358,13 @@
       previewY += (targetY - previewY) * 0.15;
       preview.style.transform = `translate3d(${previewX}px,${previewY}px,0) rotate(${Math.max(-4, Math.min(4, (targetX - previewX) * 0.03))}deg)`;
     }
-    requestAnimationFrame(frame);
+    if (lenis?.isScrolling || previewShown) requestFrame();
   }
-  requestAnimationFrame(frame);
+  ['scroll', 'resize', 'wheel'].forEach(type => window.addEventListener(type, requestFrame, { passive: true }));
+  ['click', 'keydown'].forEach(type => document.addEventListener(type, requestFrame, { passive: true }));
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { cancelAnimationFrame(appFrame); appFrame = 0; expandedVideo.pause(); }
+    else requestFrame();
+  });
+  requestFrame();
 })();

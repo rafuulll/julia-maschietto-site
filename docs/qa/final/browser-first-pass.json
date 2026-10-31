@@ -1,0 +1,714 @@
+{
+  "responsive": [
+    {
+      "width": 320,
+      "viewport": 320,
+      "page": 305,
+      "overflow": false,
+      "title": {
+        "x": 28,
+        "y": -260.65625,
+        "w": 249,
+        "h": 129.765625
+      },
+      "hero": {
+        "x": 8,
+        "y": -682,
+        "w": 289,
+        "h": 770.296875
+      },
+      "cta": {
+        "x": 28,
+        "y": 8.296875,
+        "w": 243.953125,
+        "h": 48
+      },
+      "heroSource": "hero-mobile-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 360,
+      "viewport": 360,
+      "page": 345,
+      "overflow": false,
+      "title": {
+        "x": 28,
+        "y": -257,
+        "w": 289,
+        "h": 149.734375
+      },
+      "hero": {
+        "x": 8,
+        "y": -725,
+        "w": 329,
+        "h": 813.125
+      },
+      "cta": {
+        "x": 28,
+        "y": 8.125,
+        "w": 250.78125,
+        "h": 48
+      },
+      "heroSource": "hero-mobile-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "page": 375,
+      "overflow": false,
+      "title": {
+        "x": 32,
+        "y": -267,
+        "w": 311,
+        "h": 159.640625
+      },
+      "hero": {
+        "x": 8,
+        "y": -770,
+        "w": 359,
+        "h": 858.03125
+      },
+      "cta": {
+        "x": 32,
+        "y": 8.03125,
+        "w": 272.59375,
+        "h": 48
+      },
+      "heroSource": "hero-mobile-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 430,
+      "viewport": 430,
+      "page": 415,
+      "overflow": false,
+      "title": {
+        "x": 32,
+        "y": -283.328125,
+        "w": 351,
+        "h": 176.046875
+      },
+      "hero": {
+        "x": 8,
+        "y": -833,
+        "w": 399,
+        "h": 921.109375
+      },
+      "cta": {
+        "x": 32,
+        "y": 8.109375,
+        "w": 272.59375,
+        "h": 48
+      },
+      "heroSource": "hero-mobile-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 768,
+      "viewport": 768,
+      "page": 753,
+      "overflow": false,
+      "title": {
+        "x": 44,
+        "y": -188.40625,
+        "w": 665,
+        "h": 107
+      },
+      "hero": {
+        "x": 12,
+        "y": -766,
+        "w": 729,
+        "h": 863.59375
+      },
+      "cta": {
+        "x": 44,
+        "y": 11.59375,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-tablet-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 820,
+      "viewport": 820,
+      "page": 805,
+      "overflow": false,
+      "title": {
+        "x": 44,
+        "y": -195,
+        "w": 717,
+        "h": 114.234375
+      },
+      "hero": {
+        "x": 12,
+        "y": -809,
+        "w": 781,
+        "h": 907.234375
+      },
+      "cta": {
+        "x": 44,
+        "y": 12.234375,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-tablet-final.webp",
+      "copyBeforeBadge": true,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": false
+    },
+    {
+      "width": 1024,
+      "viewport": 1024,
+      "page": 1009,
+      "overflow": false,
+      "title": {
+        "x": 44,
+        "y": -198,
+        "w": 900,
+        "h": 116.515625
+      },
+      "hero": {
+        "x": 12,
+        "y": -898,
+        "w": 985,
+        "h": 995.515625
+      },
+      "cta": {
+        "x": 44,
+        "y": 11.515625,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-tablet-final.webp",
+      "copyBeforeBadge": false,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": true
+    },
+    {
+      "width": 1280,
+      "viewport": 1280,
+      "page": 1265,
+      "overflow": false,
+      "title": {
+        "x": 44,
+        "y": -64.34375,
+        "w": 819,
+        "h": 118.34375
+      },
+      "hero": {
+        "x": 12,
+        "y": -638,
+        "w": 1241,
+        "h": 736
+      },
+      "cta": {
+        "x": 911,
+        "y": 4,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-desktop-final.webp",
+      "copyBeforeBadge": false,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": true
+    },
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "page": 1425,
+      "overflow": false,
+      "title": {
+        "x": 72.5,
+        "y": -79.140625,
+        "w": 922,
+        "h": 133.140625
+      },
+      "hero": {
+        "x": 12,
+        "y": -638,
+        "w": 1401,
+        "h": 736
+      },
+      "cta": {
+        "x": 1042.5,
+        "y": 4,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-desktop-final.webp",
+      "copyBeforeBadge": false,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": true
+    },
+    {
+      "width": 1920,
+      "viewport": 1920,
+      "page": 1905,
+      "overflow": false,
+      "title": {
+        "x": 312.5,
+        "y": -98,
+        "w": 922,
+        "h": 152
+      },
+      "hero": {
+        "x": 12,
+        "y": -638,
+        "w": 1881,
+        "h": 736
+      },
+      "cta": {
+        "x": 1282.5,
+        "y": 4,
+        "w": 298.21875,
+        "h": 50
+      },
+      "heroSource": "hero-desktop-final.webp",
+      "copyBeforeBadge": false,
+      "textOverflow": [
+        {
+          "tag": "P",
+          "text": "Deslize para ler os depoimentos. Pelo teclado, use as setas ",
+          "width": 1,
+          "scroll": 899
+        },
+        {
+          "tag": "P",
+          "text": "Depoimento 3 de 5: Marina A.. Exemplo fictício.",
+          "width": 1,
+          "scroll": 340
+        }
+      ],
+      "tagOverlaps": [],
+      "processPinned": true
+    }
+  ],
+  "flows": [
+    {
+      "name": "WhatsApp nativo",
+      "pass": true,
+      "detail": 10
+    },
+    {
+      "name": "Email",
+      "pass": true
+    },
+    {
+      "name": "LinkedIn",
+      "pass": true
+    },
+    {
+      "name": "Abrir Ver resultados e minha partici",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Sepulveda ChocolatesEstratégia",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Delegada Júlia NunesEstratégia",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Bruna MarianaConteúdo e lançam",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Novo MétodoNarrativa e apresen",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Copa das SeleçõesDesign gráfic",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Preciso contratar as três fren",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Já tenho identidade visual. Fa",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir O atendimento pode ser a distâ",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Qual é o prazo de um projeto?",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir Como funciona o investimento?",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Abrir O que acontece depois do prime",
+      "pass": true
+    },
+    {
+      "name": "Fechar disclosure",
+      "pass": true
+    },
+    {
+      "name": "Tab Leticia Isse",
+      "pass": true
+    },
+    {
+      "name": "Autoplay Leticia Isse",
+      "pass": true,
+      "detail": {
+        "time": 1.551971,
+        "source": "http://127.0.0.1:4175/dist/assets/leticia-book-video-final.mp4"
+      }
+    },
+    {
+      "name": "Tab Dra. Nathalia",
+      "pass": true
+    },
+    {
+      "name": "Autoplay Dra. Nathalia",
+      "pass": true,
+      "detail": {
+        "time": 1.527717,
+        "source": "http://127.0.0.1:4175/dist/assets/nathalia-book-video-final.mp4"
+      }
+    },
+    {
+      "name": "Tab Novo Método",
+      "pass": true
+    },
+    {
+      "name": "Autoplay Novo Método",
+      "pass": true,
+      "detail": {
+        "time": 1.551945,
+        "source": "http://127.0.0.1:4175/dist/assets/novo-book-video-final.mp4"
+      }
+    },
+    {
+      "name": "Pausar book",
+      "pass": true
+    },
+    {
+      "name": "Retomar book",
+      "pass": true
+    },
+    {
+      "name": "Abrir imagem",
+      "pass": true
+    },
+    {
+      "name": "Dialog ajustado à imagem",
+      "pass": true,
+      "detail": {
+        "image": {
+          "x": 466.256103515625,
+          "y": 24.17205810546875,
+          "w": 347.48779296875,
+          "h": 751.9059448242188
+        },
+        "dialog": {
+          "x": 466.256103515625,
+          "y": 24.17205810546875,
+          "w": 347.48779296875,
+          "h": 751.9059448242188
+        }
+      }
+    },
+    {
+      "name": "Fechar imagem e restaurar foco",
+      "pass": false
+    },
+    {
+      "name": "Ampliar vídeo",
+      "pass": false
+    },
+    {
+      "name": "Fechar vídeo",
+      "pass": true
+    },
+    {
+      "name": "Navegação de depoimentos",
+      "pass": true
+    },
+    {
+      "name": "Rolagem após depoimentos",
+      "pass": true
+    },
+    {
+      "name": "Vídeo footer",
+      "pass": true,
+      "detail": {
+        "time": 0.798462,
+        "src": "http://127.0.0.1:4175/dist/assets/footer-silk.mp4"
+      }
+    },
+    {
+      "name": "Rótulo removido",
+      "pass": true
+    },
+    {
+      "name": "Vídeo fora da tela pausado",
+      "pass": true
+    },
+    {
+      "name": "Menu aberto",
+      "pass": true
+    },
+    {
+      "name": "Menu fecha na navegação",
+      "pass": true
+    }
+  ],
+  "accessibility": {
+    "violations": [
+      {
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "description": "Ensure role attribute has an appropriate value for the element",
+        "nodes": [
+          {
+            "target": [
+              "figure[aria-label=\"1 de 5\"]"
+            ],
+            "summary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+          },
+          {
+            "target": [
+              "figure[aria-label=\"2 de 5\"]"
+            ],
+            "summary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+          },
+          {
+            "target": [
+              "figure[aria-label=\"3 de 5\"]"
+            ],
+            "summary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+          },
+          {
+            "target": [
+              "figure[aria-label=\"4 de 5\"]"
+            ],
+            "summary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+          },
+          {
+            "target": [
+              "figure[aria-label=\"5 de 5\"]"
+            ],
+            "summary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "description": "Ensure all page content is contained by landmarks",
+        "nodes": [
+          {
+            "target": [
+              ".floating-contact"
+            ],
+            "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ],
+    "passes": 48,
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "nodes": 1
+      },
+      {
+        "id": "color-contrast",
+        "nodes": 30
+      },
+      {
+        "id": "video-caption",
+        "nodes": 2
+      }
+    ]
+  }
+}

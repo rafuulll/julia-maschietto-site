@@ -1,0 +1,363 @@
+{
+  "kind": "local browser diagnostic, unthrottled; not field CWV",
+  "lcp": 588,
+  "cls": 0,
+  "shifts": [],
+  "longTasks": [],
+  "errors": [],
+  "preferenceSimulation": false,
+  "webglFailureSimulation": false,
+  "width": 1440,
+  "page": 1425,
+  "paint": [
+    {
+      "name": "first-paint",
+      "time": 588
+    },
+    {
+      "name": "first-contentful-paint",
+      "time": 588
+    }
+  ],
+  "resources": [
+    {
+      "name": "probe.js",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "manrope.ttf",
+      "bytes": 164700,
+      "transfer": 165000
+    },
+    {
+      "name": "instrument-serif-italic.ttf",
+      "bytes": 64208,
+      "transfer": 64508
+    },
+    {
+      "name": "hero-desktop-v10.webp",
+      "bytes": 126418,
+      "transfer": 126718
+    },
+    {
+      "name": "styles.css?v=20261030-round2",
+      "bytes": 38966,
+      "transfer": 39266
+    },
+    {
+      "name": "second-round.css?v=20261030-round4",
+      "bytes": 8726,
+      "transfer": 9026
+    },
+    {
+      "name": "third-round.css?v=20261030-round3",
+      "bytes": 256,
+      "transfer": 556
+    },
+    {
+      "name": "sixth-round.css?v=20261030-round6",
+      "bytes": 7803,
+      "transfer": 8103
+    },
+    {
+      "name": "fourth-round.css?v=20261030-round4",
+      "bytes": 2652,
+      "transfer": 2952
+    },
+    {
+      "name": "seventh-round.css?v=20261030-round7",
+      "bytes": 7095,
+      "transfer": 7395
+    },
+    {
+      "name": "eighth-round.css?v=20261030-round8",
+      "bytes": 5495,
+      "transfer": 5795
+    },
+    {
+      "name": "testimonials-carousel.css?v=20261030-round8",
+      "bytes": 5128,
+      "transfer": 5428
+    },
+    {
+      "name": "ninth-round.css?v=20261030-round9",
+      "bytes": 4625,
+      "transfer": 4925
+    },
+    {
+      "name": "tenth-round.css?v=20261030-round10",
+      "bytes": 550,
+      "transfer": 850
+    },
+    {
+      "name": "lenis.min.js",
+      "bytes": 17020,
+      "transfer": 17320
+    },
+    {
+      "name": "config.js?v=20261030-round10",
+      "bytes": 342,
+      "transfer": 642
+    },
+    {
+      "name": "app.js?v=20261030-round10",
+      "bytes": 19674,
+      "transfer": 19974
+    },
+    {
+      "name": "second-round.js?v=20261030-round8",
+      "bytes": 4652,
+      "transfer": 4952
+    },
+    {
+      "name": "media-update.css",
+      "bytes": 2079,
+      "transfer": 2379
+    },
+    {
+      "name": "testimonials-carousel.js?v=20261030-round7",
+      "bytes": 4238,
+      "transfer": 4538
+    },
+    {
+      "name": "bahari-founder-poster-v9.webp",
+      "bytes": 38354,
+      "transfer": 38654
+    },
+    {
+      "name": "hero-julia.webp",
+      "bytes": 117548,
+      "transfer": 117848
+    },
+    {
+      "name": "footer-silk-poster.webp",
+      "bytes": 52290,
+      "transfer": 52590
+    },
+    {
+      "name": "bruna-profile-v9.webp",
+      "bytes": 108578,
+      "transfer": 108878
+    },
+    {
+      "name": "leticia-book.webp",
+      "bytes": 347132,
+      "transfer": 347432
+    },
+    {
+      "name": "arrow-right.svg",
+      "bytes": 245,
+      "transfer": 545
+    },
+    {
+      "name": "target.svg",
+      "bytes": 343,
+      "transfer": 643
+    },
+    {
+      "name": "arrow-up-right.svg",
+      "bytes": 217,
+      "transfer": 517
+    },
+    {
+      "name": "pen-nib.svg",
+      "bytes": 548,
+      "transfer": 848
+    },
+    {
+      "name": "aperture.svg",
+      "bytes": 705,
+      "transfer": 1005
+    },
+    {
+      "name": "plus.svg",
+      "bytes": 212,
+      "transfer": 512
+    },
+    {
+      "name": "pause.svg",
+      "bytes": 320,
+      "transfer": 620
+    },
+    {
+      "name": "whatsapp-logo.svg",
+      "bytes": 703,
+      "transfer": 1003
+    },
+    {
+      "name": "favicon.svg",
+      "bytes": 226,
+      "transfer": 526
+    }
+  ],
+  "video": [
+    {
+      "id": "",
+      "src": "http://127.0.0.1:4176/output/finalization/before-dist/assets/bahari-founder-v9.mp4",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "book-video",
+      "src": "http://127.0.0.1:4176/output/finalization/before-dist/assets/leticia-book-video-v10.mp4",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "footer-video",
+      "src": "",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "expanded-video",
+      "src": "",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    }
+  ],
+  "requestedAssetInventory": {
+    "bytes": 1152048,
+    "count": 33,
+    "resources": [
+      {
+        "name": "manrope.ttf",
+        "fileBytes": 164700
+      },
+      {
+        "name": "instrument-serif-italic.ttf",
+        "fileBytes": 64208
+      },
+      {
+        "name": "hero-desktop-v10.webp",
+        "fileBytes": 126418
+      },
+      {
+        "name": "styles.css",
+        "fileBytes": 38966
+      },
+      {
+        "name": "second-round.css",
+        "fileBytes": 8726
+      },
+      {
+        "name": "third-round.css",
+        "fileBytes": 256
+      },
+      {
+        "name": "sixth-round.css",
+        "fileBytes": 7803
+      },
+      {
+        "name": "fourth-round.css",
+        "fileBytes": 2652
+      },
+      {
+        "name": "seventh-round.css",
+        "fileBytes": 7095
+      },
+      {
+        "name": "eighth-round.css",
+        "fileBytes": 5495
+      },
+      {
+        "name": "testimonials-carousel.css",
+        "fileBytes": 5128
+      },
+      {
+        "name": "ninth-round.css",
+        "fileBytes": 4625
+      },
+      {
+        "name": "tenth-round.css",
+        "fileBytes": 550
+      },
+      {
+        "name": "lenis.min.js",
+        "fileBytes": 17020
+      },
+      {
+        "name": "config.js",
+        "fileBytes": 342
+      },
+      {
+        "name": "app.js",
+        "fileBytes": 19674
+      },
+      {
+        "name": "second-round.js",
+        "fileBytes": 4652
+      },
+      {
+        "name": "media-update.css",
+        "fileBytes": 2079
+      },
+      {
+        "name": "testimonials-carousel.js",
+        "fileBytes": 4238
+      },
+      {
+        "name": "bahari-founder-poster-v9.webp",
+        "fileBytes": 38354
+      },
+      {
+        "name": "hero-julia.webp",
+        "fileBytes": 117548
+      },
+      {
+        "name": "footer-silk-poster.webp",
+        "fileBytes": 52290
+      },
+      {
+        "name": "bruna-profile-v9.webp",
+        "fileBytes": 108578
+      },
+      {
+        "name": "leticia-book.webp",
+        "fileBytes": 347132
+      },
+      {
+        "name": "arrow-right.svg",
+        "fileBytes": 245
+      },
+      {
+        "name": "target.svg",
+        "fileBytes": 343
+      },
+      {
+        "name": "arrow-up-right.svg",
+        "fileBytes": 217
+      },
+      {
+        "name": "pen-nib.svg",
+        "fileBytes": 548
+      },
+      {
+        "name": "aperture.svg",
+        "fileBytes": 705
+      },
+      {
+        "name": "plus.svg",
+        "fileBytes": 212
+      },
+      {
+        "name": "pause.svg",
+        "fileBytes": 320
+      },
+      {
+        "name": "whatsapp-logo.svg",
+        "fileBytes": 703
+      },
+      {
+        "name": "favicon.svg",
+        "fileBytes": 226
+      }
+    ],
+    "note": "Uncompressed on-disk sizes of assets requested during initial local load. This avoids treating cached transfer sizes as a cold network measurement. Excludes test probe and HTML."
+  }
+}

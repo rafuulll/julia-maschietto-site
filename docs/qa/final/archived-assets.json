@@ -1,0 +1,178 @@
+{
+  "count": 43,
+  "bytesRemovedFromDeployment": 10015157,
+  "files": [
+    {
+      "asset": "about-julia.webp",
+      "bytes": 251832
+    },
+    {
+      "asset": "about-julia.webp.json",
+      "bytes": 1268
+    },
+    {
+      "asset": "bahari-cover.webp",
+      "bytes": 484126
+    },
+    {
+      "asset": "bahari-cover.webp.json",
+      "bytes": 923
+    },
+    {
+      "asset": "bahari-film-poster-v9.webp",
+      "bytes": 108804
+    },
+    {
+      "asset": "bahari-results-v9.webp",
+      "bytes": 93166
+    },
+    {
+      "asset": "bruna-feed.webp",
+      "bytes": 73782
+    },
+    {
+      "asset": "bruna-profile-v9.webp",
+      "bytes": 108578
+    },
+    {
+      "asset": "bruna-proof.webp",
+      "bytes": 12756
+    },
+    {
+      "asset": "footer-silk-poster.webp.json",
+      "bytes": 850
+    },
+    {
+      "asset": "footer-silk.webp",
+      "bytes": 116644
+    },
+    {
+      "asset": "footer-silk.webp.json",
+      "bytes": 850
+    },
+    {
+      "asset": "hero-desktop-v10.webp",
+      "bytes": 126418
+    },
+    {
+      "asset": "hero-desktop-v9.webp",
+      "bytes": 88956
+    },
+    {
+      "asset": "hero-julia-original-cutout.webp",
+      "bytes": 536368
+    },
+    {
+      "asset": "hero-julia-v5.webp",
+      "bytes": 221226
+    },
+    {
+      "asset": "hero-julia.webp.json",
+      "bytes": 1297
+    },
+    {
+      "asset": "hero-mobile-v10.webp",
+      "bytes": 113052
+    },
+    {
+      "asset": "hero-mobile-v9.webp",
+      "bytes": 77436
+    },
+    {
+      "asset": "hero-story-julia.webp",
+      "bytes": 36964
+    },
+    {
+      "asset": "hero-story-lipstick.webp",
+      "bytes": 62688
+    },
+    {
+      "asset": "hero-story-profile.webp",
+      "bytes": 71578
+    },
+    {
+      "asset": "hero-tablet-v10.webp",
+      "bytes": 138212
+    },
+    {
+      "asset": "hero-tablet-v9.webp",
+      "bytes": 95338
+    },
+    {
+      "asset": "leticia-book-video-v10.mp4",
+      "bytes": 3194526
+    },
+    {
+      "asset": "leticia-content.webp",
+      "bytes": 37986
+    },
+    {
+      "asset": "leticia-visual.webp",
+      "bytes": 20790
+    },
+    {
+      "asset": "nathalia-book-video-v10.mp4",
+      "bytes": 1997555
+    },
+    {
+      "asset": "nathalia-content.webp",
+      "bytes": 33232
+    },
+    {
+      "asset": "novo-book-video-v10.mp4",
+      "bytes": 1366682
+    },
+    {
+      "asset": "positioning-proof.webp",
+      "bytes": 173340
+    },
+    {
+      "asset": "revista-work.webp",
+      "bytes": 23956
+    },
+    {
+      "asset": "social-preview.jpg",
+      "bytes": 102361
+    },
+    {
+      "asset": "fonts\\instrument-serif-italic.ttf",
+      "bytes": 64208
+    },
+    {
+      "asset": "fonts\\manrope.ttf",
+      "bytes": 164700
+    },
+    {
+      "asset": "icons\\arrow-left.svg",
+      "bytes": 248
+    },
+    {
+      "asset": "icons\\caret-down.svg",
+      "bytes": 214
+    },
+    {
+      "asset": "icons\\check.svg",
+      "bytes": 215
+    },
+    {
+      "asset": "licenses\\Instrument-Serif-OFL.txt",
+      "bytes": 4405
+    },
+    {
+      "asset": "licenses\\Lenis-MIT.txt",
+      "bytes": 1088
+    },
+    {
+      "asset": "licenses\\Manrope-OFL.txt",
+      "bytes": 4387
+    },
+    {
+      "asset": "licenses\\Phosphor-MIT.txt",
+      "bytes": 1071
+    },
+    {
+      "asset": "licenses\\Three-MIT.txt",
+      "bytes": 1081
+    }
+  ]
+}

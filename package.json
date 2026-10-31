@@ -1,0 +1,15 @@
+{
+  "name": "julia-maschietto-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-css.cjs",
+    "check": "node scripts/check-site.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "cssnano": "7.1.9",
+    "html-validate": "11.17.0",
+    "postcss": "8.5.32"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "kind": "local browser diagnostic, unthrottled; not field CWV",
+  "lcp": 240,
+  "cls": 0,
+  "shifts": [],
+  "longTasks": [],
+  "errors": [],
+  "preferenceSimulation": false,
+  "webglFailureSimulation": false,
+  "width": 1440,
+  "page": 1425,
+  "paint": [
+    {
+      "name": "first-paint",
+      "time": 240
+    },
+    {
+      "name": "first-contentful-paint",
+      "time": 240
+    }
+  ],
+  "resources": [
+    {
+      "name": "probe.js",
+      "bytes": 0,
+      "transfer": 0
+    },
+    {
+      "name": "manrope.woff2",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "instrument-serif-italic.woff2",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "hero-desktop-final.webp?v=20261031b",
+      "bytes": 121632,
+      "transfer": 0
+    },
+    {
+      "name": "site.min.css?v=final-20261031b",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "lenis.min.js",
+      "bytes": 17020,
+      "transfer": 0
+    },
+    {
+      "name": "config.js?v=final-20261031b",
+      "bytes": 342,
+      "transfer": 0
+    },
+    {
+      "name": "app.js?v=final-20261031b",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "testimonials-carousel.js?v=final-20261031b",
+      "bytes": 4238,
+      "transfer": 0
+    },
+    {
+      "name": "second-round.js?v=final-20261031b",
+      "bytes": 0,
+      "transfer": 300
+    },
+    {
+      "name": "arrow-right.svg",
+      "bytes": 245,
+      "transfer": 0
+    },
+    {
+      "name": "target.svg",
+      "bytes": 343,
+      "transfer": 0
+    },
+    {
+      "name": "arrow-up-right.svg",
+      "bytes": 217,
+      "transfer": 0
+    },
+    {
+      "name": "pen-nib.svg",
+      "bytes": 548,
+      "transfer": 0
+    },
+    {
+      "name": "aperture.svg",
+      "bytes": 705,
+      "transfer": 0
+    },
+    {
+      "name": "plus.svg",
+      "bytes": 212,
+      "transfer": 0
+    },
+    {
+      "name": "pause.svg",
+      "bytes": 320,
+      "transfer": 0
+    },
+    {
+      "name": "whatsapp-logo.svg",
+      "bytes": 703,
+      "transfer": 0
+    }
+  ],
+  "video": [
+    {
+      "id": "",
+      "src": "http://127.0.0.1:4176/dist/assets/bahari-founder-v9.mp4",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "book-video",
+      "src": "http://127.0.0.1:4176/dist/assets/leticia-book-video-final.mp4",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "footer-video",
+      "src": "",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "expanded-video",
+      "src": "",
+      "ready": 0,
+      "paused": true,
+      "time": 0
+    }
+  ],
+  "requestedAssetInventory": {
+    "bytes": 332511,
+    "count": 17,
+    "resources": [
+      {
+        "name": "manrope.woff2",
+        "fileBytes": 53684
+      },
+      {
+        "name": "instrument-serif-italic.woff2",
+        "fileBytes": 26356
+      },
+      {
+        "name": "hero-desktop-final.webp",
+        "fileBytes": 121632
+      },
+      {
+        "name": "site.min.css",
+        "fileBytes": 81144
+      },
+      {
+        "name": "lenis.min.js",
+        "fileBytes": 17020
+      },
+      {
+        "name": "config.js",
+        "fileBytes": 342
+      },
+      {
+        "name": "app.js",
+        "fileBytes": 19633
+      },
+      {
+        "name": "testimonials-carousel.js",
+        "fileBytes": 4238
+      },
+      {
+        "name": "second-round.js",
+        "fileBytes": 5169
+      },
+      {
+        "name": "arrow-right.svg",
+        "fileBytes": 245
+      },
+      {
+        "name": "target.svg",
+        "fileBytes": 343
+      },
+      {
+        "name": "arrow-up-right.svg",
+        "fileBytes": 217
+      },
+      {
+        "name": "pen-nib.svg",
+        "fileBytes": 548
+      },
+      {
+        "name": "aperture.svg",
+        "fileBytes": 705
+      },
+      {
+        "name": "plus.svg",
+        "fileBytes": 212
+      },
+      {
+        "name": "pause.svg",
+        "fileBytes": 320
+      },
+      {
+        "name": "whatsapp-logo.svg",
+        "fileBytes": 703
+      }
+    ],
+    "note": "Uncompressed on-disk sizes of assets requested during initial local load. This avoids treating cached transfer sizes as a cold network measurement. Excludes test probe and HTML."
+  }
+}

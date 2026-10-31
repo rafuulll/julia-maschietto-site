@@ -1,0 +1,40 @@
+/* Production refinements within the established editorial identity. */
+/* The frame includes a pale inner lip. Cover its full aperture at fractional sizes. */
+.notebook{aspect-ratio:2560/1541}
+.notebook-shell{position:absolute;inset:0;width:100%;height:100%}
+/* Match the frame aperture to the supplied 16:9 recordings without cropping slides. */
+.notebook-screen{left:14.78%;right:14.78%;top:17.84%;height:65.82%;background:#0a0f15;isolation:isolate}
+.notebook-screen>img,.notebook-screen>video{position:absolute;inset:-.6px;width:calc(100% + 1.2px);height:calc(100% + 1.2px);max-width:none;object-fit:cover;background:#0a0f15}
+.book-pause[hidden],#video-toggle[hidden]{display:none}
+.hero .hero-image{height:100%}
+.project-detail>*,.deliverables-grid>*,.closing-top>*,.about-copy{min-width:0}
+.project-name,.project-result,.footer-links a{overflow-wrap:anywhere}
+.case-media-button{transition:opacity .2s var(--ease)}
+.case-media-button:hover{opacity:.88}
+.footer-bottom{font-size:11px;gap:20px}
+.footer-bottom button{min-height:44px;font-size:11px}
+.faq-list details>p{max-width:65ch}
+.process-window:focus-visible,.testimonials-carousel__rail:focus-visible{outline:2px solid var(--wine);outline-offset:8px}
+.closing #footer-video{background:var(--wine)}
+.motion-enabled .concept-word{opacity:.56}
+.motion-enabled .concept-word.on{opacity:1}
+@media(max-width:760px){
+ .footer-bottom{font-size:10px;align-items:center}
+ .footer-bottom button{font-size:10px}
+ .notebook-stage{min-width:0}
+ .book-actions{column-gap:18px;row-gap:0}
+ .hero .hero-actions{flex-wrap:wrap}
+ .testimonials-carousel__window{width:100%}
+}
+@media(max-width:359px){
+ .hero h1{font-size:clamp(26px,8.1vw,30px)}
+ .hero h1>em{white-space:normal}
+ .hero .hero-actions .btn{font-size:11px}
+ .hero .hero-actions .btn-ghost{padding-inline:12px}
+ .book-tabs button{font-size:11px;padding-inline:10px}
+ .credentials>div{grid-template-columns:70px minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){
+ .case-media-button{transition:none}
+ .process-timeline-progress>span{transform:scaleY(1)}
+}

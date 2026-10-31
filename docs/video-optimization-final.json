@@ -1,0 +1,35 @@
+[
+  {
+    "asset": "leticia-book-video-final.mp4",
+    "previousBytes": 3194526,
+    "bytes": 3063600,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 20,
+    "audio": false
+  },
+  {
+    "asset": "nathalia-book-video-final.mp4",
+    "previousBytes": 1997555,
+    "bytes": 1900509,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 20,
+    "audio": false
+  },
+  {
+    "asset": "novo-book-video-final.mp4",
+    "previousBytes": 1366682,
+    "bytes": 1333269,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 20,
+    "audio": false
+  }
+]
