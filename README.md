@@ -50,3 +50,11 @@ Acesse `http://localhost:4173/` ou `http://localhost:4173/portfolio/`. Use um se
 ## Verificação
 
 `npm install` e `npm run check` verificam a landing page. O verificador de portfólio `scripts/check-portfolio.cjs` depende de ferramentas locais em `.tools/`, pasta não incluída no repositório, e não é exigido para a publicação estática. Confira também a navegação, os vídeos, os contatos e a apresentação em celular e computador após publicar.
+
+## Microsoft Clarity e medição de contato
+
+O projeto Clarity `z7jn58ca4k` é carregado por `dist/clarity-consent.js` apenas após a pessoa aceitar a análise de uso. A escolha pode ser alterada pelo botão **Preferências de privacidade** no rodapé; a recusa interrompe a coleta após a atualização da página. A preferência é salva no navegador. O sinal Consent V2 é enviado com análise permitida e anúncios negados após a aceitação.
+
+O listener de clique registra o evento `whatsapp_click` nos links dos domínios `wa.me` e `api.whatsapp.com`, sem alterar seu destino e sem enviar telefone ou mensagem como parâmetros customizados. O clique mostra intenção, não confirma mensagem enviada nem venda. Visitantes que não aceitam análise, bloqueadores de conteúdo ou falhas de rede podem reduzir a cobertura. No painel Clarity, filtre as sessões pelo evento e página; não trate contagem de eventos como sessões únicas. Dados podem levar algumas horas para aparecer.
+
+O aviso e o botão de preferências são implementados em `dist/clarity-consent.css` e `dist/clarity-consent.js`; estão vinculados à landing page e às páginas do portfólio. Consulte a documentação da Microsoft e revise a configuração de consentimento e mascaramento no painel antes de analisar gravações.
