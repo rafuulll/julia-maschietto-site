@@ -46,7 +46,7 @@ Os indicadores têm os períodos e atribuições descritos em cada case. Os depo
 
 ## Sobre Julia
 
-Estrategista de marca e conteúdo, com atuação em direção criativa. Formação em Artes Cênicas no Conservatório de Tatuí; Formação Estrategista de Marca (FEM); graduação em andamento em Publicidade e Propaganda na PUC Minas. Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
+Estrategista de marca e conteúdo, com atuação em direção criativa. Publicidade e Propaganda, PUC Minas — 7º semestre; Formação Estrategista de Marca (FEM). Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
 
 ## Atendimento
 

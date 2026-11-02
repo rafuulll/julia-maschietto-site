@@ -37,7 +37,7 @@ s=s.replace('''<div class="hover-preview" aria-hidden="true"><img src="assets/br
 s=s.replace('alt="Retrato de Julia Maschietto com batom vermelho.">','alt="Retrato de Julia Maschietto com batom vermelho." loading="lazy">')
 s=re.sub(r'<!-- THESIS:.*?-->\n','',s,flags=re.S)
 person=URL+'/#julia';site=URL+'/#site';page=URL+'/#pagina'
-graph=[{'@type':'Person','@id':person,'name':'Julia Maschietto','url':URL+'/','image':URL+'/assets/hero-desktop-final.webp','jobTitle':'Estrategista de marca e conteúdo','description':'Estrategista de marca e conteúdo, com atuação em direção criativa e formação em Artes Cênicas.','email':'jumaschietto3@gmail.com','sameAs':['https://www.linkedin.com/in/jumaschietto/'],'knowsAbout':['Estratégia de marca','Posicionamento de marca','Conteúdo estratégico','Direção criativa','Storytelling']},
+graph=[{'@type':'Person','@id':person,'name':'Julia Maschietto','url':URL+'/','image':URL+'/assets/hero-desktop-final.webp','jobTitle':'Estrategista de marca e conteúdo','description':'Estrategista de marca e conteúdo, com atuação em direção criativa.','email':'jumaschietto3@gmail.com','sameAs':['https://www.linkedin.com/in/jumaschietto/'],'knowsAbout':['Estratégia de marca','Posicionamento de marca','Conteúdo estratégico','Direção criativa','Storytelling']},
 {'@type':'WebSite','@id':site,'url':URL+'/','name':'Julia Maschietto','inLanguage':'pt-BR','publisher':{'@id':person}},
 {'@type':'WebPage','@id':page,'url':URL+'/','name':'Julia Maschietto · Estratégia, conteúdo e direção criativa','inLanguage':'pt-BR','isPartOf':{'@id':site},'about':{'@id':person},'mainEntity':{'@id':person}}]
 for name,description in [('Estratégia de marca','Posicionamento e essência, expressão visual e verbal e estratégia de comunicação.'),('Conteúdo estratégico','Planejamento editorial, roteiros, storytelling e rituais de conteúdo.'),('Direção criativa','Conceito de campanha, direção de ensaios e narrativa de lançamento.')]:
@@ -50,7 +50,7 @@ p.write_text(s,encoding='utf-8')
 
 > Estratégia de marca, conteúdo estratégico e direção criativa. Site profissional e portfólio de Julia Maschietto, com atendimento remoto.
 
-Julia tem formação em Artes Cênicas pelo Conservatório de Tatuí, formação Estrategista de Marca (FEM) e cursa Publicidade e Propaganda na PUC Minas. Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
+Julia cursa Publicidade e Propaganda na PUC Minas — 7º semestre — e tem formação Estrategista de Marca (FEM). Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
 
 ## Conteúdo principal
 
@@ -116,7 +116,7 @@ Os indicadores têm os períodos e atribuições descritos em cada case. Os depo
 
 ## Sobre Julia
 
-Estrategista de marca e conteúdo, com atuação em direção criativa. Formação em Artes Cênicas no Conservatório de Tatuí; Formação Estrategista de Marca (FEM); graduação em andamento em Publicidade e Propaganda na PUC Minas. Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
+Estrategista de marca e conteúdo, com atuação em direção criativa. Publicidade e Propaganda, PUC Minas — 7º semestre; Formação Estrategista de Marca (FEM). Desde 2024, desenvolveu trabalhos para mais de 30 marcas e perfis, conforme sua apresentação profissional.
 
 ## Atendimento
 
