@@ -18,6 +18,8 @@ selection=[
  (media/'IMG_3365.PNG','portfolio-julia-followers.webp',1000),
  (media/'IMG_3360.PNG','portfolio-bahari-story.webp',1000),
  (ROOT/'assets-source/portfolio-bruna-results.png','portfolio-bruna-results.webp',1600),
+ (media/'sepulveda/IMG_3389.JPG.jpeg','portfolio-sepulveda-trufa.webp',1200),
+ (media/'sepulveda/IMG_3391.JPG.jpeg','portfolio-sepulveda-chocolate.webp',1200),
 ]
 records=[]
 for src,name,width in selection:
@@ -25,6 +27,15 @@ for src,name,width in selection:
  im.thumbnail((width,width*3))
  im.save(ROOT/'dist/assets'/name,'WEBP',quality=88,method=6)
  records.append({'source':src.name,'asset':name,'size':im.size})
+# Recover the individual Bruna evidence, rather than enlarging the document montage.
+from pypdf import PdfReader
+pdf=next(downloads.glob('PORTFO*compressed.pdf'))
+reader=PdfReader(str(pdf))
+for index in [1,2,3]:
+ name=f'portfolio-bruna-proof-{index}.webp'
+ reader.pages[9].images[index].image.convert('RGB').save(ROOT/'dist/assets'/name,'WEBP',quality=94,method=6)
+ records.append({'source':pdf.name,'pageIndex':9,'imageIndex':index,'asset':name})
+Image.open(ROOT/'assets-source/bruna-profile-v9.webp').save(ROOT/'dist/assets/portfolio-bruna-feed.webp','WEBP',quality=94,method=6)
 import imageio_ffmpeg
 ff=imageio_ffmpeg.get_ffmpeg_exe()
 for src,kind in [('IMG_3380.MOV','esporte'),('IMG_1512.MOV','mulher')]:

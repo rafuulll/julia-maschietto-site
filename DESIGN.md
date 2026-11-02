@@ -321,3 +321,15 @@ Local colors are intentional contextual treatments: branding paper (#e8e7e1), it
 Through (1100px), clean mobile/tablet artwork preserves the original face and stories without the former gray matte. One photograph-local overlay (`hero-scene::after`) descends from transparent at (45%) to charcoal at (84%). The separate shade is hidden; in-flow copy sits on matching solid charcoal with a (-1px) seam overlap. The fade is independent of copy length and also applies to the commercial hero through the shared stylesheet. Desktop photography and fade remain unchanged.
 
 Three books remain simultaneously present, rather than gated by tabs. Scopes use native details and a quarter-second rotating plus. Muted inline previews pause offscreen, in hidden tabs and during enlargement; static covers support reduced motion, data saving and autoplay failure. Campaign films use native controls. Enlargement is a transparent fit-content native dialog with circular close control, Escape/backdrop dismissal and focus restoration. Portfolio reveal content is immediately visible. Preserve actual supplied artifacts, shared credits and accessible source links.
+
+
+### Approved portfolio layout refinement — 2 November 2026
+
+This supersedes the sequential three-notebook portfolio arrangement only. The shared stage has three prominent named selectors, a single top-aligned notebook at the left and the selected copy/scope at the right; compact layouts put the preview before copy and disclosure. Opening details must not recenter or displace the preview. Selection updates text, cover, film, credit and enlargement together; tabs support arrows, Home and End. All source content remains in the server HTML for unenhanced access.
+
+Case galleries now express their purpose: Bahari contribution/film, paired results, then communication and production; Júlia Nunes paired films followed by three aligned Insights records; Sepulveda supplied product photography followed by an attributed commercial result and the original report. No screenshot detail is fabricated or cropped to equalize ratios. Compact layouts stack the proof records for reading. The portfolio and all case pages reuse the original commercial silk-video footer, with the portfolio contact message. Original hero and commercial page remain untouched.
+
+Implementation: scripts/portfolio_layout.py, dist/portfolio/portfolio.css and portfolio.js. Within the inherited palette, the wine selected-project control, ruled disclosure, notebook stage and chapter spacing provide hierarchy. Touch targets stay at least 44px for primary controls. The 21px chapter subheading role extends the existing portfolio type scale intentionally. Source fidelity and validation evidence: docs/PORTFOLIO-REFINAMENTO.md and docs/qa/portfolio-v14/.
+
+
+Bruna Mariana refinement approved during the same execution: pair the supplied presentation portrait with participation, give the actual feed its own chapter, and replace the low-resolution montage with four separate original result captures from the supplied portfolio PDF. Preserve client authorship of the written copy and the context of individual publication metrics.

@@ -1,0 +1,65 @@
+{
+  "state": "complete",
+  "rows": [
+    {
+      "test": "switch leticia",
+      "pass": true
+    },
+    {
+      "test": "pause leticia",
+      "pass": true
+    },
+    {
+      "test": "enlarge selected leticia",
+      "pass": true
+    },
+    {
+      "test": "close selected leticia",
+      "pass": true
+    },
+    {
+      "test": "switch nathalia",
+      "pass": true
+    },
+    {
+      "test": "pause nathalia",
+      "pass": true
+    },
+    {
+      "test": "enlarge selected nathalia",
+      "pass": true
+    },
+    {
+      "test": "close selected nathalia",
+      "pass": true
+    },
+    {
+      "test": "switch novo",
+      "pass": true
+    },
+    {
+      "test": "pause novo",
+      "pass": true
+    },
+    {
+      "test": "enlarge selected novo",
+      "pass": true
+    },
+    {
+      "test": "close selected novo",
+      "pass": true
+    },
+    {
+      "test": "keyboard Home selects Letícia",
+      "pass": true
+    },
+    {
+      "test": "silk footer autoplays",
+      "pass": true
+    },
+    {
+      "test": "silk footer pause",
+      "pass": true
+    }
+  ]
+}

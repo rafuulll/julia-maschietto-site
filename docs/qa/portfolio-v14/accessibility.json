@@ -1,0 +1,99 @@
+{
+  "state": "complete",
+  "rows": [
+    {
+      "path": "/portfolio/",
+      "width": 390,
+      "violations": [],
+      "passes": 26,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast",
+        "video-caption"
+      ]
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast",
+        "video-caption"
+      ]
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 390,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "/portfolio/",
+      "width": 1440,
+      "violations": [],
+      "passes": 26,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 1440,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast",
+        "video-caption"
+      ]
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 1440,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast",
+        "video-caption"
+      ]
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 1440,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 1440,
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

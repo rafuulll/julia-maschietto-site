@@ -2,6 +2,9 @@
 <!-- impeccable:product-schema 1 -->
 ## Platform
 web
+
+## Approved portfolio layout refinement — 2 November 2026
+The company-facing portfolio now presents one shared notebook with three prominent named project selectors. Opening a scope expands only the adjacent copy on desktop; the preview precedes the copy on mobile and stays in place. Bahari separates contribution/film, digital results and communication/production. Júlia Nunes separates the film pair from three aligned Insights captures. Sepulveda includes supplied product photographs and contextualized client-reported results. All portfolio pages use the commercial landing page's silk video footer with professional-opportunity contact copy. Preserve original media, claims and credits, the approved hero and commercial page.
 ## Stack
 Static HTML, CSS and JavaScript, explicitly requested. Buildless dist directory. Sites publication and downloadable source; preserve the audience currently configured by the owner.
 ## Users
@@ -50,3 +53,6 @@ Source fidelity is binding: actual supplied photographs, recordings and captures
 Native campaign controls, proportional media enlargement and muted visibility-aware previews preserve user control; static covers support reduced motion, data saving and autoplay failure. Original mobile/tablet portraits use one photo-local fade into a solid copy field; the shared correction also applies at `/`, preserving the approved face, stories and desktop artwork.
 
 The bounded finish review is complete: `docs/qa/portfolio/finish-review.md` records disposition **ship**, no open material findings, and resolution of the sole screenshot-timing issue without an implementation change. `docs/PORTFOLIO.md` records verification evidence and testing limits.
+
+
+Bruna Mariana refinement approved during the same execution: pair the supplied presentation portrait with participation, give the actual feed its own chapter, and replace the low-resolution montage with four separate original result captures from the supplied portfolio PDF. Preserve client authorship of the written copy and the context of individual publication metrics.
