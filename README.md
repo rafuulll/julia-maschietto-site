@@ -1,87 +1,52 @@
-# Julia Maschietto — Landing page V1
+# Julia Maschietto — site e portfólio
 
-Primeira versão de apresentação em HTML, CSS e JavaScript. Abra `dist/index.html` ou sirva a pasta `dist` com qualquer servidor estático. Os arquivos prontos para hospedagem estão integralmente em `dist/`; nenhuma compilação é necessária.
+Site profissional de Julia Maschietto, com landing page de serviços e portfólio para empresas. O projeto usa HTML, CSS e JavaScript; fotos, fontes e vídeos utilizados no site acompanham a entrega.
+
+## Páginas
+
+- `/` — serviços, projetos, trajetória e contato.
+- `/portfolio/` — apresentação profissional e projetos de branding.
+- `/portfolio/bahari/`, `/portfolio/sepulveda/`, `/portfolio/julia-nunes/` e `/portfolio/bruna/` — cases individuais.
+
+## Publicar na Vercel
+
+1. Envie **a pasta completa deste projeto** ao repositório GitHub `rafuulll/julia-maschietto-site`.
+2. Na Vercel, importe esse repositório e mantenha a raiz do projeto na raiz do repositório.
+3. O arquivo `vercel.json` já configura o framework como Other, o comando de build e a pasta de saída. Em **Settings → Environment Variables**, mantenha ativada a opção **Automatically expose System Environment Variables**. Ela costuma vir ativa em projetos novos.
+4. Publique e confira a landing page, `/portfolio/` e os quatro cases no endereço fornecido pela Vercel.
+
+O build copia `dist/` para `.vercel-static/` e substitui os endereços do site anterior pelo domínio de produção fornecido pela variável de sistema `VERCEL_PROJECT_PRODUCTION_URL`. Isso atualiza canônicos, imagens de compartilhamento, dados estruturados, sitemap, robots e documentos de conteúdo sem modificar os arquivos originais em `dist/`. Se a variável não estiver disponível, o build falha com uma mensagem explicativa, em vez de publicar os links antigos.
+
+Em previews, os metadados também apontam para o domínio de produção. Se um domínio próprio for adicionado posteriormente, confira qual domínio a Vercel selecionou e faça um novo deploy para atualizar os metadados; a Vercel pode escolher o domínio personalizado mais curto. Caso queira outro domínio canônico, será necessário ajustar o build para essa preferência.
+
+A publicação na Vercel e a hospedagem existente no Sites são independentes. Os depoimentos demonstrativos da landing page estão identificados como fictícios e devem ser revisados com a cliente antes do lançamento comercial.
 
 ## Visualizar localmente
 
-Com Python instalado, execute na pasta do projeto:
+Na raiz do projeto, com Python instalado:
 
 ```sh
 python -m http.server 4173 --directory dist
 ```
 
-Acesse http://localhost:4173. A cópia da mensagem usa a área de transferência do navegador; em hospedagem definitiva, utilize HTTPS.
-
-## O que está implementado
-
-- Hero raster com o PNG transparente original fornecido, stories fotográficos incorporados e versões para desktop, tablet e celular.
-- Manrope e Instrument Serif Italic hospedadas localmente.
-- Menu flutuante, menu móvel, botões com texto deslizante e seta circular.
-- Entrada de palavras, revelação do manifesto conforme a rolagem e navegação suave no desktop.
-- Cases com resultados visíveis, detalhes expansíveis e prévia de imagem no mouse.
-- Materiais reais em um mockup de notebook, seleção por teclado e ampliação.
-- Sobre Julia com crachá 3D arrastável; carrossel de depoimentos ilustrativos; processo lateral com progresso e FAQ.
-- Rodapé em vídeo leve, controle de pausa e respeito à preferência por movimento reduzido.
-- Contato oficial: os CTAs abrem o WhatsApp com mensagem preenchida; e-mail e LinkedIn estão ativos.
-
-## Contatos oficiais
-
-Os contatos fornecidos pelo cliente já estão em `dist/config.js` e nos links HTML:
-
-```js
-window.JULIA_SITE = Object.freeze({
-  demo: false,
-  whatsapp: '5515997486580',
-  email: 'jumaschietto3@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/jumaschietto/',
-  defaultMessage: 'Olá, Julia! Vim pelo seu site e quero conversar sobre um projeto para a minha marca.'
-});
-```
-
-Os botões de contato abrem o WhatsApp com a mensagem preenchida, incluindo o serviço escolhido quando pertinente. A pessoa confirma o envio no WhatsApp. Os links Ver projetos e de navegação mantêm seus destinos. Nenhuma solicitação ou formulário é armazenado por esta página.
-
-## Antes do lançamento comercial
-
-Consulte `docs/ANTES-DE-PUBLICAR.md`. Esta V1 mantém `noindex,nofollow`, depoimentos ilustrativos identificados e um prazo ilustrativo. Os contatos oficiais já estão ativos. Os resultados apresentados foram extraídos dos materiais fornecidos e mantêm os créditos e contextos descritos.
+Acesse `http://localhost:4173/` ou `http://localhost:4173/portfolio/`. Use um servidor HTTP para que caminhos absolutos e módulos funcionem corretamente. A visualização de `dist/` conserva os metadados do endereço anterior; o build da Vercel os adapta para a publicação.
 
 ## Organização
 
-- `dist/index.html`: estrutura e textos.
-- `dist/styles.css`: identidade visual e comportamento responsivo.
-- `dist/app.js`: navegação, animações, cases, livros, contato e vídeo.
-- `dist/config.js`: contato configurável.
-- `dist/assets/`: fotografias, materiais, ícones, fontes e vídeo.
-- `PRODUCT.md`, `DESIGN.md`: contexto do produto e sistema visual.
-- `docs/`: critérios, procedência das imagens, prompts e revisão.
+- `dist/` — site estático pronto, com páginas, estilos, scripts, metadados e `assets/`.
+- `vercel.json` e `scripts/build-vercel.cjs` — configuração e preparação para publicação na Vercel.
+- `styles/` — CSS de origem da landing page. `npm install` e `npm run build` recompilam `dist/site.min.css`; não é necessário para o deploy normal.
+- `scripts/build-portfolio.py` e `scripts/portfolio_layout.py` — geração do portfólio e dos cases; requerem Python e Pillow. Os arquivos gerados já estão em `dist/`.
+- `dist/config.js` — configuração de contato da landing page; o portfólio também possui links diretamente no HTML e no gerador.
+- `assets-source/` — materiais de origem, não necessários para servir o site.
+- `docs/`, `PRODUCT.md` e `DESIGN.md` — decisões e histórico. Documentos de rodadas anteriores podem descrever versões antigas.
 
-## Referências e recursos
+## Contato
 
-Referência principal indicada pelo cliente: Leticia Bassan, incluindo o exemplo do minicurso da Nat Designer. A implementação e a identidade de Julia foram produzidas para esta versão; fotos e vídeo da clínica de referência não foram reutilizados.
+- WhatsApp: +55 15 99748-6580, com mensagem preenchida.
+- E-mail: jumaschietto3@gmail.com.
+- LinkedIn: https://www.linkedin.com/in/jumaschietto/.
 
-Recursos: GPT Images (edições dos retratos, composição ilustrativa Bahari e textura de seda), Manrope, Instrument Serif, Phosphor Icons e Lenis. O vídeo foi produzido a partir da textura gerada, com movimento suave de tecido. Os créditos detalhados estão em `docs/ASSETS.md`.
+## Verificação
 
-
-## Segunda execução
-
-Esta entrega inclui o crachá 3D local (Three.js 0.180.0, sem React), rolagem lateral do processo, ondas contínuas entre Processo e Sobre, depoimentos ilustrativos animados e hover dos ícones. Veja `docs/RODADA-2.md` e o relatório em `docs/qa/round-two/report.json`. Os relatos exibidos nesta experiência são fictícios e estão identificados. As evidências reais dos cases permanecem preservadas.
-
-`dist/second-round.js`, `dist/second-round.css` e `dist/badge-3d.js` implementam essa rodada. O módulo 3D é carregado próximo do Sobre; requer um servidor HTTP/HTTPS para importar os módulos locais. A alternativa estática funciona quando WebGL não estiver disponível. As bibliotecas locais já acompanham `dist/assets/vendor`; não é necessário instalar dependências ou compilar.
-
-A sexta execução restaura a fotografia aprovada anteriormente na hero, fundo cinza quente, fade escuro e três stories monocromáticos decorativos. Substitui a parede de relatos por depoimentos editoriais com seleção manual, amplia o arraste do crachá e fixa as ondas durante o processo. Veja `docs/RODADA-6.md` e `docs/qa/round-six/report.json`. A quinta permanece documentada como versão anterior, sem controlar a composição atual.
-
-A sétima execução refina a hero e seus stories, troca os depoimentos por cartões em carrossel e libera as ondas após o percurso lateral. Inclui revisão de celulares, tablets, telas baixas e monitores largos, com CTAs compactos e áreas de toque ampliadas. `dist/seventh-round.css` e `dist/testimonials-carousel.{css,js}` controlam os refinamentos atuais. Veja `docs/RODADA-7.md` e `docs/qa/round-seven/report.json`; as rodadas anteriores documentam o histórico.
-
-A oitava execução restaura Bahari como destaque, mantém os outros cinco cases expansíveis, adota uma sequência vertical com progresso nos aparelhos sem pin e corrige a passagem pela seção dos depoimentos. Tags voltam às quatro pontas sem sobrepor o texto. A composição raster desktop da hero foi criada apenas para aprovação e não está integrada. Veja `docs/RODADA-8.md`; `dist/eighth-round.css` contém os novos refinamentos.
-
-A nona execução aplica a hero aprovada com o rosto do PSD original, sem nova geração facial. Acrescenta a ordem texto/crachá no mobile, duas ondas discretas, fotografia e vídeo reais da Bahari, capturas de Júlia Nunes e ampliação das evidências. Corrige a imagem de Bruna e elimina o fade dos depoimentos. Veja `docs/RODADA-9.md`, `docs/media-round9.json` e `docs/qa/round-nine/report.json`. `dist/ninth-round.css` contém os refinamentos atuais.
-
-A décima execução substitui o PSD pelo PNG transparente original, recompõe os stories com fotos originais e aproxima o superior direito. As tags acompanham a rolagem com entradas distintas e reversíveis. Contatos oficiais estão ativos. A textura gerada é uma alternativa separada para comparação. Veja `docs/RODADA-10.md`.
-
-O complemento da rodada 10 acrescenta três vídeos de reprodução automática no notebook, ampliação proporcional sem painel branco, miniaturas sem faixas e capas atualizadas de Copa, Sepulveda, Júlia Nunes e Bruna. `dist/media-update.css` contém o ajuste visual e `docs/media-update-round10.json` registra os arquivos utilizados.
-
-
-## Final production build
-
-The published static directory is `dist/`. Ordered CSS authoring files live in `styles/`; run `npm install`, `npm run build`, then `npm run check` with Node. Production needs no Node runtime. Old media remain in `assets-source/` and are excluded from the hosted package.
-
-Final implementation, QA and limits: [docs/FINALIZACAO.md](docs/FINALIZACAO.md). Contact links are configured in `dist/config.js` and have usable HTML fallbacks. For a domain change, update canonical, social URLs, JSON-LD, robots, sitemap, llms.txt and index.md together. Source migration scripts named finalize-site/finalize-interactions are one-time records, not build steps.
+`npm install` e `npm run check` verificam a landing page. O verificador de portfólio `scripts/check-portfolio.cjs` depende de ferramentas locais em `.tools/`, pasta não incluída no repositório, e não é exigido para a publicação estática. Confira também a navegação, os vídeos, os contatos e a apresentação em celular e computador após publicar.

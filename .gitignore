@@ -9,3 +9,5 @@ docs/qa/*.jpg
 docs/qa/**/*.png
 docs/qa/**/*.jpg
 output/
+.vercel-static/
+.vercel/
