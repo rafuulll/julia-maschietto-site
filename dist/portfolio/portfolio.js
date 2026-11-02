@@ -59,12 +59,19 @@
  document.addEventListener('visibilitychange',()=>{previews.forEach(updatePreview);if(document.hidden)document.querySelectorAll('video').forEach(v=>v.pause());});
  reduced.addEventListener('change',()=>{previews.forEach(host=>{if(reduced.matches){host.querySelector('video').hidden=true;host.querySelector('.notebook-screen>img').hidden=false;host.querySelector('.preview-pause').hidden=true;}updatePreview(host);});});
  const badge=document.getElementById('badge-scene');
- if(badge){const badgeObserver=new IntersectionObserver(async entries=>{
-  if(!entries[0].isIntersecting)return;badgeObserver.disconnect();
+ if(badge){
+  let nearBadge=false,started=false,engaged=scrollY>40||location.hash==='#sobre';
   const fallback=()=>{badge.dataset.state='fallback';badge.querySelector('.badge-handle').hidden=true;document.getElementById('badge-help').textContent='Julia Maschietto · Estratégia, conteúdo e direção criativa';};
-  if(reduced.matches||navigator.connection?.saveData){fallback();return;}
-  try{await document.fonts.ready;const {createBadge}=await import('/badge-3d.js?v=final-20261031');await createBadge(badge);}catch{fallback();}
- },{rootMargin:'200px'});badgeObserver.observe(badge);}
+  const loadBadge=async()=>{
+   if(started||!nearBadge||!engaged)return;
+   started=true;badgeObserver.disconnect();removeEventListener('scroll',engage);badge.removeEventListener('pointerenter',engage);badge.removeEventListener('pointerdown',engage);badge.removeEventListener('focusin',engage);
+   if(reduced.matches||navigator.connection?.saveData){fallback();return;}
+   try{await document.fonts.ready;const {createBadge}=await import('/badge-3d.js?v=final-20261031');await createBadge(badge);}catch{fallback();}
+  };
+  function engage(){engaged=true;loadBadge();}
+  const badgeObserver=new IntersectionObserver(entries=>{nearBadge=entries[0].isIntersecting;loadBadge();},{rootMargin:'200px'});
+  addEventListener('scroll',engage,{passive:true});badge.addEventListener('pointerenter',engage,{once:true});badge.addEventListener('pointerdown',engage,{once:true});badge.addEventListener('focusin',engage,{once:true});badgeObserver.observe(badge);
+ }
  // Same silk film as the commercial landing page, loaded only near the footer.
  const footerMovie=document.querySelector('#footer-video'),footerToggle=document.querySelector('#video-toggle');
  if(footerMovie){
