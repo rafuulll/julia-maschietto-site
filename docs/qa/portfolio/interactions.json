@@ -1,0 +1,133 @@
+{
+  "state": "complete",
+  "results": [
+    {
+      "test": "mobile menu opens",
+      "pass": true
+    },
+    {
+      "test": "mobile anchor closes menu",
+      "pass": true
+    },
+    {
+      "test": "all three book scopes accessible",
+      "pass": true
+    },
+    {
+      "test": "book 0 autoplays when reached",
+      "pass": true
+    },
+    {
+      "test": "book 0 pauses",
+      "pass": true
+    },
+    {
+      "test": "book 0 enlarges",
+      "pass": true
+    },
+    {
+      "test": "book 0 closes",
+      "pass": true
+    },
+    {
+      "test": "book 1 autoplays when reached",
+      "pass": true
+    },
+    {
+      "test": "book 1 pauses",
+      "pass": true
+    },
+    {
+      "test": "book 1 enlarges",
+      "pass": true
+    },
+    {
+      "test": "book 1 closes",
+      "pass": true
+    },
+    {
+      "test": "book 2 autoplays when reached",
+      "pass": true
+    },
+    {
+      "test": "book 2 pauses",
+      "pass": true
+    },
+    {
+      "test": "book 2 enlarges",
+      "pass": true
+    },
+    {
+      "test": "book 2 closes",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bahari next project",
+      "pass": true
+    },
+    {
+      "test": "sepulveda image enlargement",
+      "pass": true
+    },
+    {
+      "test": "sepulveda next project",
+      "pass": true
+    },
+    {
+      "test": "julia-nunes image enlargement",
+      "pass": true
+    },
+    {
+      "test": "julia-nunes image enlargement",
+      "pass": true
+    },
+    {
+      "test": "julia-nunes image enlargement",
+      "pass": true
+    },
+    {
+      "test": "julia-nunes image enlargement",
+      "pass": true
+    },
+    {
+      "test": "julia-nunes next project",
+      "pass": true
+    },
+    {
+      "test": "bruna image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bruna image enlargement",
+      "pass": true
+    },
+    {
+      "test": "bruna next project",
+      "pass": true
+    }
+  ]
+}

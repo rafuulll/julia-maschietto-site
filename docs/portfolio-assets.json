@@ -1,0 +1,50 @@
+[
+  {
+    "source": "IMG_3392.JPG.jpeg",
+    "asset": "portfolio-bahari-team.webp",
+    "size": [
+      1600,
+      1340
+    ]
+  },
+  {
+    "source": "IMG_3375.PNG",
+    "asset": "portfolio-bahari-feed.webp",
+    "size": [
+      1000,
+      2164
+    ]
+  },
+  {
+    "source": "IMG_3393.PNG",
+    "asset": "portfolio-bahari-production.webp",
+    "size": [
+      1300,
+      1827
+    ]
+  },
+  {
+    "source": "IMG_3394.HEIC",
+    "asset": "portfolio-julia-team.webp",
+    "size": [
+      1600,
+      2844
+    ]
+  },
+  {
+    "source": "IMG_3370.PNG",
+    "asset": "portfolio-julia-reel.webp",
+    "size": [
+      1000,
+      2173
+    ]
+  },
+  {
+    "source": "IMG_3365.PNG",
+    "asset": "portfolio-julia-followers.webp",
+    "size": [
+      1000,
+      2173
+    ]
+  }
+]

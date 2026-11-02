@@ -1,0 +1,245 @@
+{
+  "state": "complete",
+  "rows": [
+    {
+      "path": "/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 320,
+      "pageWidth": 305,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 768,
+      "pageWidth": 753,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 1024,
+      "pageWidth": 1009,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bahari/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/julia-nunes/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/bruna/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "path": "/portfolio/sepulveda/",
+      "width": 1440,
+      "pageWidth": 1425,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    }
+  ]
+}

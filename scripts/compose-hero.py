@@ -35,13 +35,14 @@ for index,photo,center in [(0,'hero-story-julia.webp',(.5,.4)),(2,'hero-story-pr
 def paste_card(im,index,x,y,w):
  c=cards[index];c=c.resize((w,round(w*c.height/c.width)),Image.Resampling.LANCZOS)
  sm=Image.new('L',im.size);sm.paste(c.getchannel('A'),(x+3,y+8));sm=sm.filter(ImageFilter.GaussianBlur(12));sh=Image.new('RGBA',im.size);sh.putalpha(sm.point(lambda a:int(a*.13)));im.alpha_composite(sh);im.alpha_composite(c,(x,y))
-def composition(name,size,ph,py,layout,texture=None):
+def composition(name,size,ph,py,layout,texture=None,fade_portrait=True):
  w,h=size
  if texture:im=ImageOps.fit(Image.open(texture).convert('RGBA'),size)
  else:im=Image.new('RGBA',size,(210,207,201,255))
  for i,x,y,cw in layout[:2]:paste_card(im,i,x,y,cw)
  p=portrait.resize((round(portrait.width*ph/portrait.height),ph),Image.Resampling.LANCZOS)
- a=np.asarray(p.getchannel('A')).astype(float);fade=np.clip((ph*.995-np.arange(ph))/(ph*.19),0,1);p.putalpha(Image.fromarray((a*fade[:,None]).astype('uint8')))
+ if fade_portrait:
+  a=np.asarray(p.getchannel('A')).astype(float);fade=np.clip((ph*.995-np.arange(ph))/(ph*.19),0,1);p.putalpha(Image.fromarray((a*fade[:,None]).astype('uint8')))
  im.alpha_composite(p,((w-p.width)//2,py));i,x,y,cw=layout[2];paste_card(im,i,x,y,cw)
  if texture:
   shade=Image.new('RGBA',size);a=np.zeros((h,w),np.uint8)

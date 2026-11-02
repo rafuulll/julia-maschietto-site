@@ -38,3 +38,12 @@
  .case-media-button{transition:none}
  .process-timeline-progress>span{transform:scaleY(1)}
 }
+/* One photo-local fade, independent of the length of the mobile copy.
+   The clean artwork retains the original portrait alpha, without a gray matte. */
+@media(max-width:1100px){
+ .hero{background:linear-gradient(#d2cfc9 0 160px,#140e10 160px)}
+ .hero-shade{display:none}
+ .hero-scene{background:#d2cfc9;isolation:isolate}
+ .hero-scene::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,transparent 45%,rgba(20,14,16,.16) 58%,rgba(20,14,16,.65) 72%,#140e10 84%)}
+ .hero-bottom{margin-top:-1px;padding-top:24px;background:#140e10}
+}

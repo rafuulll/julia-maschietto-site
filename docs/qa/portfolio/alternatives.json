@@ -1,0 +1,38 @@
+{
+  "state": "complete",
+  "results": [
+    {
+      "option": "reduce",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": [],
+      "badge": "fallback",
+      "posterVisible": true,
+      "videoPaused": true
+    },
+    {
+      "option": "no-webgl",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": [],
+      "badge": "fallback",
+      "posterVisible": false,
+      "videoPaused": false
+    },
+    {
+      "option": "no-autoplay",
+      "width": 390,
+      "pageWidth": 375,
+      "overflow": false,
+      "broken": [],
+      "errors": [],
+      "badge": "ready",
+      "posterVisible": true,
+      "videoPaused": true
+    }
+  ]
+}

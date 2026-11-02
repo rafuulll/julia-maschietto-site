@@ -1,0 +1,55 @@
+{
+  "pages": [
+    {
+      "file": "portfolio/index.html",
+      "errors": [],
+      "missing": [],
+      "fragments": [],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/portfolio/",
+      "schema": true
+    },
+    {
+      "file": "portfolio/bahari/index.html",
+      "errors": [],
+      "missing": [],
+      "fragments": [],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/portfolio/bahari/",
+      "schema": true
+    },
+    {
+      "file": "portfolio/sepulveda/index.html",
+      "errors": [],
+      "missing": [],
+      "fragments": [],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/portfolio/sepulveda/",
+      "schema": true
+    },
+    {
+      "file": "portfolio/julia-nunes/index.html",
+      "errors": [],
+      "missing": [],
+      "fragments": [],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/portfolio/julia-nunes/",
+      "schema": true
+    },
+    {
+      "file": "portfolio/bruna/index.html",
+      "errors": [],
+      "missing": [],
+      "fragments": [],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "canonical": "https://julia-maschietto-estudio.classyscout131.chatgpt.site/portfolio/bruna/",
+      "schema": true
+    }
+  ],
+  "jsSyntax": true
+}

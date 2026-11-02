@@ -38,3 +38,15 @@ The raster hero direction is approved with the explicit condition that Julia's o
 
 ## Tenth execution media update
 User requests proportional image enlargement without white canvas or black thumbnail bars, automatic notebook videos from supplied originals, and updated covers from Copa, Sepulveda, Júlia Nunes and Bruna folders. Preserve existing factual case copy and results. Play previews muted and inline on arrival/tab change, with pause and reduced-motion support.
+
+## Approved company-facing portfolio — 2 November 2026
+
+The approved company-facing version at `/portfolio/` sits alongside the retained commercial page at `/`. It presents Julia as founder and brand strategist of [RE]VERSA, with the supplied biography, FEM with Brenda Scalco and 7th semester at PUC Minas. It inherits the approved identity; prior commercial approvals above remain historical where superseded for this separate surface.
+
+All three branding books—Letícia Isse, Dra. Nathália Serafim and Novo Método—are visible with an index, native scope disclosures, supplied notebook previews, pause and enlargement. Four dedicated case pages cover Bahari, Sepulveda, Delegada Júlia Nunes and Bruna Mariana, with participation, evidence, credits, return and next-project links. Novo Método remains a branding book; Novo Método and Copa are omitted only from this version's case list. Native WhatsApp uses the professional-opportunity message; email and LinkedIn remain direct links.
+
+Source fidelity is binding: actual supplied photographs, recordings and captures, without face synthesis or invented metrics. Bahari's 1.1 million views belong to one publication; other captures are examples, not a campaign total, and codirection credits Julia and Larissa Gomes. Sepulveda's revenue comparison is the client's report. Júlia Nunes's more than 100 videos in 45 days is a team result; approximately 27% campaign growth and the separate 30-day +7.5% capture retain their different periods. Bruna writes the text; Julia's roles remain strategy, social media, creative coordination and automation. Retain the low-resolution source montage without inventing detail.
+
+Native campaign controls, proportional media enlargement and muted visibility-aware previews preserve user control; static covers support reduced motion, data saving and autoplay failure. Original mobile/tablet portraits use one photo-local fade into a solid copy field; the shared correction also applies at `/`, preserving the approved face, stories and desktop artwork.
+
+The bounded finish review is complete: `docs/qa/portfolio/finish-review.md` records disposition **ship**, no open material findings, and resolution of the sole screenshot-timing issue without an implementation change. `docs/PORTFOLIO.md` records verification evidence and testing limits.

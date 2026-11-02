@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T03:09:44Z",
+  "generatedAt": "2026-11-02T19:50:50.146Z",
   "title": "Design System: Julia Maschietto",
   "extensions": {
     "colorMeta": {
@@ -169,6 +169,11 @@
         "name": "service-icon-hover",
         "value": "translateY(-4px) rotate(-3deg), .8s var(--spring)",
         "purpose": "Subtle reference-matched feedback on service hover/focus."
+      },
+      {
+        "name": "portfolio-book-previews",
+        "value": "IntersectionObserver threshold .2; muted loop playsinline",
+        "purpose": "Scoped to /portfolio/: supplied visibility-aware previews with manual pause, hidden-tab/dialog suspension and static covers for reduced motion, data saving or autoplay failure."
       }
     ],
     "breakpoints": [
@@ -191,6 +196,10 @@
       {
         "name": "narrow",
         "value": "max-width:380px"
+      },
+      {
+        "name": "portfolio-compact-hero-and-grid",
+        "value": "max-width:1100px"
       }
     ]
   },
@@ -225,6 +234,13 @@
       "description": "Editable message preview inside the paper contact dialog.",
       "html": "<label class=\"ds-label\" for=\"ds-message\">Sua mensagem</label><textarea class=\"ds-field\" id=\"ds-message\">Olá, Julia! Quero conversar sobre um projeto para a minha marca.</textarea>",
       "css": ".ds-label{display:block;font:400 11px/1.6 Manrope,Arial,sans-serif;color:var(--wine,#721919);margin-bottom:8px}.ds-field{width:100%;resize:vertical;min-height:115px;border:1px solid #b7a29d;border-radius:12px;background:#f8f4ef;color:var(--ink,#0a0f15);padding:14px;font:400 13px/1.65 Manrope,Arial,sans-serif}.ds-field:focus-visible{outline:2px solid #f4d1cd;outline-offset:6px}"
+    },
+    {
+      "name": "Portfolio Scope Disclosure",
+      "kind": "custom",
+      "description": "Scoped to /portfolio/ branding books: native flat disclosure and rotating plus; all three books remain visible.",
+      "html": "<details class=\"ds-portfolio-scope\"><summary>O que desenvolvi <svg class=\"ds-portfolio-plus\" aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><dl><dt>Posicionamento estratégico</dt><dd>Público-alvo, proposta de valor e diferenciais competitivos.</dd></dl></details>",
+      "css": ".ds-portfolio-scope{color:var(--ink,#0a0f15);border-block:1px solid var(--line,rgba(60,35,35,.17));font-family:Manrope,Arial,sans-serif}.ds-portfolio-scope>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;padding:16px 0;cursor:pointer;font-size:14px}.ds-portfolio-scope>summary::-webkit-details-marker{display:none}.ds-portfolio-plus{color:var(--wine,#721919);transition:transform .25s}.ds-portfolio-scope[open] .ds-portfolio-plus{transform:rotate(45deg)}.ds-portfolio-scope dl{margin:0;padding:10px 0 26px}.ds-portfolio-scope dt{font-size:14px;line-height:1.6;font-weight:600;margin-bottom:5px}.ds-portfolio-scope dd{margin:0;font-size:14px;line-height:1.8;color:var(--muted,#635b57)}.ds-portfolio-scope>summary:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-portfolio-plus{transition:none}}"
     }
   ],
   "narrative": {
