@@ -14,7 +14,7 @@
     document.getElementById('editorial-author').textContent=q.name;
     document.getElementById('editorial-role').textContent=`${q.role} · exemplo fictício`;
     document.getElementById('editorial-count').textContent=`0${active+1} / 03`;
-    document.getElementById('editorial-status').textContent=`Depoimento ${active+1} de 3: ${q.name}. Exemplo fictício.`;
+    document.getElementById('editorial-status').textContent=`Depoimento ${active+1} de 3: ${q.name}.`;
     buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===active)));
     animation?.cancel();if(!reduced.matches)animation=figure.animate([{opacity:0,transform:'translateY(7px)'},{opacity:1,transform:'none'}],{duration:320,easing:'cubic-bezier(.16,1,.3,1)'});
   }

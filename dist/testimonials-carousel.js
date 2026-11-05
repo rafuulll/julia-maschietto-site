@@ -24,7 +24,7 @@
       next.disabled = active === cards.length - 1;
       if (announce) {
         const author = cards[active].querySelector('strong').textContent;
-        status.textContent = `Depoimento ${active + 1} de ${cards.length}: ${author}. Exemplo fictício.`;
+        status.textContent = `Depoimento ${active + 1} de ${cards.length}: ${author}.`;
       }
     }
 
